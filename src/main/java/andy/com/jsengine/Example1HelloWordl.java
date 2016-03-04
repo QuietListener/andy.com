@@ -8,11 +8,12 @@ public class Example1HelloWordl {
 
 	public static void main(String[] args) {
 		
-		ScriptEngine engine = Utils.getJsEngineInstance();
+		ScriptEngine engine = JSEngineUtils.getJsEngineInstance();
 		
 		// Js script
 		String script = "print(' hello world !')";
 		
+		//run javascript
 		try
 		{
 			engine.eval(script);
