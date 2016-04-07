@@ -1,10 +1,12 @@
 package andy.com.test.pattern;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Test {
 
 	static String pattern = ".+\\+.+→.+";
+	static String pattern1 = "^[a-zA-Z\']+";
 	
 	public static void main(String[] args) {
 		
@@ -19,6 +21,21 @@ public class Test {
 		for(String data:datas)
 		{
 			System.out.println(Pattern.matches(pattern, data)+"  :"+data);
+		}
+		
+
+		Pattern p = Pattern.compile(pattern1);
+		System.out.println();
+		for(String data:datas)
+		{
+			Matcher m = p.matcher(data);
+			System.out.print(data+"   :    ");
+			while(m.find())
+			{
+				System.out.print(data.substring(m.start(), m.end()) +" ; ");
+			}
+			
+			System.out.println();
 		}
 		
 	}
