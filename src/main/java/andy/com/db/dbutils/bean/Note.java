@@ -8,11 +8,12 @@ public class Note {
     public int user_id;
     public String msg;
     public Date create_date;
+    public User user;
     public boolean active;
   
     @Override
     public String toString() {
-    	return id+":"+user_id+":"+msg+":"+create_date+":"+active;
+    	return id+":"+user_id+":"+msg+":"+create_date+":"+active + "\n user:"+user;
     }
     
 	public int getId() {
@@ -44,6 +45,14 @@ public class Note {
 	}
 	public void setActive(boolean active) {
 		this.active = active;
+	}
+	
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	} 
 	  
 	  

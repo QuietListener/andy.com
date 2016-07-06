@@ -1,13 +1,33 @@
 package andy.com.db.dbutils.bean;
 
 public class User {
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO 自动生成的方法存根
-
+	public int id;
+	public String name;
+	public String password;
+	
+	@Override
+	public String toString() {
+		return id+":"+name+":"+password;
 	}
-
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	
 }
