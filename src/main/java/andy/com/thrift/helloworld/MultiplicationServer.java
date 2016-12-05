@@ -1,42 +1,53 @@
 package andy.com.thrift.helloworld;
 
+import org.apache.thrift.TProcessor;
+import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.server.TServer;
-import org.apache.thrift.server.TServer.Args;
-import org.apache.thrift.server.TSimpleServer;
-import org.apache.thrift.transport.TServerSocket;
-import org.apache.thrift.transport.TServerTransport;
+import org.apache.thrift.server.TThreadedSelectorServer;
+import org.apache.thrift.transport.TNonblockingServerSocket;
+import org.apache.thrift.transport.TNonblockingServerTransport;
+
 public class MultiplicationServer {
 
-	  public static MultiplicationHandler handler;
+	public static final int PORT = 19090;
 
-	  public static MultiplicationService.Processor processor;
+	public static void main(String[] args) {
+		try {
 
-	  public static void main(String [] args) {
-	    try {
-	      handler = new MultiplicationHandler();
-	      processor = new MultiplicationService.Processor(handler);
+			MultiplicationHandler handler = new MultiplicationHandler();
+			final TProcessor processor = new MultiplicationService.Processor<MultiplicationService.Iface>(handler);
 
-	      Runnable simple = new Runnable() {
-	        public void run() {
-	          simple(processor);
-	        }
-	      };      
-	     
-	      new Thread(simple).start();
-	    } catch (Exception x) {
-	      x.printStackTrace();
-	    }
-	  }
+			Runnable simple = new Runnable() {
 
-	  public static void simple(MultiplicationService.Processor processor) {
-	    try {
-	      TServerTransport serverTransport = new TServerSocket(9090);
-	      TServer server = new TSimpleServer(new Args(serverTransport).processor(processor));
+				public void run() {
+					runServer(processor);
+				}
 
-	      System.out.println("Starting the simple server...");
-	      server.serve();
-	    } catch (Exception e) {
-	      e.printStackTrace();
-	    }
-	  }	 
+			};
+
+			new Thread(simple).start();
+		} catch (Exception x) {
+			x.printStackTrace();
+		}
+	}
+
+	public static void runServer(TProcessor processor) {
+
+		try {
+			TNonblockingServerTransport serverTransport = new TNonblockingServerSocket(PORT);
+			TThreadedSelectorServer.Args tArgs = new TThreadedSelectorServer.Args(serverTransport);
+			tArgs.maxReadBufferBytes = Integer.MAX_VALUE;
+			tArgs.selectorThreads(10);
+			tArgs.workerThreads(10);
+			tArgs.processor(processor);
+			tArgs.protocolFactory(new TCompactProtocol.Factory());
+			TServer server = new TThreadedSelectorServer(tArgs);
+
+			System.out.println("Starting the TThreadedSelectorServer server...");
+			server.serve();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
 }

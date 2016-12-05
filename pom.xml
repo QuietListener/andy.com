@@ -20,10 +20,9 @@
 			<artifactId>jetty-webapp</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
-
 		<!-- 常用包 -->
 		
-			<!-- rxjava -->
+	    <!-- rxjava -->
 		<dependency>
 			<groupId>io.reactivex</groupId>
 			<artifactId>rxjava</artifactId>
@@ -181,6 +180,15 @@
 			<artifactId>activemq-client</artifactId>
 			<version>5.12.0</version>
 		</dependency>
+		
+		 <dependency>
+		    <groupId>activemq</groupId>
+		    <artifactId>activemq-client</artifactId>
+		    <version>5.12.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/lib/activemq-client-5.12.0.jar</systemPath>
+		</dependency>
+		
 		<!-- active MQ end -->
 
 		<!-- thrift -->
@@ -193,12 +201,12 @@
 
 		<!-- http client -->
 		<dependency>
-			<groupId>commons-httpclient</groupId>
-			<artifactId>commons-httpclient</artifactId>
-			<version>3.1</version>
+	  	  <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>4.5</version>
 		</dependency>
 
-		<dependency>
+		 <dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpmime</artifactId>
 			<version>4.2.3</version>
@@ -262,7 +270,43 @@
 		
         <!-- dbend -->
         
+        
+        <!-- dfs -->		
+       <dependency>
+		    <groupId>fastdfs</groupId>
+		    <artifactId>fastdfs-client</artifactId>
+		    <version>1.25</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/lib/fastdfs-client-java-1.25.jar</systemPath>
+		</dependency>
+		
+        <!-- dfs end  -->
+        
+        <!-- actor ok -->
+        
+        <!-- https://mvnrepository.com/artifact/asm/asm -->
+		<dependency>
+		    <groupId>asm</groupId>
+		    <artifactId>asm</artifactId>
+		    <version>3.3.1</version>
+		 </dependency>
+		        
+		<!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor_2.11 -->
+		<dependency>
+		    <groupId>com.typesafe.akka</groupId>
+		    <artifactId>akka-actor_2.11</artifactId>
+		    <version>2.4.10</version>
+		</dependency>
+        <!-- actor end -->
 	</dependencies>
+	<!-- 
+	<repositories>
+        <repository>
+            <id>typesafe</id>
+            <name>Typesafe Repository</name>
+            <url>http://repo.typesafe.com/typesafe/releases/</url>
+        </repository>
+    </repositories> -->
 
 	<build>
 		<plugins>
