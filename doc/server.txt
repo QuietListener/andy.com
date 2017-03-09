@@ -1,0 +1,2 @@
+mvn jetty:run-exploded
+详情：http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin

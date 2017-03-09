@@ -15,16 +15,11 @@
         http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd" >
        
-    <context:annotation-config />    
-    <context:component-scan base-package="andy.com.web.helloworld.controller">
-        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-    </context:component-scan>
-    
-        <bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:order="3">
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="contentType" value="text/html"/>      
-        <property name="prefix" value="/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
-    
+      <!-- 把标记了@Controller注解的类转换为bean -->  
+    <context:component-scan base-package="andy.com.web.springmvc.helloworld" />  
+    <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->  
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />  
+    <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->  
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"  
+        p:prefix="/" p:suffix=".jsp"/>  
 </beans>

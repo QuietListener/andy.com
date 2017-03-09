@@ -23,7 +23,6 @@ public class DbBase {
 				}
 			}
 		}
-	
 	}
   
   static private DataSource getDS() throws PropertyVetoException

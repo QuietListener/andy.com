@@ -15,11 +15,12 @@ public class HelloWorldController {
 	//@Autowired
 	private HelloWorldService helloWorldService = new HelloWorldServiceImpl();
 	
-	@RequestMapping("helloworld")
+	@RequestMapping(value="helloworld")
 	public String getName(@RequestParam("userName") String userName,  HttpServletRequest request)
 	{
 		  String newUserName = helloWorldService.getNewName(userName);
-          request.setAttribute("newUserName", newUserName+"");
+		  System.out.println(newUserName);
+          request.setAttribute("newUserName", newUserName+"hello");
           return "helloworld";
 	}
 }

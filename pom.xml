@@ -140,11 +140,6 @@
 			<artifactId>commons-pool</artifactId>
 			<version>1.6</version>
 		</dependency>
-		<dependency>
-			<groupId>cglib</groupId>
-			<artifactId>cglib</artifactId>
-			<version>2.2.2</version>
-		</dependency>
 
 		<dependency>
 			<groupId>commons-dbcp</groupId>
@@ -285,11 +280,17 @@
         <!-- actor ok -->
         
         <!-- https://mvnrepository.com/artifact/asm/asm -->
-		<dependency>
+<!-- 	<dependency>
 		    <groupId>asm</groupId>
 		    <artifactId>asm</artifactId>
 		    <version>3.3.1</version>
-		 </dependency>
+		 </dependency> -->
+		 
+		 <dependency>
+		    <groupId>org.ow2.asm</groupId>
+		    <artifactId>asm</artifactId>
+		    <version>5.2</version>
+		</dependency>
 		        
 		<!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor_2.11 -->
 		<dependency>
@@ -298,6 +299,27 @@
 		    <version>2.4.10</version>
 		</dependency>
         <!-- actor end -->
+        
+   <!--      
+       <dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-hdfs</artifactId>
+			<version>2.7.3</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>2.7.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-client</artifactId>
+			<version>2.7.3</version>
+		</dependency>	 -->
+		
+
 	</dependencies>
 	<!-- 
 	<repositories>
@@ -307,6 +329,8 @@
             <url>http://repo.typesafe.com/typesafe/releases/</url>
         </repository>
     </repositories> -->
+    
+    
 
 	<build>
 		<plugins>
@@ -319,11 +343,16 @@
 				</configuration>
 			</plugin>
 			
+			
 			<plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>8.0.0.v20110901</version>
+			  <groupId>org.eclipse.jetty</groupId>
+			  <artifactId>jetty-maven-plugin</artifactId>
+			   <version>9.2.21.v20170120</version>
+			   <configuration>
+		          <war>${basedir}/target/andy.com.war</war>
+		        </configuration>
 			</plugin>
+			
 		</plugins>
 		<finalName>andy.com</finalName>
 	</build>

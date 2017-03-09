@@ -3,7 +3,6 @@
   
   <display-name>Archetype Created Web Application</display-name>
  
-    
     <filter>
         <filter-name>Encoding</filter-name>
         <filter-class>
@@ -19,26 +18,23 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     
-    
-    <!-- Spring MVC配置开始 -->
-    <servlet>
-        <servlet-name>spring</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <init-param>
-            <init-param>  
+   <!-- SpringMVC的前端控制器 -->  
+    <servlet>  
+        <servlet-name>spring</servlet-name>  
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>  
+        <!-- 设置自己定义的控制器xml文件 -->  
+        <init-param>  
             <param-name>contextConfigLocation</param-name>  
-            <param-value>/WEB-INF/spring-servlet.xml</param-value>  
+            <param-value>/WEB-INF/classes/spring-servlet.xml</param-value>  
         </init-param>  
         <load-on-startup>1</load-on-startup>  
-        </init-param>  
-        <load-on-startup>1</load-on-startup>  </param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>spring</servlet-name>
-        <url-pattern>*.html</url-pattern>
-    </servlet-mapping>
-    <!-- Spring MVC配置结束-->
+    </servlet>  
+    <!-- Spring MVC配置文件结束 -->  
+  
+    <!-- 拦截设置 -->  
+    <servlet-mapping>  
+        <servlet-name>spring</servlet-name>  
+        <!-- 由SpringMVC拦截所有请求 -->  
+        <url-pattern>/</url-pattern>  
+    </servlet-mapping>  
 </web-app>
