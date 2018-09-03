@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>andy.com</groupId>
-	<artifactId>andy.com</artifactId>
+	<artifactId>mycodebase</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>andy.com Maven Webapp</name>
@@ -338,8 +338,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			
@@ -349,12 +349,12 @@
 			  <artifactId>jetty-maven-plugin</artifactId>
 			   <version>9.2.21.v20170120</version>
 			   <configuration>
-		          <war>${basedir}/target/andy.com.war</war>
+		          <war>${basedir}/target/mycodebase.war</war>
 		        </configuration>
 			</plugin>
 			
 		</plugins>
-		<finalName>andy.com</finalName>
+		<finalName>mycodebase</finalName>
 	</build>
 
 </project>

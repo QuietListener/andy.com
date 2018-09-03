@@ -5,3 +5,7 @@
 /.classpath
 /.project
 /.externalToolBuilders/*
+/target/
+.DS_Store
+/**/*/.DS_Store
+/andy.com.iml

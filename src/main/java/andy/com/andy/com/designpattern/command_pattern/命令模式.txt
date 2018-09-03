@@ -1,0 +1,2 @@
+1.讲命令用command进行封装
+2.解决的问题：通过command将讲调用者invoker和命令执行者receiver的解耦
