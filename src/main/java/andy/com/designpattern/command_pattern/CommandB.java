@@ -1,4 +1,4 @@
-package andy.com.andy.com.designpattern.command_pattern;
+package andy.com.designpattern.command_pattern;
 
 public class CommandB implements Command {
 

@@ -1,4 +1,4 @@
-package andy.com.andy.com.designpattern.command_pattern;
+package andy.com.designpattern.command_pattern;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,7 +16,7 @@ public class Receiver
         }
         catch(Exception e)
         {
-            
+
         }
     }
 

@@ -1,4 +1,4 @@
-package andy.com.andy.com.designpattern.command_pattern;
+package andy.com.designpattern.command_pattern;
 
 /**
  * 把逻辑封装到命令中
