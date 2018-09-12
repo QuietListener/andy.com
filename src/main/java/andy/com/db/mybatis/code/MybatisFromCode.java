@@ -33,7 +33,7 @@ public class MybatisFromCode
 
             UserMapper mapper = session.getMapper(UserMapper.class);
             User user = mapper.selectUser(id);
-            
+
             user.setName(" abc " + new Date());
             mapper.insert(user);
 

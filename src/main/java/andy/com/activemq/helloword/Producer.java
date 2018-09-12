@@ -39,7 +39,7 @@ class Producer {
         Connection connection = factory.createConnection("admin", "admin");
         connection.start();
         Session session = connection.createSession(false, Session.CLIENT_ACKNOWLEDGE);
-        Destination dest = new StompJmsDestination("/queue/test");
+        Destination dest = new StompJmsDestination("/queue/test1");
         MessageProducer producer = session.createProducer(dest);
         producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
 

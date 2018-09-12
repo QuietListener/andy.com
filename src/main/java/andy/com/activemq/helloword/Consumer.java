@@ -36,7 +36,7 @@ class Consumer {
         Connection connection = factory.createConnection("admin", "admin");
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        Destination dest = new StompJmsDestination("/queue/test");
+        Destination dest = new StompJmsDestination("/queue/test1");
 
         MessageConsumer consumer = session.createConsumer(dest);
         long start = System.currentTimeMillis();

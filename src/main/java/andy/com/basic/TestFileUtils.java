@@ -11,7 +11,7 @@ public class TestFileUtils {
 	{
 		File f = new File("/tmp/testFileUtils");
 		f.mkdirs();
-		File f1 = new File(f.getAbsolutePath(),"test.txt");
+		File f1 = new File(f.getAbsolutePath(),"test1.txt");
 		f1.createNewFile();
 		return f;
 	}
