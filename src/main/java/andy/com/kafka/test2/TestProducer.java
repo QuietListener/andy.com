@@ -1,16 +1,20 @@
 package andy.com.kafka.test2;
 
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.Producer;
-import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.PartitionInfo;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
 import java.util.*;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 public class TestProducer
 {
+    static final int SYNC = 1;
+    static final int ASYNC = 2;
+
+    static  int type = ASYNC;
+
     public static void main(String[] args) {
 
         Properties props = new Properties();
@@ -43,20 +47,42 @@ public class TestProducer
         //生产者发送消息
         String topic = "consumer-tutorial";
 
-        Producer<String, String> procuder = new KafkaProducer<String,String>(props);
+        Producer<String, String> producer = new KafkaProducer<String,String>(props);
 
         long start = new Date().getTime();
 
-        int total = 20000;
+        int total = 1000;
         for (int i = 1; i <= total; i++) {
             String value = "value_" + i + "     asdfasdfa;sdlfjal;sdfj;alsdfjla;sjflajflajsfa;sd"+new Random().nextInt(1000)+"fhjakldfhashdfahsdfkhadksah";
+
             ProducerRecord<String, String> msg = new ProducerRecord<String, String>(topic, value);
-            procuder.send(msg);
+
+
+            if(type == SYNC) {
+                try {
+                    RecordMetadata rm = producer.send(msg).get();
+                    System.out.println(rm.toString());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(type == ASYNC)
+            {
+                try
+                {
+                    producer.send(msg,new ProducerCallback(value));
+                }
+                catch(Exception  e)
+                {
+                    e.printStackTrace();
+                }
+            }
+
         }
 
         //列出topic的相关信息
         List<PartitionInfo> partitions = new ArrayList<PartitionInfo>() ;
-        partitions = procuder.partitionsFor(topic);
+        partitions = producer.partitionsFor(topic);
 
         for(PartitionInfo p:partitions)
         {
@@ -64,9 +90,34 @@ public class TestProducer
         }
 
         System.out.println("send message over.");
-        procuder.close();
+        producer.close();
 
         long end = new Date().getTime();
         System.out.println("send " + total + " records; used "+ (end-start) + " miniseconds");
     }
 }
+
+
+class ProducerCallback implements  Callback
+{
+    private String value = null;
+    public ProducerCallback(String value)
+    {
+        this.value = value;
+    }
+
+    @Override
+    public void onCompletion(RecordMetadata m, Exception exception) {
+
+        if(null != exception)
+        {
+            exception.printStackTrace();
+            //do some logic
+        }
+        else
+        {
+            System.out.println(m.topic() +"："+ m.partition() + ":" + m.hasOffset()+" ："+value+" success");
+        }
+    }
+}
+
