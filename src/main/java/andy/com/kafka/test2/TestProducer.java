@@ -7,13 +7,14 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 import java.util.*;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 public class TestProducer
 {
     static final int SYNC = 1;
     static final int ASYNC = 2;
 
-    static  int type = ASYNC;
+    static  int type = SYNC;
 
     public static void main(String[] args) {
 
@@ -30,6 +31,7 @@ public class TestProducer
         // 如果大于1 不能保证record在partition中的顺序:比如record1 发送了，然后record2也发送了，record2成功，record1失败，然后record1重试成功。顺序就变成了 record2，record1
         props.put("retries",1);
 
+        //16k
         props.put("batch.size", 16384);
 
         //在正常负载的情况下, 要想减少请求的数量. 加上一个认为的延迟: 不是立即发送消息, 而是延迟等待更多的消息一起批量发送
@@ -51,7 +53,7 @@ public class TestProducer
 
         long start = new Date().getTime();
 
-        int total = 1000;
+        int total = 5000;
         for (int i = 1; i <= total; i++) {
             String value = "value_" + i + "     asdfasdfa;sdlfjal;sdfj;alsdfjla;sjflajflajsfa;sd"+new Random().nextInt(1000)+"fhjakldfhashdfahsdfkhadksah";
 
@@ -60,9 +62,14 @@ public class TestProducer
 
             if(type == SYNC) {
                 try {
-                    RecordMetadata rm = producer.send(msg).get();
+                    RecordMetadata rm = producer.send(msg).get(200,TimeUnit.MILLISECONDS);
                     System.out.println(rm.toString());
-                } catch (Exception e) {
+                }
+                catch(TimeoutException e)
+                {
+                    e.printStackTrace();
+                }
+                catch (Exception e) {
                     e.printStackTrace();
                 }
             }
