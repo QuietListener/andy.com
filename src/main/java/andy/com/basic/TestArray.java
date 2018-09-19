@@ -35,6 +35,30 @@ public class TestArray {
 		int count = 0;
 		while(m.find()){count++;}
 		System.out.println(count);
+
+
+		System.out.println("========2018-9-17========");
+
+		List<Integer> a1 = new ArrayList<>(Arrays.asList(0,1,2));
+		List<Integer> a2 =  new ArrayList<>(Arrays.asList(2,3,4));
+		List<Integer> a1_clone = new ArrayList<>(a1);
+		List<Integer> a2_clone = new ArrayList<>(a2);
+
+		a1_clone.retainAll(a2);
+		a1.removeAll(a1_clone);
+		a2.removeAll(a2_clone);
+
+		System.out.println(a1);
+		System.out.println(a2);
+
+
+		List<Integer> a = Arrays.asList(1,2);
+        List<Integer> b = Arrays.asList(1,2);
+        List<Integer> c = Arrays.asList(1,2,3);
+
+        System.out.println("a == b:"+a.equals(b));
+        System.out.println("a == c:"+a.equals(c));
+
 	}
 
 }
