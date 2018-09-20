@@ -69,5 +69,9 @@ java
 linux:
   运维命令
   调优:打开文件数目
+  shell脚本
 
+python:
 
+ruby:
+    rails
