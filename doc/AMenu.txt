@@ -1,0 +1,72 @@
+数据库:
+    1.mysql操作
+    2.java链接池
+    3.orm: mybatis,
+    4.分库分表
+    5.数据库中间件，mycat shadding-jdbc mysql-route
+    6.mysql优化
+
+中间件-mq
+   kafka
+
+中间件-thrift
+
+kv数据库:
+    redis:
+
+微服务：springboot
+    链路跟踪:slueth
+    隔离(熔断)：hystrix
+    网关: zuul
+    服务发现:eureka
+
+
+应用框架:
+    spring
+    springmvc
+    springboot
+
+分布式事务:
+  1.两阶段提交
+  2.三阶段提交
+  3.tcc 是两阶段提交的改进
+  4.补偿方案
+  5.最大努力通知方式
+  6.可靠消息最终一致
+
+互联网理论:
+   CAP
+   Base
+
+互联网相关算法
+   lru cache
+   一致哈希
+   paxos
+
+java
+    并发
+        线程池
+        锁
+
+    jvm调优
+    log:sl4j,logback
+    java设计模式：
+        命令模式(command pattern):hystrix中使用
+        门面模式(facade pattern):slf4j
+        装饰模式(decorator pattern):io
+
+13.基本算法
+   二分
+   快排
+   找第K大值
+   堆
+
+服务器
+   nginx
+   tomcat
+
+linux:
+  运维命令
+  调优:打开文件数目
+
+
