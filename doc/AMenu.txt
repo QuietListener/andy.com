@@ -3,7 +3,7 @@
     2.java链接池
     3.orm: mybatis,
     4.分库分表
-    5.数据库中间件，mycat shadding-jdbc mysql-route
+    5.数据库中间件，mycat shadding-jdbc mysql-route, AbstractRoutingDataSource
     6.mysql优化
 
 中间件-mq
@@ -48,6 +48,8 @@ java
     并发
         线程池
         锁
+            readLock
+            writeLock
 
     jvm调优
     log:sl4j,logback
