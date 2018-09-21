@@ -1,11 +1,9 @@
-package andy.com.kafka.test2;
+package andy.com.kafka.test2_basic;
 
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.PartitionInfo;
-import org.apache.kafka.common.serialization.StringDeserializer;
 
 import java.util.*;
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 

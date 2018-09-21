@@ -1,4 +1,4 @@
-package andy.com.kafka.test2;
+package andy.com.kafka.test2_basic;
 
 import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.common.TopicPartition;
