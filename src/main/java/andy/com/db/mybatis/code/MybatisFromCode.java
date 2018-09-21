@@ -19,7 +19,7 @@ public class MybatisFromCode
     private static SqlSessionFactory factory = getSqlSesionFactory();
     public static void main(String [] args)
     {
-        User user = query(17);
+        User user = query(29);
         System.out.println(user.getId());
 
     }
@@ -37,7 +37,7 @@ public class MybatisFromCode
             user.setName(" abc " + new Date());
             mapper.insert(user);
 
-            int a = 1/0;
+            //int a = 1/0;
 
             user.setName("cde"+new Date());
 
@@ -48,6 +48,7 @@ public class MybatisFromCode
         }
         catch(Exception e)
         {
+            e.printStackTrace();
             session.rollback();
         }
         finally {

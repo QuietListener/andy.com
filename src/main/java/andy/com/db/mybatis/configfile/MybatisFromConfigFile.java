@@ -1,10 +1,12 @@
 package andy.com.db.mybatis.configfile;
 
-import andy.com.db.mybatis.code.UserMapper;
+import andy.com.db.mybatis.configfile.UserMapperXML;
 import andy.com.db.mybatis.domains.User;
+import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
 import java.io.*;
 
 public class MybatisFromConfigFile {
@@ -12,7 +14,7 @@ public class MybatisFromConfigFile {
     private static SqlSessionFactory factory = getSqlSesionFactory();
     public static void main(String [] args)
     {
-        User user = query(17);
+        User user = query(29);
         System.out.println(user.getId());
 
     }
@@ -23,7 +25,7 @@ public class MybatisFromConfigFile {
         SqlSession session = factory.openSession();
 
         try{
-            UserMapper mapper = session.getMapper(UserMapper.class);
+            UserMapperXML mapper = session.getMapper(UserMapperXML.class);
             User user = mapper.selectUser(id);
             return user;
         }
@@ -42,12 +44,15 @@ public class MybatisFromConfigFile {
     static final SqlSessionFactory getSqlSesionFactory()
     {
         try {
-            Class clazz = User.class;
+
             // 开头的'/'表示classpath的根目录，这个是表示从classpath的根目录中开始查找资源，如果开头没有'/'，表示从当前这个class所在的包中开始查找
-            InputStream is = clazz.getResourceAsStream("mybatis.xml");
+
+            InputStream is = Resources.getResourceAsStream("mybatis/mybatis.xml");
             //Reader reader = new InputStreamReader(is);
 
-            Reader reader = new FileReader("/Users/junjun/Documents/项目/java/java/andy.com/target/classes/mybatis/UserMapper.xml");
+            //Reader reader = new FileReader("/Users/junjun/Documents/项目/java/java/andy.com/src/main/resources/mybatis/mybatis.xml");
+
+            Reader reader = new InputStreamReader(is);
             SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(reader);
             return factory;
         }

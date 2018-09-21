@@ -16,7 +16,17 @@
     </environments>
 
     <mappers>
-        <mapper resource="file:///Users/junjun/Documents/项目/java/java/andy.com/src/main/resources/mybatis/UserMapper.xml"/>
-    </mappers>
+        <!-- 第一种：注册sql映射文件-->
+        <mapper resource="mybatis/mappers/UserMapper.xml" />
+
+        <!-- 第二种：注册接口   sql映射文件必须与接口同名，并且放在同一目录下-->
+        <!--<mapper class="com.spldeolin.mapper.UserMapper" />-->
+
+        <!-- 第三种：注册基于注解的接口  基于注解   没有sql映射文件，所有的sql都是利用注解写在接口上-->
+        <!--<mapper class="com.spldeolin.mapper.TeacherMapper" />-->
+
+        <!-- 第四种：批量注册  需要将sql配置文件和接口放到同一目录下-->
+        <!--<package name="andy.com.db.mybatis.mapperXML" />-->
+ </mappers>
 
 </configuration>
