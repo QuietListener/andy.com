@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 引入配置文件 -->
+    <bean id="propertyConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:mybatis/spring/datasource.properties"/>
+    </bean>
+
+
+    <bean id="dataSource0" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${driver}"/>
+        <property name="url" value="${jdbc.mysql.url0}"/>
+        <property name="username" value="${jdbc.mysql.username0}"/>
+        <property name="password" value="${jdbc.mysql.password0}"/>
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="${initialSize}"></property>
+        <!-- 连接池最大数量 -->
+        <property name="maxActive" value="${maxActive}"></property>
+        <!-- 连接池最大空闲 -->
+        <property name="maxIdle" value="${maxIdle}"></property>
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="${minIdle}"></property>
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWait" value="${maxWait}"></property>
+    </bean>
+
+
+    <bean id="dataSource1" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${driver}"/>
+        <property name="url" value="${jdbc.mysql.url1}"/>
+        <property name="username" value="${jdbc.mysql.username1}"/>
+        <property name="password" value="${jdbc.mysql.password1}"/>
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="${initialSize}"></property>
+        <!-- 连接池最大数量 -->
+        <property name="maxActive" value="${maxActive}"></property>
+        <!-- 连接池最大空闲 -->
+        <property name="maxIdle" value="${maxIdle}"></property>
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="${minIdle}"></property>
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWait" value="${maxWait}"></property>
+    </bean>
+
+
+    <bean id="dataSource2" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${driver}"/>
+        <property name="url" value="${jdbc.mysql.url2}"/>
+        <property name="username" value="${jdbc.mysql.username2}"/>
+        <property name="password" value="${jdbc.mysql.password2}"/>
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="${initialSize}"></property>
+        <!-- 连接池最大数量 -->
+        <property name="maxActive" value="${maxActive}"></property>
+        <!-- 连接池最大空闲 -->
+        <property name="maxIdle" value="${maxIdle}"></property>
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="${minIdle}"></property>
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWait" value="${maxWait}"></property>
+    </bean>
+    <!-- 动态获取数据源 -->
+    <bean id="mysqlDynamicDataSource" class="andy.com.db.mybatis.spring.multiple_datasource.DynamicDatasource">
+        <property name="targetDataSources">
+            <!-- 标识符类型 -->
+            <map>
+                <entry key="db0" value-ref="dataSource0"/>
+                <entry key="db1" value-ref="dataSource1"/>
+                <entry key="db2" value-ref="dataSource2"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <!--事务-->
+    <bean id="baiTiaoTransactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="mysqlDynamicDataSource"></property>
+    </bean>
+
+    <bean id="btTransactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="baiTiaoTransactionManager"></property>
+        <property name="propagationBehaviorName" value="PROPAGATION_REQUIRED"></property>
+    </bean>
+
+    <!--&lt;!&ndash; spring和MyBatis完美整合，不需要mybatis的配置映射文件 &ndash;&gt;-->
+    <!--<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">-->
+        <!--<property name="dataSource" ref="mysqlDynamicDataSource"/>-->
+        <!--&lt;!&ndash; 自动扫描mapping.xml文件 &ndash;&gt;-->
+        <!--<property name="mapperLocations" value="classpath:com/wz/mapping/*.xml"></property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; DAO接口所在包名，Spring会自动查找其下的类 &ndash;&gt;-->
+    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+        <!--<property name="basePackage" value="com.wz.dao"/>-->
+        <!--<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>-->
+    <!--</bean>-->
+
+</beans>

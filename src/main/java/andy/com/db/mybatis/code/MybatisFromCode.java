@@ -13,6 +13,10 @@ import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import javax.sql.DataSource;
 import java.util.Date;
 
+
+/**
+ * 使用代码的方式
+ */
 public class MybatisFromCode
 {
 

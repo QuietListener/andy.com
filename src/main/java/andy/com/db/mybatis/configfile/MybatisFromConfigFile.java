@@ -9,6 +9,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.*;
 
+/**
+ * 使用配置文件的方式
+ */
 public class MybatisFromConfigFile {
 
     private static SqlSessionFactory factory = getSqlSesionFactory();
