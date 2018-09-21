@@ -44,6 +44,10 @@ kv数据库:
    一致哈希
    paxos
 
+互联网技术:
+   分布式锁:
+        redission
+
 java
     并发
         线程池
