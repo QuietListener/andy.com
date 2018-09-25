@@ -1,6 +1,7 @@
 package andy.com.db.mybatis.code;
 
 import andy.com.db.mybatis.domains.User;
+import andy.com.db.mybatis.mappers.UserMapper;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;

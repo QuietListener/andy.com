@@ -1,4 +1,4 @@
-package andy.com.db.mybatis.code;
+package andy.com.db.mybatis.mappers;
 
 import andy.com.db.mybatis.domains.User;
 import org.apache.ibatis.annotations.Delete;
