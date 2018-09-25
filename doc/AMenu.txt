@@ -5,6 +5,8 @@
     4.分库分表
     5.数据库中间件，mycat shadding-jdbc mysql-route, AbstractRoutingDataSource
     6.mysql优化
+    7.概念:SavePoint,隔离级别
+
 
 中间件-mq
    kafka
