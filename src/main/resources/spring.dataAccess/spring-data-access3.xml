@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!--看这部分 start-->
+    <!-- 需要事务支持的service对象-->
+    <bean id="fooService" class="andy.com.springFramework.dataAccess.annotationTransactionImplementation.DefaultFooService" />
+
+    <!-- 开始注解事务 enable the configuration of transactional behavior based on annotations -->
+    <tx:annotation-driven transaction-manager="txManager"/><!-- a PlatformTransactionManager is still required -->
+
+    <!--
+    如果用java配置需要
+    @Configuration
+    @EnableTransactionManagement
+    public class AppConfig {
+
+    @Bean
+    public FooRepository fooRepository() {
+    // configure and return a class having @Transactional methods
+    return new JdbcFooRepository(dataSource());
+    }
+
+    @Bean
+    public DataSource dataSource() {
+    // configure and return the necessary JDBC DataSource
+    }
+
+    @Bean
+    public PlatformTransactionManager txManager() {
+    return new DataSourceTransactionManager(dataSource());
+    }
+    }
+    -->
+
+    <!--看这部分 end -->
+
+
 
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
