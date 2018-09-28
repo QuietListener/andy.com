@@ -5,8 +5,9 @@
     4.分库分表
     5.数据库中间件，mycat shadding-jdbc mysql-route, AbstractRoutingDataSource
     6.mysql优化
-      1、for update，乐观锁，悲观锁
-    7.概念:SavePoint,隔离级别
+      1、for update，乐观锁，悲观锁 ，explain
+    7.概念:SavePoint,隔离级别，mvvc
+    8.mysql运维:slow_log
 
 
 中间件-mq
