@@ -4,9 +4,14 @@ import andy.com.db.mybatis.mappers.UserMapper;
 import andy.com.db.mybatis.domains.User;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import rx.annotations.Beta;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -25,6 +30,8 @@ public class TestMultipleDatasourceWithMybatis {
 
     static ApplicationContext context = new ClassPathXmlApplicationContext("mybatis/spring/spring-multiple-datasources-mybatis.xml");
 
+
+
     public static void main(String [] args) throws Exception {
         AbstractRoutingDataSource ds = (AbstractRoutingDataSource) context.getBean("mysqlDynamicDataSource");
 
@@ -36,11 +43,12 @@ public class TestMultipleDatasourceWithMybatis {
             DataSourceHolder.clearDataSource();
         }
 
+        UserService us = (UserService) context.getBean("userService");
         for(int i = 0 ;i <100; i++)
         {
             String dbname = "db"+(i%3);
             DataSourceHolder.setDataSource(dbname);
-            testUser(i);
+            us.testUser(i);
             DataSourceHolder.clearDataSource();
         }
     }
@@ -61,34 +69,9 @@ public class TestMultipleDatasourceWithMybatis {
 
     }
 
-    public static void testUser(int i)
-    {
 
-        SqlSessionFactory ssf = (SqlSessionFactory)context.getBean("sqlSessionFactory");
-        SqlSession session = ssf.openSession(true); //false 表示 autocommit为false
-        try{
 
-            UserMapper mapper = session.getMapper(UserMapper.class);
-            User user = new User();
-            user.setName(i+": abc " + new Date());
-            mapper.insert(user);
 
-            int a = 1/0;
-            user.setName(i+":cde"+new Date());
-            mapper.insert(user);
-
-            session.commit();
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-            session.rollback();
-        }
-        finally {
-            session.close();
-        }
-
-    }
 
 
     public static void createTable(DataSource ds) throws Exception
@@ -110,3 +93,5 @@ public class TestMultipleDatasourceWithMybatis {
 
 
 }
+
+
