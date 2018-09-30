@@ -1,5 +1,6 @@
 package andy.com.db.mybatis.code;
 
+import andy.com.db.mybatis.configfile.UserMapperXML;
 import andy.com.db.mybatis.domains.User;
 import andy.com.db.mybatis.mappers.UserMapper;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
@@ -12,7 +13,9 @@ import org.apache.ibatis.transaction.TransactionFactory;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 
 import javax.sql.DataSource;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -22,10 +25,61 @@ public class MybatisFromCode
 {
 
     private static SqlSessionFactory factory = getSqlSesionFactory();
+
     public static void main(String [] args)
     {
         User user = query(29);
         System.out.println(user.getId());
+        //testInsertBath();
+        testQueryAnnotationResultMap();
+
+
+
+    }
+
+    //annotation的resultMap
+    public static void testQueryAnnotationResultMap()
+    {
+        //从SqlSessionFactory获取一个SqlSession
+        SqlSession session = factory.openSession();
+
+
+        UserMapper mapper = session.getMapper(UserMapper.class);
+        List<User> users = mapper.selectUsers();
+
+        for(User u:users)
+        {
+            System.out.println(u.getId()+","+u.getName()+","+u.getTname()+","+u.getCity());
+        }
+
+    }
+
+    public static void testInsertBath()
+    {
+        List<User> users = new ArrayList<>();
+        for(int i = 0; i < 5; i++)
+        {
+            User u = new User();
+            u.setName("new user "+new Date().getTime());
+            u.setAge(i+100);
+            u.setCity("no city");
+            users.add(u);
+        }
+
+        //从SqlSessionFactory获取一个SqlSession
+        SqlSession session = factory.openSession();
+
+        try{
+            UserMapper mapper = session.getMapper(UserMapper.class);
+            int ret = mapper.insertUsers(users);
+            System.out.println(ret);
+            session.commit();
+        }
+        finally
+        {
+            session.close();
+        }
+
 
     }
 

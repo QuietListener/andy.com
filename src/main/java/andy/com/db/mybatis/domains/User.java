@@ -7,6 +7,8 @@ public class User
     private String city;
     private int age;
 
+    private String tname;
+
     public User(){}
 
     public User( String name, String city, int age) {
@@ -41,5 +43,13 @@ public class User
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getTname() {
+        return tname;
+    }
+
+    public void setTname(String tname) {
+        this.tname = tname;
     }
 }

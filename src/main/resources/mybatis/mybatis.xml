@@ -2,7 +2,15 @@
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+
 <configuration>
+
+    <settings>
+        <setting name="cacheEnabled" value="false"/><!--关闭二级缓存-->
+    </settings>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -13,6 +21,7 @@
                 <property name="password" value=""/>
             </dataSource>
         </environment>
+
     </environments>
 
     <mappers>
@@ -30,3 +39,5 @@
  </mappers>
 
 </configuration>
+
+

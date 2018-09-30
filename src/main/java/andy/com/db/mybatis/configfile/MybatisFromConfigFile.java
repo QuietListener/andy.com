@@ -8,6 +8,10 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 使用配置文件的方式
@@ -20,7 +24,11 @@ public class MybatisFromConfigFile {
         User user = query(29);
         System.out.println(user.getId());
 
+        //testCache1();
+
+
     }
+
 
     public static  User query(int id)
     {
@@ -34,6 +42,30 @@ public class MybatisFromConfigFile {
         }
         finally
         {
+            session.close();
+        }
+    }
+
+    public static void testCache1()
+    {
+        //从SqlSessionFactory获取一个SqlSession
+        SqlSession session = factory.openSession();
+        try {
+            UserMapperXML mapper = session.getMapper(UserMapperXML.class);
+            List<User> users = mapper.selectUsers();
+
+            System.out.println("当前个数:"+users.size());
+            System.out.println("睡20秒，手动修改数据库");
+            TimeUnit.SECONDS.sleep(20);
+
+            List<User> users1 = mapper.selectUsers();
+            System.out.println("当前个数:"+users1.size());
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally {
             session.close();
         }
     }
