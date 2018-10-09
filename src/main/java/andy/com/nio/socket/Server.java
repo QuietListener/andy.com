@@ -31,9 +31,17 @@ public class Server {
         System.out.println("服务器启动...");
     }
 
-    public void service() throws IOException {
+    public void service() throws IOException
+    {
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
-        while (selector.select() > 0) {
+        while (true)
+        {
+            int i = selector.select(Common.TIMEOUT);
+            if(i == 0)
+            {
+                continue;
+            }
+
             Set<SelectionKey> readyKeys = selector.selectedKeys();
             Iterator<SelectionKey> it = readyKeys.iterator();
             while (it.hasNext()) {
@@ -84,13 +92,12 @@ public class Server {
         SocketChannel socketChannel = (SocketChannel) key.channel();
         buffer.flip();// 把极限设为位置,把位置设为0, 准备读
 
-        Common.putBuf(buffer);
         String data = decode(buffer);
-        Common.putBuf(buffer);
 
         if (data.indexOf("\r\n") == -1) {
             return;
         }
+
         String outputData = data.substring(0, data.indexOf("\n") + 1);
         System.out.print(outputData);
         ByteBuffer outputBuffer = encode("echo:" + outputData);
@@ -110,6 +117,7 @@ public class Server {
     }
 
     public void receive(SelectionKey key) throws IOException {
+        System.out.println("recieve");
         ByteBuffer buffer = (ByteBuffer) key.attachment();
         SocketChannel socketChannel = (SocketChannel) key.channel();
         ByteBuffer readBuff = ByteBuffer.allocate(32);

@@ -15,8 +15,8 @@ import java.util.Set;
 
 public class Client {
     private SocketChannel socketChannel = null;
-    private ByteBuffer sendBuffer = ByteBuffer.allocate(1024);
-    private ByteBuffer receiveBuffer = ByteBuffer.allocate(1024);
+    private ByteBuffer sendBuffer = ByteBuffer.allocate(10240);
+    private ByteBuffer receiveBuffer = ByteBuffer.allocate(10240);
     private Charset charset = Charset.forName("GBK");
     private Selector selector;
 
