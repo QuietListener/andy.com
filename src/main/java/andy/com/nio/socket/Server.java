@@ -17,7 +17,7 @@ import java.util.Set;
 public class Server {
     private Selector selector = null;
     private ServerSocketChannel serverSocketChannel = null;
-    private int port = Conf.PORT;
+    private int port = Common.PORT;
     private Charset charset = Charset.forName("GBK");
 
     public Server() throws IOException {
@@ -41,6 +41,7 @@ public class Server {
                 try {
                     key = it.next();
                     it.remove();
+
                     if (key.isAcceptable()) {
                         ServerSocketChannel ssc = (ServerSocketChannel) key
                                 .channel();
@@ -54,9 +55,11 @@ public class Server {
                         socketChannel.register(selector, SelectionKey.OP_READ
                                 | SelectionKey.OP_WRITE, buffer);
                     }
+
                     if (key.isReadable()) {
                         receive(key);
                     }
+
                     if (key.isWritable()) {
                         send(key);
                     }
@@ -79,8 +82,12 @@ public class Server {
     public void send(SelectionKey key) throws IOException {
         ByteBuffer buffer = (ByteBuffer) key.attachment();
         SocketChannel socketChannel = (SocketChannel) key.channel();
-        buffer.flip();// 把极限设为位置，把位置设为0
+        buffer.flip();// 把极限设为位置,把位置设为0, 准备读
+
+        Common.putBuf(buffer);
         String data = decode(buffer);
+        Common.putBuf(buffer);
+
         if (data.indexOf("\r\n") == -1) {
             return;
         }
@@ -88,8 +95,10 @@ public class Server {
         System.out.print(outputData);
         ByteBuffer outputBuffer = encode("echo:" + outputData);
         while (outputBuffer.hasRemaining()) {
-            socketChannel.write(outputBuffer);
+            int i = socketChannel.write(outputBuffer);
+            System.out.println("write"+i);
         }
+
         ByteBuffer temp = encode(outputData);
         buffer.position(temp.limit());
         buffer.compact();// 删除已经处理的字符串
@@ -123,7 +132,4 @@ public class Server {
     public static void main(String[] args) throws IOException {
         new Server().service();
     }
-
-
-
 }

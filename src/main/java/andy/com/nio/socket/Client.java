@@ -23,7 +23,7 @@ public class Client {
     public Client() throws IOException {
         socketChannel = SocketChannel.open();
         InetAddress ia = InetAddress.getLocalHost();
-        InetSocketAddress isa = new InetSocketAddress(ia, Conf.PORT);
+        InetSocketAddress isa = new InetSocketAddress(ia, Common.PORT);
         socketChannel.connect(isa);
         socketChannel.configureBlocking(false);
         System.out.println("与服务器的连接建立成功");
