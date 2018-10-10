@@ -15,10 +15,19 @@ public class TestService
     }
 
     @AopAnnotationAround
-    public String doOtherJob1(String jobName,String content)
+    public String doOtherJob1(String jobName)
     {
-        System.out.println(jobName +","+content);
+        System.out.println(jobName +",");
        //int a = 1/0;
         return jobName +" done(other job)";
+    }
+
+
+    @AopAnnotationAround
+    public String doOtherJob2(String jobName,String count)
+    {
+        System.out.println(jobName +","+count);
+        //int a = 1/0;
+        return jobName +" done(other job2)";
     }
 }

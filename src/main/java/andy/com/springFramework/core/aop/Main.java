@@ -15,7 +15,9 @@ public class Main {
         TestService ts = (TestService)ctx.getBean("TestService");
         ts.doJob("job1"," 挖沙沙");
 
-        ts.doOtherJob1("job2"," 挖沙沙");
+        ts.doOtherJob1("job2");
+
+        ts.doOtherJob2("job23","dd");
     }
 
 
