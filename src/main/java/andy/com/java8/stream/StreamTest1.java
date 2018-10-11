@@ -58,6 +58,27 @@ public class StreamTest1 {
                 new Task(Status.CLOSED,1)
         );
 
+        /**
+         * 判断一个操作是惰性求值还是及早求值很简单:只需看它的返回值。
+         * 如果返回值是 Stream， 那么是惰性求值;
+         * 如果返回值是另一个值或为空，那么就是及早求值
+         */
+
+        ts.stream()
+                .filter(t->{
+                    System.out.println("print " + t); //不会打印，因为是惰性求值
+                    return t.getStatus() == Status.OPEN;
+                }) ;
+
+        Long count =  ts.stream()
+                .filter(t->t.getStatus() == Status.OPEN) //这行代码并未做什么实际性的工作，filter 只刻画出了 Stream，但没有产生新的集合。像 filter 这样只描述 Stream，最终不产生新集合的方法叫作惰性求值方法
+                .count();//而像 count 这样 最终会从 Stream 产生值的方法叫作及早求值方法。
+        System.out.println("opened tasks count:"+count);
+
+        /**
+         * 惰性求值结束
+         */
+
         int totalPointsOfOpenTasks = ts.stream()
                 .filter(task->task.getStatus() == Status.CLOSED) //在steam上的filter操作会过滤掉所有CLOSED的task
                 .mapToInt(Task::getPoints) //第三，mapToInt操作基于每个task实例的Task::getPoints方法将task流转换成Integer集合
@@ -65,6 +86,27 @@ public class StreamTest1 {
 
         System.out.println("totalPointsOfOpenTasks = "+totalPointsOfOpenTasks);
 
+
+        /**
+         * 常用流操作 map,filter,collect
+         */
+
+        //1.collect(toList()) 方法由 Stream 里的值生成一个列表，是一个及早求值操作。
+        List<String> l1 = Arrays.asList("a","b","c").stream()
+            .map(t->t+t) //map
+            .filter(t->!t.equals("bb")) //不等于bb的
+            .collect(Collectors.toList()); //生成一个列表
+        System.out.println(l1 + "\r\n");
+
+        //2.flatMap 多个流合成一个流
+        List<String> list1 = Arrays.asList("c","d","e");
+        List<String>  list2 =  Arrays.asList("a","b","c");
+
+        List<String> flatMapList = Stream.of(list1,list2)
+                .flatMap(t->t.stream())
+                .collect(Collectors.toList());
+
+        System.out.println(flatMapList);
 
 
         //分类
