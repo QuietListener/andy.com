@@ -69,6 +69,7 @@ java
         命令模式(command pattern):hystrix中使用
         门面模式(facade pattern):slf4j
         装饰模式(decorator pattern):io
+    java8: functional, stream, interface(default 方法)
 
 13.基本算法
    二分
