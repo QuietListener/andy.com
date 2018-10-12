@@ -1,14 +1,15 @@
 package andy.com.java8.stream;
 
+import com.google.common.collect.Lists;
+
 import javax.annotation.Resource;
 import java.io.File;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -24,11 +25,13 @@ class Task
 {
     private Status status;
     private Integer points;
+    private Integer value;
 
-    Task(Status status,Integer points)
+    Task(Status status,Integer points,Integer value)
     {
         this.status = status;
         this.points = points;
+        this.value = value;
     }
 
     public Integer getPoints() {
@@ -38,10 +41,13 @@ class Task
     public Status getStatus() {
         return status;
     }
+    public Integer getValue() {
+        return value;
+    }
 
     @Override
     public String toString() {
-        return String.format( "[%s, %d]", status, points );
+        return String.format( "[%s, %d, %d]", status, points ,value);
     }
 
 
@@ -51,11 +57,11 @@ public class StreamTest1 {
     public static void main(String [] args) throws  Exception
     {
         List<Task> ts = Arrays.asList(
-                new Task(Status.CLOSED,1),
-                new Task(Status.OPEN,2),
-                new Task(Status.OPEN,2),
-                new Task(Status.OPEN,2),
-                new Task(Status.CLOSED,1)
+                new Task(Status.CLOSED,1,1),
+                new Task(Status.OPEN,2,2),
+                new Task(Status.OPEN,2,3),
+                new Task(Status.OPEN,2,4),
+                new Task(Status.CLOSED,1,5)
         );
 
         /**
@@ -112,6 +118,38 @@ public class StreamTest1 {
         //分类
         Map<Status,List<Task>> map = ts.stream().collect(Collectors.groupingBy(Task::getStatus));
         System.out.println( map );
+        Map<Status,List<Task>> map2 = ts.stream().collect(Collectors.toMap(Task::getStatus,
+//                    (Task y) -> {System.out.println("y:"+y);  List<Task> ret =  new ArrayList<Task>(); ret.add(y); return ret;},
+//                    (exists, newOne) -> {
+//                        System.out.println("exists:"+exists+"   newOne");
+//                        if(newOne != null)
+//                            exists.addAll(newOne);
+//                        return exists;
+//                }
+                y -> Lists.newArrayList(Arrays.asList(y)),
+                (p,q) -> {
+                    p.addAll(q);
+                    return p;
+                }
+                ));
+        System.out.println("map2： "+map2);
+
+        /**
+         * (a,b)->{return a.getValue() > b.getValue() ? a : b;}) 冲突函数 取大的
+         */
+        Map<Status,Task> map3 = ts.stream().collect(Collectors.toMap(Task::getStatus, t->t,
+                (a,b)->{return a.getValue() > b.getValue() ? a : b;}));
+
+        System.out.println("map3： "+map3);
+
+
+        //分隔
+        String tmp1 = Arrays.asList(1,2,3,4).stream().map(t->t+"").collect(Collectors.joining("|"));
+        System.out.println(tmp1);
+
+
+        List<String> ret = Arrays.asList(new String []{"1","2"});
+        System.out.println(ret.get(0));
 
     }
 }
