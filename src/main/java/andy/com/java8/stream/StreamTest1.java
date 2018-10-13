@@ -138,7 +138,7 @@ public class StreamTest1 {
          * (a,b)->{return a.getValue() > b.getValue() ? a : b;}) 冲突函数 取大的
          */
         Map<Status,Task> map3 = ts.stream().collect(Collectors.toMap(Task::getStatus, t->t,
-                (a,b)->{return a.getValue() > b.getValue() ? a : b;}));
+                (a,b)->{return a.getValue() > b.getValue() ? a : b;}));//解决冲突
 
         System.out.println("map3： "+map3);
 
