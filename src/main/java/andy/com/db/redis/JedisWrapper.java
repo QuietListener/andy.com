@@ -109,29 +109,29 @@ public class JedisWrapper {
 
     public String get(String key)
     {
-        String ret = jedisTemplate( jedis->jedis.get(key));
+        String ret = jedisTemplate( jedis->jedis.get(key),key);
         return ret;
     }
 
     public boolean setex(String key,int expireSeconds, String value)
     {
-        String ret = jedisTemplate(jedis->jedis.setex(key,expireSeconds,value));
+        String ret = jedisTemplate(jedis->jedis.setex(key,expireSeconds,value),key);
         return ret != null;
     }
 
     public boolean set(String key, String value)
     {
-        String ret =jedisTemplate(jedis->jedis.set(key,value));
+        String ret =jedisTemplate(jedis->jedis.set(key,value),key);
         return ret != null;
     }
 
     public boolean del(String [] keys) {
-        Long ret = jedisTemplate(jedis->jedis.del(keys));
+        Long ret = jedisTemplate(jedis->jedis.del(keys),keys);
         return ret != null;
     }
 
 
-    public <T> T jedisTemplate(Function<Jedis,T> func)
+    public <T> T jedisTemplate(Function<Jedis,T> func,Object key)
     {
         Jedis jedis = null;
         try {
@@ -139,7 +139,7 @@ public class JedisWrapper {
             T ret = func.apply(jedis);
             return ret;
         } catch (Exception e) {
-            logger.error("redis failed failed:",e);
+            logger.error("redis failed, key = "+key+"; server info:"+this.toString(),e);
             return null;
         }
         finally {
@@ -153,7 +153,7 @@ public class JedisWrapper {
     @Override
     public String toString() {
         return "BczJedisWrapper{" +
-                ", ip='" + ip +
+                "ip='" + ip +
                 ", port=" + port +
                 ", timeoutMs=" + timeoutMs +
                 ", lastCheckPoolMs=" + lastCheckPoolMs +
