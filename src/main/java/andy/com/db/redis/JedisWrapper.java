@@ -6,6 +6,8 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
+import java.util.function.Function;
+
 public class JedisWrapper {
 
     Logger logger = LoggerFactory.getLogger(JedisWrapper.class);
@@ -77,8 +79,7 @@ public class JedisWrapper {
     private boolean needUpdatePool(long now) {
         return this.lastCheckPoolMs + 120000L < now || this.pool == null && this.lastCheckPoolMs + 10000L < now;
     }
-
-    public Jedis getResource() throws Exception
+    public Jedis getResource()
     {
         if(!this.initializing && this.needUpdatePool(System.currentTimeMillis()))
         {
@@ -87,7 +88,7 @@ public class JedisWrapper {
 
         if(this.pool == null)
         {
-            throw new Exception("Jedis pool is null ,params is "+this.toString());
+            throw new BizException(ExceptionCode.GENERAL_ERROR, "Jedis pool is null ,params is "+this.toString());
         }
         else
         {
@@ -108,52 +109,50 @@ public class JedisWrapper {
 
     public String get(String key)
     {
-        Jedis jedis = null;
-        try {
-            jedis = this.getResource();
-            String ret = jedis.get(key);
-            jedis.close();
-            return ret;
-        } catch (Exception e) {
-            logger.error("redis get failed: key = " + key );
-            return null;
-        }
+        String ret = jedisTemplate( jedis->jedis.get(key));
+        return ret;
     }
 
     public boolean setex(String key,int expireSeconds, String value)
     {
-        Jedis jedis = null;
-        try {
-            jedis = this.getResource();
-            String ret = jedis.setex(key,expireSeconds,value);
-            jedis.close();
-            return true;
-
-        } catch (Exception e) {
-            logger.error("redis setex failed: key = " + key );
-            return false;
-        }
+        String ret = jedisTemplate(jedis->jedis.setex(key,expireSeconds,value));
+        return ret != null;
     }
 
     public boolean set(String key, String value)
     {
+        String ret =jedisTemplate(jedis->jedis.set(key,value));
+        return ret != null;
+    }
+
+    public boolean del(String [] keys) {
+        Long ret = jedisTemplate(jedis->jedis.del(keys));
+        return ret != null;
+    }
+
+
+    public <T> T jedisTemplate(Function<Jedis,T> func)
+    {
         Jedis jedis = null;
         try {
             jedis = this.getResource();
-            String ret = jedis.set(key,value);
-            jedis.close();
-            return true;
-
+            T ret = func.apply(jedis);
+            return ret;
         } catch (Exception e) {
-            logger.error("redis set failed: key = " + key );
-            return false;
+            logger.error("redis failed failed:",e);
+            return null;
+        }
+        finally {
+            if(jedis!=null) {
+                jedis.close();
+            }
         }
     }
 
 
     @Override
     public String toString() {
-        return "JedisWrapper{" +
+        return "BczJedisWrapper{" +
                 ", ip='" + ip +
                 ", port=" + port +
                 ", timeoutMs=" + timeoutMs +
