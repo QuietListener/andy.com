@@ -79,7 +79,7 @@ public class JedisWrapper {
     private boolean needUpdatePool(long now) {
         return this.lastCheckPoolMs + 120000L < now || this.pool == null && this.lastCheckPoolMs + 10000L < now;
     }
-    public Jedis getResource()
+    public Jedis getResource() throws Exception
     {
         if(!this.initializing && this.needUpdatePool(System.currentTimeMillis()))
         {
@@ -88,7 +88,7 @@ public class JedisWrapper {
 
         if(this.pool == null)
         {
-            throw new BizException(ExceptionCode.GENERAL_ERROR, "Jedis pool is null ,params is "+this.toString());
+            throw new Exception("Jedis pool is null ,params is "+this.toString());
         }
         else
         {
