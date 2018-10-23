@@ -99,6 +99,10 @@ public class TestProducer
 
         long end = new Date().getTime();
         System.out.println("send " + total + " records; used "+ (end-start) + " miniseconds");
+
+        //优雅的关闭producer
+        producer.flush();
+        producer.close(10,TimeUnit.SECONDS);
     }
 }
 
