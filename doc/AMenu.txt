@@ -25,6 +25,7 @@ kv数据库:
     隔离(熔断)：hystrix
     网关: zuul
     服务发现:eureka
+    rpc:feign
 
 
 应用框架:
