@@ -72,6 +72,7 @@ java
         门面模式(facade pattern):slf4j （slf4j = simple logger facade 4 java)
         装饰模式(decorator pattern):io
     java8: functional, stream, interface(default 方法)
+    序列化:Gson
 
 13.基本算法
    二分
