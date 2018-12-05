@@ -65,11 +65,19 @@ public class Server {
                     }
 
                     if (key.isReadable()) {
+                        System.out.println("is readable");
                         receive(key);
+
+                        //防止cpu100%
+                        key.interestOps(SelectionKey.OP_WRITE);
                     }
 
                     if (key.isWritable()) {
+                        System.out.println("is writable");
                         send(key);
+
+                        //防止cpu100%
+                        key.interestOps(SelectionKey.OP_READ);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

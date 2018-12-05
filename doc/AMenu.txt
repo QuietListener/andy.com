@@ -13,12 +13,15 @@
 
 
 中间件-mq
-   kafka
+   kafka server client
+
 
 中间件-thrift
 
+中间件-probuf
+
 kv数据库:
-    redis:
+    redis: twemproxy(proxy)
 
 微服务：springboot
     链路跟踪:slueth
