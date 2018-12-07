@@ -59,6 +59,7 @@ kv数据库:
 互联网技术:
    分布式锁:
         redission
+   多层缓存:jvm本地缓存+redis缓存
 
 java
     并发
