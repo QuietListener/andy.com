@@ -4,11 +4,15 @@ import com.google.common.collect.Lists;
 
 import javax.annotation.Resource;
 import java.io.File;
+import java.lang.reflect.Method;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -52,7 +56,19 @@ class Task
 
 
 }
+
+
 public class StreamTest1 {
+
+    private static <T> Collection<T> unique(java.util.List<T> list, Function<T,Object> f ){
+        Map<Object,T> map = new LinkedHashMap<>();
+        for(T t:list) {
+            Object key = f.apply(t);
+            map.putIfAbsent(key,t);
+        }
+
+        return map.values();
+    }
 
     public static void main(String [] args) throws  Exception
     {
@@ -63,6 +79,7 @@ public class StreamTest1 {
                 new Task(Status.OPEN,2,4),
                 new Task(Status.CLOSED,1,5)
         );
+
 
         /**
          * 判断一个操作是惰性求值还是及早求值很简单:只需看它的返回值。
@@ -151,6 +168,20 @@ public class StreamTest1 {
         List<String> ret = Arrays.asList(new String []{"1","2"});
         System.out.println(ret.get(0));
 
+
+
+
+        List<Task> ts1 = Arrays.asList(
+                new Task(Status.CLOSED,1,1),
+                new Task(Status.OPEN,2,2),
+                new Task(Status.OPEN,2,3),
+                new Task(Status.OPEN,2,4),
+                new Task(Status.CLOSED,1,5)
+        );
+
+        System.out.println(ts.stream().skip(0).limit(20).collect(Collectors.toList()));
+        List<Task> ts1_ = unique(ts1, t->t.getStatus()).stream().collect(Collectors.toList());
+        System.out.println(ts1_);
     }
 }
 
