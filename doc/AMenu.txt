@@ -51,15 +51,14 @@ kv数据库:
    Base
    Actor，Reactor，Proactor
 
-互联网相关算法
-   lru cache
-   一致哈希
-   paxos
 
 互联网技术:
    分布式锁:
         redission
    多层缓存:jvm本地缓存+redis缓存
+   lru cache
+   一致哈希(虚拟节点):在数据库中分库分表 https://blog.csdn.net/lyztyycode/article/details/79626945
+   paxos
 
 java
     并发

@@ -1,12 +1,16 @@
 package andy.com.db.redis;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.StringUtils;
 
+import org.springframework.util.Assert;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
+import redis.clients.jedis.Pipeline;
 
 
 public class RedisClient {
@@ -76,6 +80,40 @@ public class RedisClient {
 	    	 if(jedis != null)
 	    		 jedis.close();
 	     }
+	}
+
+	public void batchWriteCache(ArrayList<String> keys, ArrayList<String> values, int expire) {
+		Assert.notEmpty(keys,"keys is empty");
+		Assert.notEmpty(values,"values is empty");
+		Assert.isTrue(expire > 0,"expire is required");
+		Assert.isTrue(keys.size() == values.size(),"key size not eq values size");
+		List<String> kvs = new ArrayList<>(keys.size() * 2);
+		for (int i = 0 ; i < keys.size() ; i++) {
+			kvs.add(keys.get(i));
+			kvs.add(values.get(i));
+		}
+		try (Jedis jedis = pool.getResource()) {
+			Pipeline pipeline = jedis.pipelined();
+			pipeline.mset(kvs.toArray(new String[kvs.size()]));
+			keys.forEach(k -> pipeline.expire(k,expire));
+			pipeline.sync();
+		} catch (Exception e) {
+			throw e;
+		}
+	}
+
+	/**
+	 * 不存在的key,数组中对应位置值为null
+	 * @param keys
+	 * @return
+	 */
+	public List<String> batchGet(List<String> keys) {
+		Assert.notEmpty(keys,"keys is empty");
+		try (Jedis  jedis = pool.getResource()) {
+			return jedis.mget(keys.toArray(new String[keys.size()]));
+		} catch (Exception e) {
+			throw e;
+		}
 	}
 	
 	public static void main(String [] args) throws InterruptedException
