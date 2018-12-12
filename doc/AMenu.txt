@@ -59,6 +59,11 @@ kv数据库:
    lru cache
    一致哈希(虚拟节点):在数据库中分库分表 https://blog.csdn.net/lyztyycode/article/details/79626945
    paxos
+   隔离:
+      电路熔断器模式(Circuit Breaker Patten)
+      舱壁隔离模式(Bulkhead Isolation Pattern)
+      限流(Rate Limiting/Load Shedder)
+
 
 java
     并发
