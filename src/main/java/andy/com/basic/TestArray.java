@@ -59,6 +59,13 @@ public class TestArray {
         System.out.println("a == b:"+a.equals(b));
         System.out.println("a == c:"+a.equals(c));
 
+
+
+
+		List<Integer> aabb = new ArrayList<>(Arrays.asList(1,2));
+		aabb.add(0,-1);
+		System.out.println(aabb);
+
 	}
 
 }

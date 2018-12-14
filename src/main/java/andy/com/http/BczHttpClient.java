@@ -1,8 +1,8 @@
 package andy.com.http;
 
 import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
 import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpEntityEnclosingRequestBase;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
@@ -24,7 +24,9 @@ class BczHttpClient {
 
     public BczHttpClient(int socketTimeoutMs, int connectTimeoutMs, int connectionRequestTimeoutMs) {
         PoolingHttpClientConnectionManager poolConnManager = new PoolingHttpClientConnectionManager();
+        //最多多少个链接
         poolConnManager.setMaxTotal(100);
+        //perroute 表示每个网站最多建立多少个链接，比如www.baidu.com建立一个链接。www.google.com建立一个链接
         poolConnManager.setDefaultMaxPerRoute(100);
 
         requestConfig = RequestConfig.custom()
@@ -46,6 +48,7 @@ class BczHttpClient {
     public String post(String url, Map<String, String> params) {
 
         HttpEntity entity = null;
+        CloseableHttpResponse response = null;
         try {
             URIBuilder builder = new URIBuilder(url);
             for (Map.Entry<String, String> entry : params.entrySet()) {
@@ -56,7 +59,7 @@ class BczHttpClient {
 
             HttpPost request = new HttpPost(builder.build());
             addHeader(request);
-            HttpResponse response = client.execute(request);
+            response = client.execute(request);
             int code = response.getStatusLine().getStatusCode();
             if (code != 200) {
                 throw new Exception("trans failed: url=" + url + ";params=" + params);
@@ -70,7 +73,16 @@ class BczHttpClient {
             logger.error(error, e);
         } finally {
             try {
-                EntityUtils.consume(entity);
+                if(entity!=null)
+                    EntityUtils.consume(entity);
+            } catch (Exception e) {
+                String error = "url=" + url + ";params" + params;
+                logger.error(error, e);
+            }
+
+            try {
+                if(response != null)
+                    response.close();
             } catch (Exception e) {
                 String error = "url=" + url + ";params" + params;
                 logger.error(error, e);
@@ -90,5 +102,12 @@ class BczHttpClient {
     public static void main(String[] args){
         BczHttpClient client = new BczHttpClient();
         client.post("",null);
+    }
+
+    public void close(){
+        try{
+            client.close();
+        }
+        catch(Exception e){}
     }
 }

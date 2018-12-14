@@ -68,6 +68,8 @@ kv数据库:
 java
     并发
         线程池
+           线程池参数
+           最佳线程个数计算 https://blog.csdn.net/u011519624/article/details/69263460
         锁
             readLock
             writeLock
