@@ -51,8 +51,8 @@ kv数据库:
    Base
    Actor，Reactor，Proactor
 
-
 互联网技术:
+   幂等操作
    分布式锁:
         redission
    多层缓存:jvm本地缓存+redis缓存
@@ -76,6 +76,9 @@ java
             乐观锁
 
     jvm调优
+       内存分区
+       g1和cms
+
     log:sl4j,logback
     java设计模式：
         命令模式(command pattern):hystrix中使用
@@ -83,6 +86,11 @@ java
         装饰模式(decorator pattern):io
     java8: functional, stream, interface(default 方法)
     序列化:Gson
+    运维:
+       jps -lvm pid
+       jstack -l pid 查看当前线程状态
+       jmap -histo:live pid 查当前内存容量
+
 
 13.基本算法
    二分
@@ -92,10 +100,23 @@ java
 
 服务器
    nginx
+      keepalive:
+         keepalive
+         keepalive_requests
+         keepalive_timeout
+
+      upstream
    tomcat
+      acceptCount、maxConnections、maxThreads、minSpareThreads
+      maxKeepAliveRequests
 
 linux:
   运维命令
+     vmstat
+     netstat
+     uptime 负载
+     top -c
+
   调优:打开文件数目
   shell脚本
 
@@ -103,3 +124,6 @@ python:
 
 ruby:
     rails
+
+网络:
+   tcp:三次握手，四次握手
