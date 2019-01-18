@@ -100,7 +100,7 @@ class BczHttpClient {
     }
 
     public static void main(String[] args){
-        BczHttpClient client = new BczHttpClient();
+        BczHttpClient client = new BczHttpClient(2,2,2);
         client.post("",null);
     }
 

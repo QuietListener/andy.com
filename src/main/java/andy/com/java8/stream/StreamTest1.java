@@ -73,9 +73,9 @@ public class StreamTest1 {
     public static void main(String [] args) throws  Exception
     {
         List<Task> ts = Arrays.asList(
+                new Task(Status.OPEN,2,3),
                 new Task(Status.CLOSED,1,1),
                 new Task(Status.OPEN,2,2),
-                new Task(Status.OPEN,2,3),
                 new Task(Status.OPEN,2,4),
                 new Task(Status.CLOSED,1,5)
         );
@@ -168,9 +168,6 @@ public class StreamTest1 {
         List<String> ret = Arrays.asList(new String []{"1","2"});
         System.out.println(ret.get(0));
 
-
-
-
         List<Task> ts1 = Arrays.asList(
                 new Task(Status.CLOSED,1,1),
                 new Task(Status.OPEN,2,2),
@@ -182,6 +179,18 @@ public class StreamTest1 {
         System.out.println(ts.stream().skip(0).limit(20).collect(Collectors.toList()));
         List<Task> ts1_ = unique(ts1, t->t.getStatus()).stream().collect(Collectors.toList());
         System.out.println(ts1_);
+
+        List<String> t1 = Arrays.asList("d","e","a","b","a","c");
+        List<String> t2 = new ArrayList(unique(t1,t->t));
+        System.out.println(t2);
+
+
+        //sort
+        System.out.println("sorted");
+        System.out.println(ts);
+        List<Task> tts = ts.stream().sorted(Comparator.comparing(Task::getValue).reversed()).collect(Collectors.toList());
+        System.out.println(tts);
+
     }
 }
 
