@@ -66,6 +66,9 @@ public class TestArray {
 		aabb.add(0,-1);
 		System.out.println(aabb);
 
+		System.out.println(aabb.subList(1,aabb.size()));
+
+
 	}
 
 }
