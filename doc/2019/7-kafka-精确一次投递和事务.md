@@ -1,4 +1,8 @@
-参考：https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/
+参考：
+#####https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/
+#####https://www.confluent.io/blog/transactions-apache-kafka/
+#####http://www.jasongj.com/kafka/transaction/
+#####https://www.cnblogs.com/huxi2b/p/6056364.html
 
 ####消息队列中很常见的一个话题就是 "消息重复消费","精确一次投递"
 

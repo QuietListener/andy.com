@@ -1,16 +1,11 @@
 package andy.com.nio.socketMultiThread;
 
-import jdk.internal.org.objectweb.asm.Handle;
-
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
-import java.nio.charset.Charset;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
@@ -37,14 +32,11 @@ public class Server {
         System.out.println("服务器启动...");
     }
 
-    public void service() throws IOException
-    {
+    public void service() throws IOException {
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
-        while (true)
-        {
+        while (true) {
             int i = selector.select(Common.TIMEOUT);
-            if(i == 0)
-            {
+            if (i == 0) {
                 continue;
             }
 
@@ -64,7 +56,7 @@ public class Server {
                                 + socketChannel.socket().getInetAddress() + ":"
                                 + socketChannel.socket().getPort());
                         socketChannel.configureBlocking(false);
-                        Handler h = new Handler(key,-1);
+                        Handler h = new Handler(key, -1);
 
                         socketChannel.register(selector, SelectionKey.OP_READ
                                 | SelectionKey.OP_WRITE, h);
@@ -74,7 +66,7 @@ public class Server {
                         Handler h = (Handler) key.attachment();
                         es.submit(new Runnable() {
                             @Override
-                            public void run(){
+                            public void run() {
                                 synchronized (h) {
                                     try {
                                         h.receive(key);
@@ -91,12 +83,11 @@ public class Server {
                         final Handler h = (Handler) key.attachment();
                         es.submit(new Runnable() {
                             @Override
-                            public void run(){
-                                synchronized (h){
+                            public void run() {
+                                synchronized (h) {
                                     try {
                                         h.send(key);
-                                    }catch(Exception e)
-                                    {
+                                    } catch (Exception e) {
                                         e.printStackTrace();
                                     }
                                 }
