@@ -452,6 +452,12 @@
 			<version>1.6.3</version>
 		</dependency>
 
+		<!-- 阿里云 oss 支持-->
+		<dependency>
+			<groupId>com.aliyun.emr</groupId>
+			<artifactId>emr-core</artifactId>
+			<version>1.6.0</version>
+		</dependency>
 
 	</dependencies>
 	<!-- 
