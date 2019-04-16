@@ -1,4 +1,4 @@
-{"name":"Michael"}
+{"name":"Michael", "age":20,"city":"chongqing"}
 {"name":"Andy", "age":30,"city":"chengdu"}
-{"name":"Justin", "age":19}
+{"name":"Justin", "age":19,"city":"chengdu"}
 {"name":"Ted", "age":null}
