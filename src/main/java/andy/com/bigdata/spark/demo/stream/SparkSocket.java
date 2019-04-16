@@ -20,6 +20,7 @@ public class SparkSocket {
                 .format("socket")
                 .option("host", "localhost")
                 .option("port", 9999).load();
+
         Dataset<String> words = lines.as(Encoders.STRING()).flatMap(x -> Arrays.asList(x.split(" ")).iterator(), Encoders.STRING());
         Dataset<Row> wordCounts = words.groupBy("value").count();
 
