@@ -4,7 +4,10 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.api.java.function.PairFunction;
+import scala.Tuple2;
 
+import java.io.Serializable;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,7 +33,7 @@ public class SparkOperations {
              * map
              */
             JavaRDD rddMap = orgData.map(t -> t + 1); //[2,3,4,5,6]
-            rddMap.foreach(t -> System.out.println("map:" + t));
+            rddMap.foreach(t ->System.out.println("RESULT#map:" + t));
 
             /**
              * mapPartitions
@@ -48,13 +51,13 @@ public class SparkOperations {
                 //关闭连接
                 return tmp.iterator();
             }).collect();
-            System.out.println("retMapPartion:" + retMapPartion);
+           System.out.println("RESULT#retMapPartion:" + retMapPartion);
 
             /**
              *filter
              */
             JavaRDD rddFilter = orgData.filter(t -> t > 3); //[4,5]
-            rddFilter.foreach(t -> System.out.println("filter:" + t));
+            rddFilter.foreach(t ->System.out.println("RESULT#filter:" + t));
 
             /**
              * flatMap
@@ -65,14 +68,14 @@ public class SparkOperations {
 
             //接受一个返回Iterator的函数
             JavaRDD rddFlatmap = orgData1.flatMap(t -> t.iterator());
-            System.out.println("flatMap:" + rddFlatmap.collect()); //flatMap:[1, 2, 3, 4, 5]
+           System.out.println("RESULT#flatMap:" + rddFlatmap.collect()); //flatMap:[1, 2, 3, 4, 5]
 
             //把每个加1
             JavaRDD rddFlatmap1 = orgData1.flatMap(t -> {
                 return t.stream().map(a -> a + "_").collect(Collectors.toList()).iterator();
             });
             List<String> ret = rddFlatmap1.collect();
-            System.out.println("flatMap1:" + ret); //flatMap1:[1_, 2_, 3_, 4_, 5_]
+           System.out.println("RESULT#flatMap1:" + ret); //flatMap1:[1_, 2_, 3_, 4_, 5_]
 
 
             /**
@@ -87,8 +90,8 @@ public class SparkOperations {
              */
             List<Integer> rddSample1 = orgData.sample(false, 0.5).collect();
             List<Integer> rddSample2 = orgData.sample(false, 0.5).collect();
-            System.out.println("rddSample1:" + rddSample1);//rddSample1:[3, 5]
-            System.out.println("rddSample12" + rddSample2);//rddSample1:[1, 4]
+           System.out.println("RESULT#rddSample1:" + rddSample1);//rddSample1:[3, 5]
+           System.out.println("RESULT#rddSample12" + rddSample2);//rddSample1:[1, 4]
 
 
             /**
@@ -97,14 +100,14 @@ public class SparkOperations {
              */
             JavaRDD<Integer> orgData2 = sc.parallelize(Arrays.asList(2,12,13));
             List<Integer> union = orgData.union(orgData2).collect();
-            System.out.println("union:" + union);
+           System.out.println("RESULT#union:" + union);
 
             /**
              * intersection
              * 交集
              */
             List<Integer> intersection = orgData.intersection(orgData2).collect();
-            System.out.println("intersection:" + intersection); //intersection:[2]
+           System.out.println("RESULT#intersection:" + intersection); //intersection:[2]
 
 
             /**
@@ -114,16 +117,75 @@ public class SparkOperations {
 
             JavaRDD<Person> prdd1 = sc.parallelize(Arrays.asList(
                     new Person("a","chengdu",1)
-                    ,new Person("b","chengdu",1)
-                    ,new Person("c","chongqing",1)
-                    ,new Person("a","chongqing",1) ));
+                    ,new Person("b","chengdu",3)
+                    ,new Person("c","chongqing",4)
+                    ,new Person("a","chongqing",1)
+                    ,new Person("d","chongqing",2) ));
 
             JavaPairRDD<String,Iterable<Person>> pairRdd1 = prdd1.groupBy(t->t.city);
             pairRdd1.foreach(t->{
                 String city = t._1();
                 Iterable<Person> ps = t._2();
-                System.out.println("groupByKey:  "+city+":"+ ps.toString());
+               System.out.println("RESULT#groupByKey:  "+city+":"+ ps.toString());
             });
+
+
+            /**
+             * reduceByKey
+             * 按key进行聚集
+             * 先分组一下，再对每一组内进行reduce。
+             */
+
+            JavaPairRDD<String,Person> reduceByKeyRdd = prdd1.mapToPair(t-> new Tuple2<String, Person>(t.city,t)).reduceByKey((o1,o2)->{
+                 return new Person(o1.name,o1.city,o1.age+o2.age);
+            });
+            reduceByKeyRdd.foreach(t->{
+                String city = t._1();
+                Person p = t._2();
+               System.out.println("RESULT#reduceByKey:  "+city+":"+ p);
+            });
+
+
+            /**
+             * aggregateByKey
+             * aggregateByKey 与 reduceByKey 相似，多了一个 zeroValue和seqFunction
+             * seqFunction 接受 tubue的value，可以进行一次变换后再进行reduce操作
+             */
+            JavaPairRDD<String,String> aggregateByKey = prdd1
+                                                        .mapToPair(t-> new Tuple2<String, Person>(t.city,t))
+                                                        .aggregateByKey( "start" //zeroValue
+                                                                ,(String zeroValue,Person p)-> {System.out.println("**:"+zeroValue+":"+p);return zeroValue+p.age;} //seqFunction
+                                                                ,(a,b)->{return a+b;} //reduce的操作
+                                                        );
+            aggregateByKey.foreach(t->{
+               System.out.println("RESULT#aggregateByKey:  "+t.toString());
+            });
+
+
+            /**
+             * sortByKey
+             * 排序按key进行排序
+             */
+
+            JavaPairRDD<String,Person> sortByKeyRdd = prdd1
+                    .mapToPair(t-> new Tuple2<String, Person>(t.city,t)).sortByKey();
+           System.out.println("RESULT#sortByKeyRdd:"+sortByKeyRdd.collect());
+
+
+            /**
+             * join
+             * 两个集合的内积，对应数据库里的inner join
+             */
+
+            JavaRDD<Person> prdd2 = sc.parallelize(Arrays.asList(
+                    new Person("a","chengdu",11)
+                    ,new Person("b","chengdu",13)
+                    ,new Person("b","chongqing",14)));
+
+            JavaPairRDD<String,Person> rd1 = prdd1.mapToPair(t-> new Tuple2<String, Person>(t.name,t));
+            JavaPairRDD<String,Person> rd2 = prdd2.mapToPair(t-> new Tuple2<String, Person>(t.name,t));
+            JavaPairRDD<String,Tuple2<Person,Person>> rdJoin = rd1.join(rd2);
+            System.out.println("RESULT#join:"+rdJoin.collect());
 
         } finally {
             sc.close();
@@ -131,7 +193,7 @@ public class SparkOperations {
     }
 
 
-    static class Person{
+    static class Person implements Serializable {
         public String name;
         public String city;
         public Integer age;
@@ -140,6 +202,30 @@ public class SparkOperations {
             this.name = name;
             this.age = age;
             this.city = city;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
+
+        public Integer getAge() {
+            return age;
+        }
+
+        public void setAge(Integer age) {
+            this.age = age;
         }
 
         @Override
