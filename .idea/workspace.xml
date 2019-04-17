@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/JdbcWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/JdbcWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,7 +50,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="8407" />
+          <entry key="java" value="8412" />
           <entry key="json" value="54" />
           <entry key="md" value="1972" />
           <entry key="txt" value="263" />
@@ -61,7 +59,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8407" />
+          <entry key="JAVA" value="8412" />
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="1972" />
           <entry key="PLAIN_TEXT" value="271" />
@@ -72,11 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="402">
+              <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/JdbcWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="351">
+              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -253,8 +251,8 @@
         <option value="$PROJECT_DIR$/res/spark/people.json" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/JdbcWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java" />
       </list>
     </option>
   </component>
@@ -489,7 +487,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555496548151" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555496713551" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -647,7 +645,7 @@
       <workItem from="1552372500332" duration="9507000" />
       <workItem from="1552744911994" duration="27000" />
       <workItem from="1553479464439" duration="580000" />
-      <workItem from="1554707787470" duration="54660000" />
+      <workItem from="1554707787470" duration="54826000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -667,13 +665,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91652000" />
+    <option name="totallyTimeSpent" value="91818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1072" y="-1273" width="1827" height="1219" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28459385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28459385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -691,7 +689,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30072463" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30072463" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32971016" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -1145,20 +1143,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/JdbcWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        <state relative-caret-position="351">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/JdbcWriter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="402">
+          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

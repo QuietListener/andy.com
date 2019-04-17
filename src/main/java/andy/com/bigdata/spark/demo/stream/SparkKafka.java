@@ -34,6 +34,13 @@ public class SparkKafka {
         // Start running the query that prints the running counts to the console
 
 
+        /**
+         * CREATE TABLE `test2` (
+         *   `id` int(11) NOT NULL AUTO_INCREMENT,
+         *   `name` varchar(255) DEFAULT NULL,
+         *   PRIMARY KEY (`id`)
+         * ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+         */
         String user = "root";
         String password = "";
         String jdbcUrl = "jdbc:mysql://localhost:3306/test_01";
