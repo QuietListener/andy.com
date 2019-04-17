@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/spark/people.json" beforeDir="false" afterPath="$PROJECT_DIR$/res/spark/people.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,7 +50,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="7287" />
+          <entry key="java" value="7319" />
           <entry key="json" value="54" />
           <entry key="md" value="1972" />
           <entry key="txt" value="263" />
@@ -61,7 +59,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7287" />
+          <entry key="JAVA" value="7319" />
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="1972" />
           <entry key="PLAIN_TEXT" value="271" />
@@ -111,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="82" column="15" lean-forward="true" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+            <state relative-caret-position="558">
+              <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2635#2636#0" expanded="true" />
@@ -306,7 +304,7 @@
     <option name="x" value="-1022" />
     <option name="y" value="-1391" />
     <option name="width" value="1827" />
-    <option name="height" value="929" />
+    <option name="height" value="1219" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -431,7 +429,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555410695046" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555467573976" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -587,7 +585,7 @@
       <workItem from="1552372500332" duration="9507000" />
       <workItem from="1552744911994" duration="27000" />
       <workItem from="1553479464439" duration="580000" />
-      <workItem from="1554707787470" duration="39505000" />
+      <workItem from="1554707787470" duration="39914000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -607,10 +605,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76497000" />
+    <option name="totallyTimeSpent" value="76906000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1022" y="-1391" width="1827" height="929" extended-state="0" />
+    <frame x="-1022" y="-1391" width="1827" height="1219" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28459385" />
@@ -630,7 +628,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2837838" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30072463" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32971016" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -1080,8 +1078,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="82" column="15" lean-forward="true" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+        <state relative-caret-position="558">
+          <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2635#2636#0" expanded="true" />

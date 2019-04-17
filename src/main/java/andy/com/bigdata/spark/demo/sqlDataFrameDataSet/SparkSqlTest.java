@@ -82,11 +82,6 @@ public class SparkSqlTest {
              * +---------+---------+------+-----------+
              */
 
-
-
-
-
-
         }
         finally{
             spark.close();
