@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/spark/jars/spark-core_2.11-1.5.2.logging.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,42 +31,42 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="19" />
-          <entry key="java" value="39" />
+          <entry key="class" value="21" />
+          <entry key="java" value="45" />
           <entry key="json" value="1" />
           <entry key="md" value="5" />
           <entry key="pom" value="1" />
           <entry key="txt" value="6" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="19" />
-          <entry key="JAVA" value="39" />
+          <entry key="CLASS" value="21" />
+          <entry key="JAVA" value="45" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="7319" />
+          <entry key="java" value="7467" />
           <entry key="json" value="54" />
           <entry key="md" value="1972" />
           <entry key="txt" value="263" />
-          <entry key="xml" value="107" />
+          <entry key="xml" value="132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7319" />
+          <entry key="JAVA" value="7467" />
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="1972" />
           <entry key="PLAIN_TEXT" value="271" />
-          <entry key="XML" value="107" />
+          <entry key="XML" value="132" />
         </counts>
       </usages-collector>
     </session>
@@ -71,46 +74,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/SparkOperations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="18" column="3" lean-forward="true" selection-start-line="15" selection-end-line="18" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6911#6912#0" expanded="true" />
-                <element signature="e#6946#6947#0" expanded="true" />
-                <element signature="e#6990#6991#0" expanded="true" />
-                <element signature="e#7030#7031#0" expanded="true" />
-                <element signature="e#7065#7066#0" expanded="true" />
-                <element signature="e#7100#7101#0" expanded="true" />
-                <element signature="e#7144#7145#0" expanded="true" />
-                <element signature="e#7184#7185#0" expanded="true" />
-                <element signature="e#7219#7220#0" expanded="true" />
-                <element signature="e#7253#7254#0" expanded="true" />
-                <element signature="e#7296#7297#0" expanded="true" />
-                <element signature="e#7334#7335#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkSocket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+            <state relative-caret-position="346">
+              <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2635#2636#0" expanded="true" />
@@ -130,60 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.12/2.4.1/spark-sql_2.12-2.4.1.jar!/org/apache/spark/sql/functions.class">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-              <folding>
-                <element signature="e#76210#76211#0" expanded="true" />
-                <element signature="e#76264#76265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.12/2.4.1/spark-sql_2.12-2.4.1.jar!/org/apache/spark/sql/RelationalGroupedDataset.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.12/2.4.1/spark-catalyst_2.12-2.4.1.jar!/org/apache/spark/sql/catalyst/expressions/aggregate/Sum.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.12/2.4.1/spark-sql_2.12-2.4.1.jar!/org/apache/spark/sql/Dataset.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="208" column="36" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/spark/people.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/aliyun/OSSTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="16" column="61" lean-forward="true" selection-start-line="15" selection-end-line="16" selection-end-column="61" />
+            <state relative-caret-position="192">
+              <caret line="12" column="275" selection-start-line="12" selection-start-column="275" selection-end-line="12" selection-end-column="275" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,13 +110,85 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/2.4.1/spark-core_2.12-2.4.1.jar!/org/apache/spark/api/java/JavaPairRDD.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/2.4.1/spark-core_2.12-2.4.1.jar!/org/apache/spark/internal/Logging.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="864" column="29" selection-start-line="864" selection-start-column="29" selection-end-line="864" selection-end-column="29" />
+            <state relative-caret-position="391">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding>
-                <element signature="e#93340#93341#0" expanded="true" />
-                <element signature="e#93383#93384#0" expanded="true" />
+                <element signature="e#12694#12695#0" expanded="true" />
+                <element signature="e#12773#12774#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql-kafka-0-10_2.12/2.4.1/spark-sql-kafka-0-10_2.12-2.4.1.jar!/org/apache/spark/sql/kafka010/KafkaSourceProvider.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="138" column="20" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/kafka/test2_basic/ConsumerLoop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="32" column="36" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/kafka/test2_basic/TestConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/kafka/test2_basic/TestProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/TestMysql.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="521" column="38" lean-forward="true" selection-start-line="521" selection-start-column="38" selection-end-line="521" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkSocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="2" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,10 +216,14 @@
       <find>wri</find>
       <find>salary</find>
       <find>System.out.println(&quot;RESULT</find>
+      <find>Logging</find>
+      <find>log</find>
+      <find>init</find>
+      <find>log4j</find>
     </findStrings>
     <replaceStrings>
-      <replace>&quot;salary&quot;</replace>
       <replace>System.out.println(&quot;RESULT#</replace>
+      <replace>&quot;salary&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main</dir>
@@ -261,13 +255,14 @@
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/Test1.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/TestHadoop.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/TestMysql.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/aliyun/OSSTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/sparkOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/SparkOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkSocket.java" />
         <option value="$PROJECT_DIR$/res/spark/people.json" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java" />
       </list>
     </option>
   </component>
@@ -301,8 +296,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1022" />
-    <option name="y" value="-1391" />
+    <option name="x" value="-1072" />
+    <option name="y" value="-1273" />
     <option name="width" value="1827" />
     <option name="height" value="1219" />
   </component>
@@ -350,6 +345,11 @@
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -357,6 +357,13 @@
               <item name="andy.com" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="jars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
@@ -414,6 +421,22 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="sqlDataFrameDataSet" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="stream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -429,7 +452,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555467573976" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555490988370" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -440,9 +463,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="andy.com.bigdata.spark.demo.stream" />
       <recent name="andy.com.bigdata.spark.demo.rdd" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/spark/jars" />
       <recent name="$PROJECT_DIR$/doc/2019" />
     </key>
   </component>
@@ -585,7 +610,7 @@
       <workItem from="1552372500332" duration="9507000" />
       <workItem from="1552744911994" duration="27000" />
       <workItem from="1553479464439" duration="580000" />
-      <workItem from="1554707787470" duration="39914000" />
+      <workItem from="1554707787470" duration="49755000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -605,13 +630,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76906000" />
+    <option name="totallyTimeSpent" value="86747000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1022" y="-1391" width="1827" height="1219" extended-state="0" />
+    <frame x="-1072" y="-1273" width="1827" height="1219" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28459385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28459385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -628,7 +653,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30072463" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30072463" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32971016" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -661,53 +686,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="fx" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.dataAccess/spring-data-access2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/AMenu.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/serialize/GsonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/dataAccess/declarativeTransactionImplementation/FooService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/configfile/MybatisFromConfigFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/2019/5-jedis-Could not get a resource since the pool is exhausted.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/kafka/test2_basic/ConsumerLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -893,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="459" column="21" lean-forward="true" selection-start-line="459" selection-start-column="21" selection-end-line="459" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/2.4.1/spark-core_2.12-2.4.1.jar!/org/apache/spark/SparkConf.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -911,16 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="21" column="84" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/TestMysql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,16 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,7 +1024,7 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.12/2.4.1/spark-sql_2.12-2.4.1.jar!/org/apache/spark/sql/functions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="e#76210#76211#0" expanded="true" />
             <element signature="e#76264#76265#0" expanded="true" />
@@ -1078,8 +1034,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+        <state relative-caret-position="346">
+          <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2635#2636#0" expanded="true" />
@@ -1094,6 +1050,85 @@
             <element signature="e#2965#2966#0" expanded="true" />
             <element signature="e#3005#3006#0" expanded="true" />
             <element signature="e#3037#3038#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="2" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/TestMysql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/kafka/test2_basic/TestProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/kafka/test2_basic/TestConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/kafka/test2_basic/ConsumerLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql-kafka-0-10_2.12/2.4.1/spark-sql-kafka-0-10_2.12-2.4.1.jar!/org/apache/spark/sql/kafka010/KafkaSourceProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="138" column="20" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/2.4.1/spark-core_2.12-2.4.1.jar!/org/apache/spark/internal/Logging.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="e#12694#12695#0" expanded="true" />
+            <element signature="e#12773#12774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="521" column="38" lean-forward="true" selection-start-line="521" selection-start-column="38" selection-end-line="521" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="275" selection-start-line="12" selection-start-column="275" selection-end-line="12" selection-end-column="275" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
