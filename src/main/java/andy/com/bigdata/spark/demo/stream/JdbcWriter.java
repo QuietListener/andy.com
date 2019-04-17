@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 
 public class JdbcWriter extends org.apache.spark.sql.ForeachWriter {
 
-    private static String driver = "org.mysql.Driver";
+    private static String driver = "com.mysql.jdbc.Driver";
     private Connection conn = null;
 
     private String jdbcUrl;
@@ -15,6 +15,9 @@ public class JdbcWriter extends org.apache.spark.sql.ForeachWriter {
 
     public JdbcWriter(String jdbcUrl, String user, String password) {
 
+        this.jdbcUrl = jdbcUrl;
+        this.user = user;
+        this.password = password;
         try {
             Class.forName(driver);
         } catch (Exception e) {
@@ -41,8 +44,10 @@ public class JdbcWriter extends org.apache.spark.sql.ForeachWriter {
     public void process(Object o) {
         System.out.println("######process:"+o.toString());
         try{
-            PreparedStatement state =conn.prepareStatement("insert into test2 values(null, ?)");
+            PreparedStatement state = conn.prepareStatement("insert into test2 values (NULL, ?)");
             state.setString(1,o.toString());
+            state.executeUpdate();
+            conn.commit();
         }catch (Exception e){
             e.printStackTrace();
         }
