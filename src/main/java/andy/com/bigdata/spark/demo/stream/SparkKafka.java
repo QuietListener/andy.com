@@ -24,6 +24,7 @@ public class SparkKafka {
                 .format("kafka")
                 .option("kafka.bootstrap.servers", "localhost:9092")
                 .option("subscribe", "test")
+                .option("group.id","spark-test")
                 .load()
                 .selectExpr("CAST(value AS STRING)")
                 .as(Encoders.STRING());
