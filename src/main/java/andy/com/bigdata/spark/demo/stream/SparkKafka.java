@@ -1,11 +1,13 @@
 package andy.com.bigdata.spark.demo.stream;
 
 import org.apache.spark.api.java.function.FlatMapFunction;
+import org.apache.spark.api.java.function.VoidFunction2;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Encoders;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.streaming.StreamingQuery;
+import org.apache.spark.sql.streaming.Trigger;
 
 import java.util.Arrays;
 
@@ -35,10 +37,24 @@ public class SparkKafka {
 //                Encoders.STRING()).groupBy("value").count();
 
         // Start running the query that prints the running counts to the console
+
+
+        String user = "root";
+        String password = "";
+        String jdbcUrl = "jdbc:mysql://localhost:3306/test_01";
+
+        JdbcWriter foreachWriter = new JdbcWriter(jdbcUrl,user,password);
         StreamingQuery query = lines.writeStream()
                 .outputMode("update")
-                .format("console")
+                .foreach(foreachWriter)
+                .trigger( Trigger.Continuous("1 second"))
                 .start();
+
+//        StreamingQuery query = lines.writeStream()
+//                .outputMode("update")
+//                .format("console")
+//                .start();
+
 
         query.awaitTermination();
     }
