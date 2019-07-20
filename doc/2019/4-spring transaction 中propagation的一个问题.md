@@ -71,7 +71,7 @@ org.springframework.transaction.UnexpectedRollbackException: Transaction rolled 
 ```
 
 
-修改代码，propagation 修改为 Propagation.REQUIRES_NEW，问题解决。Propagation.REQUIRES_NEW 表示每次都新建一个Transaction
+修改代码，propagation 修改为 Propagation.REQUIRES_NEW，问题解决。Propagation.REQUIRES_NEW 表示每次都新建一个Transaction 解决问题
 ```$xslt
  @ChooseDatabase
     @Transactional(transactionManager = DataSourceCfg.TM_NAME, propagation = Propagation.REQUIRES_NEW)

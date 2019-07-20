@@ -17,7 +17,8 @@ public class Main {
 
         ts.doOtherJob1("job2");
 
-        ts.doOtherJob2("job23","dd");
+        TestRet tr = ts.doOtherJob2("job23","dd");
+        System.out.println(tr);
     }
 
 

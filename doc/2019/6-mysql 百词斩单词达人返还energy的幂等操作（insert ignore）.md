@@ -1,8 +1,6 @@
 ###一、背景
-"百词斩单词达人"有一个逻辑是，每一盘对战会消耗5个energy, ，在对战结束后会给赢家返还赢家5个energy.
-对战结束后会到页面pk.baicizhan.com/api/rankpk/result页面，这个页面会进行返还energy。
-这里需要做一个"幂等"的处理，如果不做的话，用户多次刷新这个页面，就会多次返还energy。
-
+"单词pk"有一个逻辑是，每一盘对战会消耗5个energy, ，在对战结束后会给赢家返还赢家5个energy.
+对战结束后会到页面result页面，这个页面会进行返还energy。这里需要做一个"幂等"的处理，如果不做的话，用户多次刷新这个页面，就会多次返还energy。
 
 这里使用了一个audit表，来做幂等
 CREATE TABLE `rank_audits` (

@@ -24,6 +24,7 @@ public class MyAspect {
     @Around("execution(* andy.com.springFramework.core.aop.TestService.*(..))")
     public Object doBasicProfiling(ProceedingJoinPoint pjp) throws Throwable {
         // start stopwatch
+
         Object retVal = pjp.proceed();
         // stop stopwatch
         System.out.println("in Aspect");

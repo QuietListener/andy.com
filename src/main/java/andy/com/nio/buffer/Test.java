@@ -19,7 +19,7 @@ public class Test {
         buf.flip();
         putBuf(buf);
         while(buf.hasRemaining()){
-            System.out.print((char) buf.get()); // read 1 byte at a time
+            System.out.print((char) buf.get()); // read 1 byte at a TimeTest
         }
         System.out.println();
         putBuf(buf);
@@ -29,7 +29,7 @@ public class Test {
         buf.rewind();
         putBuf(buf);
         while(buf.hasRemaining()){
-            System.out.print((char) buf.get()); // read 1 byte at a time
+            System.out.print((char) buf.get()); // read 1 byte at a TimeTest
         }
         System.out.println();
         putBuf(buf);

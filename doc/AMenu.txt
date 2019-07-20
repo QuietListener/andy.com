@@ -126,3 +126,17 @@ ruby:
 
 网络:
    tcp:三次握手，四次握手
+
+Lua:
+
+
+大数据:
+    spark:
+        离线
+        实时
+    flume
+    hive
+    kafka
+
+
+mq(kafka) redis mysql 分布式(SpringCloud)

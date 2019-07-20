@@ -22,27 +22,26 @@ public class RedisClient {
 
 	private static String host = "127.0.0.1";
 	private static int Port = 6379;
-	
 	private static JedisPool pool = null;
-	
+
 	public RedisClient() {
 		synchronized ( this.getClass()) {
 			if (pool == null)
 			{
 				initPool();
 			}
-			
+
 		}
 	}
 	
 	private void initPool()
 	{
-		JedisPoolConfig config = new JedisPoolConfig(); 
+		JedisPoolConfig config = new JedisPoolConfig();
         config.setMaxTotal(MaxTotal);
-        config.setMaxIdle(MaxIdle); 
+        config.setMaxIdle(MaxIdle);
         config.setMaxWaitMillis(MaxWait);
-        config.setTestOnBorrow(false); 
-        
+        config.setTestOnBorrow(false);
+
         pool = new JedisPool(config, host, Port);
 	}
 	
