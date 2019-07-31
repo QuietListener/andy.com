@@ -33,10 +33,12 @@ public class TimeTest {
         System.out.println("\r\nd3l="+d3l);
         System.out.println("d3l time = "+new Date(d3l));
 
-
         System.out.println(new Date(1563437166l*1000));
 
 
+        Date dd = new Date();
+        System.out.println(dd);
+        System.out.print(dd.getTime());
     }
 
     public static long getDayBeginTimestamp(long timeStamp){

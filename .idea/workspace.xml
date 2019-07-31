@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/basic/ArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/basic/TimeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/executor/TestScheduledThreadPoolExecutorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/queue/TestBlockQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/db/RedisDistributeLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/guava/TestRateLimiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example6JSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Common.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/protocal/SimpleProtocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/mappers/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/table1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/common/MybatisSqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/books/java并发编程实践/charpter3/Novisibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3/chapter1/mappers/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/2019/4-spring transaction 中propagation的一个问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/2019/4-spring transaction 中propagation的一个问题.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/2019/6-mysql 百词斩单词达人返还energy的幂等操作（insert ignore）.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/2019/6-mysql 百词斩单词达人返还energy的幂等操作（insert ignore）.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/AMenu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/AMenu.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/containers/TestBlockQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/containers/TestDelayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/db/redis/RedisClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/db/redis/RedisClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/basic/TimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/basic/TimeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/java8/date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/java8/date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/AopAnnotationAround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/AopAnnotationAround.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/MyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/MyAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/stuff/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/stuff/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +27,7 @@
     <session id="-843770457">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
+          <entry key="project.closed" value="33" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -50,139 +38,184 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.275" value="1" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.4" value="6" />
+          <entry key="project.open.time.4" value="7" />
           <entry key="project.open.time.45" value="2" />
+          <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="42" />
+          <entry key="project.opened" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="README" value="1" />
           <entry key="class" value="25" />
-          <entry key="java" value="177" />
+          <entry key="java" value="202" />
           <entry key="json" value="1" />
           <entry key="md" value="13" />
           <entry key="pom" value="1" />
-          <entry key="properties" value="1" />
+          <entry key="properties" value="2" />
+          <entry key="sql" value="2" />
           <entry key="txt" value="12" />
-          <entry key="xml" value="7" />
+          <entry key="xml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="25" />
-          <entry key="JAVA" value="177" />
+          <entry key="JAVA" value="202" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="13" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="8" />
+          <entry key="Properties" value="2" />
+          <entry key="SQL" value="2" />
+          <entry key="XML" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="26" />
-          <entry key="java" value="15913" />
+          <entry key="java" value="18570" />
           <entry key="json" value="54" />
           <entry key="md" value="1979" />
+          <entry key="sql" value="2" />
           <entry key="txt" value="430" />
-          <entry key="xml" value="132" />
+          <entry key="xml" value="238" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15913" />
+          <entry key="JAVA" value="18570" />
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="1979" />
           <entry key="PLAIN_TEXT" value="456" />
-          <entry key="XML" value="132" />
+          <entry key="SQL" value="2" />
+          <entry key="XML" value="238" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/TestMultipleDatasourceWithMybatis.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/common/MybatisSqlSessionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+            <state relative-caret-position="449">
+              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+                <element signature="e#1296#1297#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/UserService.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSessionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/DataSourceHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/stuff/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="204">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/date.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="361">
+              <caret line="93" column="65" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/TimeZone.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="255" column="25" selection-start-line="255" selection-start-column="25" selection-end-line="255" selection-end-column="25" />
+            <state relative-caret-position="17">
+              <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+              <folding>
+                <element signature="e#8918#8919#0" expanded="true" />
+                <element signature="e#8973#8974#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/TestMultipleDatasource1.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="230">
+              <caret line="744" column="30" selection-start-line="744" selection-start-column="30" selection-end-line="744" selection-end-column="30" />
+              <folding>
+                <element signature="e#24899#24900#0" expanded="true" />
+                <element signature="e#24958#24959#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/TestFunctional3.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/binding/MapperRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="315">
+              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/mapping/Environment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+              <folding>
+                <element signature="e#2294#2295#0" expanded="true" />
+                <element signature="e#2334#2335#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/Test1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/service/StudentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="275" column="8" selection-start-line="275" selection-start-column="8" selection-end-line="275" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -199,9 +232,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MyFuntional</find>
-      <find>mysql</find>
-      <find>wri</find>
       <find>salary</find>
       <find>System.out.println(&quot;RESULT</find>
       <find>Logging</find>
@@ -229,6 +259,9 @@
       <find>泛型</find>
       <find>TransactionStatus</find>
       <find>Date</find>
+      <find>stream()</find>
+      <find>group</find>
+      <find>transactionFactory</find>
     </findStrings>
     <replaceStrings>
       <replace>System.out.println(&quot;RESULT#</replace>
@@ -237,11 +270,11 @@
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/andy/com/jsengine</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/src/main/java</dir>
       <dir>$PROJECT_DIR$/src</dir>
       <dir>$PROJECT_DIR$/src/main</dir>
       <dir>$PROJECT_DIR$/src/main/java/andy/com</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -250,26 +283,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/doc/2019/7-kafka-1.md" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/kafka/test3_transaction/TestProducer.java" />
-        <option value="$PROJECT_DIR$/doc/2019/7-kafka-精确一次投递和事务.md" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/flink/WordCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/nio/socketMultiThread/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/flink/SocketWindowWordCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/flink/demo/WikipediaAnalysis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/demo/WikipediaAnalysis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/flink/demo/WikipediaAnalysis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/BaseSpark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/Test1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/TestHadoop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/TestMysql.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/aliyun/OSSTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/sparkOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/rdd/SparkOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkSocket.java" />
         <option value="$PROJECT_DIR$/res/spark/people.json" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/sqlDataFrameDataSet/SparkSqlTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/JdbcWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/bigdata/spark/demo/stream/SparkKafka.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/nio/httpProxy/socketMultiThread/Handler.java" />
@@ -301,6 +318,22 @@
         <option value="$PROJECT_DIR$/src/main/java/andy/com/basic/ArrayTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/basic/TimeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/java8/date.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/java并发编程实践/charpter3/Holder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/java并发编程实践/charpter3/Novisibility.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/table1.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/common/SqlSessionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/domain/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/mappers/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/mybatis-config-1.xml" />
+        <option value="$PROJECT_DIR$/target/classes/books/PersistenceWithMybatis3/chapter1/mappers/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/mappers/StudentMapper.java" />
+        <option value="$PROJECT_DIR$/target/classes/books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/common/MybatisSqlSessionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/Test1.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/service/StudentService.java" />
       </list>
     </option>
   </component>
@@ -329,15 +362,23 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="andy.com Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="andy.com Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-540" />
-    <option name="y" value="-1352" />
-    <option name="width" value="1582" />
-    <option name="height" value="1019" />
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1167" />
+    <option name="y" value="-1417" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -370,9 +411,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -383,6 +423,11 @@
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -413,7 +458,28 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+              <item name="javaPersistenceWithMybatis3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+              <item name="javaPersistenceWithMybatis3" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
@@ -429,7 +495,34 @@
               <item name="andy.com" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
@@ -439,10 +532,62 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring.dataAccess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+              <item name="PersistenceWithMybatis3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+              <item name="PersistenceWithMybatis3" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,7 +599,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563591067010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564567771334" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -464,6 +609,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3/chapter1/mappers" />
+      <recent name="$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3/chapter1" />
+      <recent name="$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="andy.com.concurrent.executor" />
       <recent name="andy.com.bigdata.spark.demo.stream" />
@@ -488,51 +638,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.date.test1">
+  <component name="RunManager" selected="JUnit.Test1.testCreateStudent">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDelayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.containers.TestDelayQueue" />
-      <module name="mycodebase" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.concurrent.containers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.springFramework.core.aop.TestService" />
-      <module name="mycodebase" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.springFramework.core.aop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.basic.TimeTest" />
-      <module name="mycodebase" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -543,17 +651,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayTest.TestArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mycodebase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="andy.com.basic.*" />
+          <option name="PATTERN" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="andy.com.basic" />
-      <option name="MAIN_CLASS_NAME" value="andy.com.basic.ArrayTest" />
-      <option name="METHOD_NAME" value="TestArray" />
+      <option name="PACKAGE_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.Test1" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mycodebase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.Test1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1.testCreateStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mycodebase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.Test1" />
+      <option name="METHOD_NAME" value="testCreateStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1.testFindAllStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mycodebase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.Test1" />
+      <option name="METHOD_NAME" value="testFindAllStudents" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1.testFindStudentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mycodebase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.books.javaPersistenceWithMybatis3.chapter1.Test1" />
+      <option name="METHOD_NAME" value="testFindStudentById" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -561,23 +735,6 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="date.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mycodebase" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.java8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="andy.com.java8" />
-      <option name="MAIN_CLASS_NAME" value="andy.com.java8.date" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -601,19 +758,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestService" />
-      <item itemvalue="Application.TimeTest" />
-      <item itemvalue="Application.TestDelayQueue" />
-      <item itemvalue="JUnit.ArrayTest.TestArray" />
-      <item itemvalue="JUnit.date.test1" />
+      <item itemvalue="JUnit.Test1.test1" />
+      <item itemvalue="JUnit.Test1" />
+      <item itemvalue="JUnit.Test1.testCreateStudent" />
+      <item itemvalue="JUnit.Test1.testFindAllStudents" />
+      <item itemvalue="JUnit.Test1.testFindStudentById" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.date.test1" />
-        <item itemvalue="Application.TimeTest" />
-        <item itemvalue="JUnit.ArrayTest.TestArray" />
-        <item itemvalue="Application.TestDelayQueue" />
-        <item itemvalue="Application.TestService" />
+        <item itemvalue="JUnit.Test1.testCreateStudent" />
+        <item itemvalue="JUnit.Test1.testFindStudentById" />
+        <item itemvalue="JUnit.Test1.testFindAllStudents" />
+        <item itemvalue="JUnit.Test1" />
+        <item itemvalue="JUnit.Test1.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -667,7 +824,10 @@
       <workItem from="1563012315369" duration="534000" />
       <workItem from="1563012918168" duration="214000" />
       <workItem from="1563349482935" duration="3011000" />
-      <workItem from="1563507240982" duration="4942000" />
+      <workItem from="1563507240982" duration="6337000" />
+      <workItem from="1563603523730" duration="561000" />
+      <workItem from="1564194822720" duration="17248000" />
+      <workItem from="1564558902204" duration="7126000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -687,45 +847,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="date_test1 - 2019.07.20 at 10h 39m 42s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testCreateStudent - 2019.07.31 at 16h 36m 31s.xml">
+      <configuration name="Test1.testCreateStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 44m 39s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testCreateStudent - 2019.07.31 at 16h 37m 15s.xml">
+      <configuration name="Test1.testCreateStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 45m 19s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testCreateStudent - 2019.07.31 at 16h 39m 19s.xml">
+      <configuration name="Test1.testCreateStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 45m 39s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testCreateStudent - 2019.07.31 at 16h 40m 56s.xml">
+      <configuration name="Test1.testCreateStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 47m 31s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testCreateStudent - 2019.07.31 at 16h 41m 50s.xml">
+      <configuration name="Test1.testCreateStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 47m 44s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testCreateStudent - 2019.07.31 at 16h 44m 10s.xml">
+      <configuration name="Test1.testCreateStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 48m 41s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testCreateStudent - 2019.07.31 at 16h 45m 55s.xml">
+      <configuration name="Test1.testCreateStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 48m 55s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testFindAllStudents - 2019.07.31 at 17h 06m 31s.xml">
+      <configuration name="Test1.testFindAllStudents" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 50m 16s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testFindStudentById - 2019.07.31 at 17h 10m 21s.xml">
+      <configuration name="Test1.testFindStudentById" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="date_test1 - 2019.07.20 at 10h 50m 34s.xml">
-      <configuration name="date.test1" configurationId="JUnit" />
+    <history-entry file="Test1_testCreateStudent - 2019.07.31 at 17h 10m 34s.xml">
+      <configuration name="Test1.testCreateStudent" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203874000" />
+    <option name="totallyTimeSpent" value="230204000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-540" y="-1352" width="1582" height="1019" extended-state="0" />
+    <frame x="-1167" y="-1417" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35259742" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22756156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -736,28 +896,28 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49856734" weight="0.4425982" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4909091" visible="true" weight="0.24446903" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5984909" weight="0.48156682" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6282764" visible="true" weight="0.48847926" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.16213275" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5090909" side_tool="true" visible="true" weight="0.24446903" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4988086" weight="0.23809524" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3717236" side_tool="true" visible="true" weight="0.48847926" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32971016" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32962137" />
       <window_info anchor="bottom" id="JRebel Executor" order="13" />
       <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49415585" weight="0.41150442" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49245432" weight="0.4093702" />
       <window_info anchor="bottom" id="Thumbnails" order="16" weight="0.32971016" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24973986" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="JSF" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32980227" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.17434472" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -799,8 +959,32 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>Resources.getResourceAsStream(&quot;books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml&quot;).available();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>InputStream i= Resources.getResourceAsStream(&quot;books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml&quot;);puts i;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>InputStream i= Resources.getResourceAsStream(&quot;books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Resources.getResourceAsStream(&quot;books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>t.getClass()</expression-string>
         <language-id>JAVA</language-id>
@@ -827,189 +1011,9 @@
         <custom-info>java.lang.String,java.util.function.Supplier</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>this.getClass().getDeclaredMethods()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>retVal.getClass().getTypeParameters()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>retVal.getClass().getName()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>retVal.getClass().getGenericInfo()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketMultiThread/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketMultiThread/Common.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketMultiThread/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/stream/StreamTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="137" column="69" selection-start-line="137" selection-start-column="69" selection-end-line="137" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/internet/cache/JedisManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example5CallJsFunc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketMultiThread/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/serialize/GsonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Common.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Client.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/FunctionalTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/FunctionalTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/MyAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/protocal/SimpleProtocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/AopAnnotationAround.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11764">
-          <caret line="763" column="16" selection-start-line="763" selection-start-column="16" selection-end-line="763" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
@@ -1036,10 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2193">
           <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
-          <folding>
-            <element signature="e#5406#5407#0" expanded="true" />
-            <element signature="e#5437#5438#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,20 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5304">
           <caret line="357" column="21" selection-start-line="357" selection-start-column="21" selection-end-line="357" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/MyFuntional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/basic/TimeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1120,34 +1106,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/TestFunctional3.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/time/temporal/TemporalField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/TestMultipleDatasource1.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/time/Instant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="212">
+          <caret line="594" column="33" selection-start-line="594" selection-start-column="33" selection-end-line="594" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="1135" column="27" lean-forward="true" selection-start-line="1135" selection-start-column="27" selection-end-line="1135" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/TestMultipleDatasourceWithMybatis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="595">
+          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1165,44 +1155,256 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/time/temporal/TemporalField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/time/Instant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="594" column="33" selection-start-line="594" selection-start-column="33" selection-end-line="594" selection-end-column="33" />
-          <folding>
-            <element signature="e#27399#27400#0" expanded="true" />
-            <element signature="e#27429#27430#0" expanded="true" />
-            <element signature="e#27825#27826#0" expanded="true" />
-            <element signature="e#27853#27854#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="1135" column="27" lean-forward="true" selection-start-line="1135" selection-start-column="27" selection-end-line="1135" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/TimeZone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="3604">
           <caret line="255" column="25" selection-start-line="255" selection-start-column="25" selection-end-line="255" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/TestMultipleDatasource1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/basic/TimeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/date.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="363">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/java并发编程实践/charpter3/Holder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/java并发编程实践/charpter3/Novisibility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/code/MybatisFromCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/TestFunctional3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/MyFuntional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/stream/StreamTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="149" column="17" lean-forward="true" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/domain/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/books/PersistenceWithMybatis3/chapter1/mappers/StudentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/mappers/StudentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSessionFactoryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding>
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/table1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3/chapter1/mappers/StudentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="543" column="20" selection-start-line="543" selection-start-column="20" selection-end-line="543" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="275" column="8" selection-start-line="275" selection-start-column="8" selection-end-line="275" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/chapter1/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/books/javaPersistenceWithMybatis3/common/MybatisSqlSessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/mapping/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+          <folding>
+            <element signature="e#2294#2295#0" expanded="true" />
+            <element signature="e#2334#2335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/binding/MapperRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="744" column="30" selection-start-line="744" selection-start-column="30" selection-end-line="744" selection-end-column="30" />
+          <folding>
+            <element signature="e#24899#24900#0" expanded="true" />
+            <element signature="e#24958#24959#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+          <folding>
+            <element signature="e#8918#8919#0" expanded="true" />
+            <element signature="e#8973#8974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="93" column="65" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
         </state>
       </provider>
     </entry>
