@@ -16,11 +16,19 @@
     <!-- 需要事务支持的service对象-->
     <bean id="fooService" class="andy.com.springFramework.dataAccess.declarativeTransactionImplementation.DefaultFooService" />
 
+    <!--看这部分 start-->
+    <!-- 需要事务支持的service对象-->
+    <bean id="foo1Service" class="andy.com.springFramework.dataAccess.declarativeTransactionImplementation.DefaultFoo1Service">
+        <property name="fooService" ref="fooService" />
+    </bean>
+
+
     <!-- transactional advice (apo)-->
     <tx:advice id="txAdvice" transaction-manager="txManager">
         <tx:attributes>
             <!-- all methods starting with 'get' are read-only -->
-            <tx:method name="get*" read-only="true" timeout="3"/>
+            <tx:method name="get*"  timeout="300"/>
+            <tx:method name="insert*"  timeout="300"/>
             <!-- other methods use the default transaction settings (see below) -->
             <tx:method name="*" rollback-for="Throwable" no-rollback-for="NoProductInStockException" />
         </tx:attributes>

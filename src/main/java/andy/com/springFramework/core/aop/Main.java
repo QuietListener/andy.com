@@ -12,7 +12,7 @@ public class Main {
     {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring/core/spring-core1.xml");
 
-        TestService ts = (TestService)ctx.getBean("TestService");
+        TestService ts = (TestService)ctx.getBean("Test1");
         ts.doJob("job1"," 挖沙沙");
 
         ts.doOtherJob1("job2");

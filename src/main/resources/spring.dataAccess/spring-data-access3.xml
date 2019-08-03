@@ -14,10 +14,15 @@
 
     <!--看这部分 start-->
     <!-- 需要事务支持的service对象-->
-    <bean id="fooService" class="andy.com.springFramework.dataAccess.annotationTransactionImplementation.DefaultFooService" />
+    <bean id="fooService" class="andy.com.springFramework.dataAccess.annotationTransactionImplementation.FooService" />
+    <!--看这部分 start-->
+    <!-- 需要事务支持的service对象-->
+    <bean id="foo1Service" class="andy.com.springFramework.dataAccess.annotationTransactionImplementation.Foo1Service">
+        <property name="fooService" ref="fooService" />
+    </bean>
 
-    <!-- 开始注解事务 enable the configuration of transactional behavior based on annotations -->
-    <tx:annotation-driven transaction-manager="txManager"/><!-- a PlatformTransactionManager is still required -->
+
+
 
     <!--
     如果用java配置需要
@@ -73,11 +78,20 @@
 
 
 
+    <!-- 开始注解事务 enable the configuration of transactional behavior based on annotations -->
+    <tx:annotation-driven transaction-manager="txManager" mode="aspectj"/><!-- a PlatformTransactionManager is still required -->
+    <aop:aspectj-autoproxy expose-proxy="true"/>
+
     <!--事务-->
     <bean id="txManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource0"></property>
     </bean>
 
+    <aop:spring-configured />
+
+    <bean id="annotationTransactionAspect" factory-method="aspectOf"  class="org.springframework.transaction.aspectj.AnnotationTransactionAspect">
+        <property name="transactionManager" ref="txManager"></property>
+    </bean>
 
 </beans>
