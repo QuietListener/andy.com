@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/algorithm/editdistance/EditDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/algorithm/editdistance/EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/algorithm/editdistance/EditDistance.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +75,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="38" />
-          <entry key="java" value="21026" />
+          <entry key="java" value="21077" />
           <entry key="json" value="54" />
           <entry key="md" value="1979" />
           <entry key="sql" value="2" />
@@ -86,7 +85,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="21026" />
+          <entry key="JAVA" value="21077" />
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="1979" />
           <entry key="PLAIN_TEXT" value="468" />
@@ -179,8 +178,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/algorithm/editdistance/EditDistance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state relative-caret-position="413">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -353,8 +352,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-804" />
-    <option name="y" value="-1359" />
+    <option name="x" value="-932" />
+    <option name="y" value="-1350" />
     <option name="width" value="2021" />
     <option name="height" value="1191" />
   </component>
@@ -497,7 +496,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564994922306" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564995576684" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -726,7 +725,7 @@
       <workItem from="1564194822720" duration="17248000" />
       <workItem from="1564558902204" duration="8447000" />
       <workItem from="1564628058008" duration="22123000" />
-      <workItem from="1564816496864" duration="10878000" />
+      <workItem from="1564816496864" duration="11527000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -778,10 +777,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264526000" />
+    <option name="totallyTimeSpent" value="265175000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-804" y="-1359" width="2021" height="1191" extended-state="0" />
+    <frame x="-932" y="-1350" width="2021" height="1191" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26275897" />
@@ -861,6 +860,12 @@
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/andy/com/algorithm/editdistance/EditDistance.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -870,6 +875,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>a.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>Resources.getResourceAsStream(&quot;books/PersistenceWithMybatis3/chapter1/mybatis-config-1.xml&quot;).available();</expression-string>
         <language-id>JAVA</language-id>
@@ -908,12 +918,6 @@
       <expression>
         <expression-string>method.getGenericReturnType()</expression-string>
         <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.getClass().getDeclaredMethod(&quot;getObj&quot;, String.class, Supplier.class)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>java.lang.String,java.util.function.Supplier</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
@@ -1309,8 +1313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/algorithm/editdistance/EditDistance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        <state relative-caret-position="413">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
