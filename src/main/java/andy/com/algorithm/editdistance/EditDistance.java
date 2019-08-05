@@ -110,29 +110,31 @@ public class EditDistance {
         int[][] matrix = new int[2][blength];
 
         for (int i = 0; i < alength; i++) {
-            for (int j = 1; j < blength; j++) {
+            for (int j = 0; j < blength; j++) {
                 if (i == 0) {
                     matrix[0][j] = j;
+                }else if(j == 0){
+                    matrix[i % 2][j] = i;
                 } else {
                     matrix[i % 2][j] = Collections.min(Arrays.asList(
                             //+1是删除a[i]
                             matrix[(i - 1) % 2][j] + 1,
                             //+1插入b[j]
-                            matrix[i % 2][j - 1] + 1,
+                            j-1 >= 0 ? matrix[i % 2][j - 1] + 1 : 0,
                             //+1 是a[i]替换为b[j]
-                            matrix[(i - 1) % 2][j - 1] + 1));
+                            j-1 >= 0 ? matrix[(i - 1) % 2][j - 1] + 1: 0));
                 }
             }
         }
 
-        return matrix[alength % 2][blength - 1];
+        return matrix[alength-1 % 2][blength - 1];
     }
 
 
     public static void main(String args[]) {
         EditDistance ed = new EditDistance();
-        char[] a = "".toCharArray();
-        char[] b = "aaaa".toCharArray();
+        char[] a = "aa".toCharArray();
+        char[] b = "bbaaa".toCharArray();
 
         int ed1 = ed.editDistance1(a, b, a.length - 1, b.length - 1);
         System.out.println(ed1);
