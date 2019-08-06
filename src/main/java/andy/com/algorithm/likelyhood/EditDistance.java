@@ -1,4 +1,4 @@
-package andy.com.algorithm.editdistance;
+package andy.com.algorithm.likelyhood;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -26,9 +26,9 @@ public class EditDistance {
      */
     public int editDistance1(char[] a, char[] b, int i, int j) {
         if (i == 0 || i == -1) {
-            return j+1;
+            return j;
         } else if (j == 0 || j == -1) {
-            return i+1;
+            return i;
         } else if (a[i] == b[j]) {
             //相同的
             return editDistance1(a, b, i - 1, j - 1);
@@ -71,8 +71,20 @@ public class EditDistance {
             matrix[j][0] = j;
         }
 
+        System.out.print(" " +" ");
+        for(char t: b){
+            System.out.print(t+" ");
+        }
+        System.out.println("");
+
+        System.out.print(a[0]+" ");
+        for(Integer t: matrix[0]){
+            System.out.print(t+" ");
+        }
+        System.out.println("");
+
         for (int i = 1; i < alength; i++) {
-            for (int j = 1; j < blength; j++)
+            for (int j = 1; j < blength; j++) {
                 if (a[i] == b[j]) {
                     matrix[i][j] = matrix[i - 1][j - 1];
                 } else {
@@ -84,6 +96,13 @@ public class EditDistance {
                             //+1 是a[i]替换为b[j]
                             matrix[i - 1][j - 1] + 1));
                 }
+            }
+
+            System.out.print(a[i]+" ");
+            for(Integer t: matrix[i]){
+                System.out.print(t+" ");
+            }
+            System.out.println(" ");
         }
 
         return matrix[alength - 1][blength - 1];
@@ -109,6 +128,12 @@ public class EditDistance {
 
         int[][] matrix = new int[2][blength];
 
+        System.out.print(" " +" ");
+        for(char t: b){
+            System.out.print(t+" ");
+        }
+        System.out.println("");
+
         for (int i = 0; i < alength; i++) {
             for (int j = 0; j < blength; j++) {
                 if (i == 0) {
@@ -118,31 +143,38 @@ public class EditDistance {
                 } else {
                     matrix[i % 2][j] = Collections.min(Arrays.asList(
                             //+1是删除a[i]
-                            matrix[(i - 1) % 2][j] + 1,
+                            i-1>=0 ? matrix[(i - 1) % 2][j] + 1 : 0,
                             //+1插入b[j]
                             j-1 >= 0 ? matrix[i % 2][j - 1] + 1 : 0,
                             //+1 是a[i]替换为b[j]
                             j-1 >= 0 ? matrix[(i - 1) % 2][j - 1] + 1: 0));
                 }
             }
+
+            System.out.print(a[i]+" ");
+            for(Integer t: matrix[i%2]){
+                System.out.print(t+" ");
+            }
+
+            System.out.println("");
         }
 
-        return matrix[alength-1 % 2][blength - 1];
+        return matrix[(alength-1) % 2][blength - 1];
     }
 
 
     public static void main(String args[]) {
         EditDistance ed = new EditDistance();
-        char[] a = "aa".toCharArray();
+        char[] a = "acca".toCharArray();
         char[] b = "bbaaa".toCharArray();
 
         int ed1 = ed.editDistance1(a, b, a.length - 1, b.length - 1);
-        System.out.println(ed1);
+        System.out.println("\n ed1 = "+ed1+"\r\n");
 
         int ed2 = ed.editDistance2(a, b);
-        System.out.println(ed2);
+        System.out.println("\n ed2 = "+ed2);
 
         int ed3 = ed.editDistance3(a, b);
-        System.out.println(ed3);
+        System.out.println("\n ed3 = "+ed3);
     }
 }
