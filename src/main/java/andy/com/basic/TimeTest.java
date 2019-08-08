@@ -3,6 +3,7 @@ package andy.com.basic;
 import org.joda.time.DateTime;
 
 import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -39,6 +40,13 @@ public class TimeTest {
         Date dd = new Date();
         System.out.println(dd);
         System.out.print(dd.getTime());
+
+        DateTime dt =  DateTime.now();
+        System.out.println("year = "+ dt.getYear()+ " month = "+dt.getMonthOfYear());
+
+
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.println(sdf1.format(new Date()));
     }
 
     public static long getDayBeginTimestamp(long timeStamp){
