@@ -43,10 +43,20 @@ public class TimeTest {
 
         DateTime dt =  DateTime.now();
         System.out.println("year = "+ dt.getYear()+ " month = "+dt.getMonthOfYear());
-
+        System.out.println( dt.withDayOfMonth(1).withTimeAtStartOfDay()+"\r\n");
 
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
         System.out.println(sdf1.format(new Date()));
+
+
+        DateTime dt1 = DateTime.now().withTimeAtStartOfDay();
+        System.out.println(dt1);
+
+        System.out.println(new Date().getTime()/1000);
+
+
+        DateTime ddd = new DateTime(2018,8,22,0,0,0);
+        System.out.print(ddd.toDate().getTime()/1000);
     }
 
     public static long getDayBeginTimestamp(long timeStamp){
