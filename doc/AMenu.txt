@@ -89,6 +89,7 @@ java
        jps -lvm pid
        jstack -l pid 查看当前线程状态
        jmap -histo:live pid 查当前内存容量
+    Java探针-Java Agent技术-阿里面试题  https://www.cnblogs.com/aspirant/p/8796974.html
 
 
 13.基本算法
