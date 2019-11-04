@@ -30,10 +30,12 @@ public class TestThreadInterupt {
 					catch (InterruptedException e) //会抛出InterruptException因为Sleep会阻塞 
 					{
 						e.printStackTrace();
-						System.out.println(Thread.currentThread().getName() +":"+e.getMessage());
+						System.out.println(Thread.currentThread().getName() +":"+Thread.currentThread().isInterrupted()+":"+e.getMessage());
 					}
 			}
 		};
+
+		t1.setName("t1");
 		
 		Thread t2 = new Thread() {
 			@Override
@@ -47,14 +49,20 @@ public class TestThreadInterupt {
 							while(true)
 							{
 								i++;
+								if(i%1000 == 0){
+									sleep(100);
+									System.out.println(Thread.currentThread().getName() +":"+Thread.currentThread().isInterrupted());
+								}
 							}
 						} catch (InterruptedException e) {
 							// TODO 自动生成的 catch 块
-							e.printStackTrace();
+							System.out.println(Thread.currentThread().getName() +":"+Thread.currentThread().isInterrupted()+":"+e.getMessage());
 						}
 					}		
 			}
 		};
+
+		t2.setName("t2");
 		
 		t1.start();
 		t2.start();

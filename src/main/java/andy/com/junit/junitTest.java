@@ -6,6 +6,10 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class junitTest {
 
@@ -30,4 +34,15 @@ public class junitTest {
         System.out.println("对象将被清理！,preparedData = "+preparedData);
 
     }
+
+
+    @Test
+    public void test() {
+
+        List<String> a = Arrays.asList("bb1","aaa","ccc");
+        List<String> b =  a.stream().sorted().collect(Collectors.toList());
+        System.out.println(a);
+        System.out.println(b);
+    }
+
 }
