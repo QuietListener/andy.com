@@ -32,7 +32,7 @@ public class TestScheduledThreadPoolExecutorService {
     static ScheduledThreadPoolExecutor pool = new ScheduledThreadPoolExecutor(2, new ScheduledThreadPoolExecutor.DiscardPolicy());
 
     /**
-     * 定时任务
+     * 定时任务 具体时间执行
      */
     @Test
     public void testSchedule() {
@@ -49,6 +49,9 @@ public class TestScheduledThreadPoolExecutorService {
     }
 
 
+    /**
+     * 周期的任务
+     */
     @Test
     public void testScheduleAtFixRate() {
 
