@@ -39,8 +39,8 @@ public class ProfileBug {
 
     @Test
     public void test1() {
-        assert "name_test".equals(testProfile("test"));
-        assert "name".equals(testProfile("default"));
-        assert "name_prod".equals(testProfile("prod"));
+        assert "name_test".equals(testProfile("test")); // passed return "name_test"
+        assert "name".equals(testProfile("default")); // passed return default value "name"
+        assert "name_prod".equals(testProfile("prod")); //failed return "name"
     }
 }
