@@ -2,6 +2,7 @@ package andy.com.concurrent.synchronizers;
 
 import org.junit.Test;
 
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -11,6 +12,9 @@ public class TestReadWriteLock {
     static volatile boolean flag = true;
     static volatile int count = 1;
     static volatile int readActionCount = 1;
+    static int countReader = 10;
+    static int countWriter = 1;
+    static final private CyclicBarrier barrier = new CyclicBarrier(countReader + countWriter);
 
     public void sleepMillis(int timeMs) {
         try {
@@ -25,6 +29,7 @@ public class TestReadWriteLock {
      * 10个读线程线程，读操作耗时20ms
      * 1个写线程，写操作耗时80ms 每隔100毫秒一个写操作
      * 30秒可以并发读2000+次
+     *
      * @throws Exception
      */
     @Test
@@ -32,17 +37,23 @@ public class TestReadWriteLock {
 
         final ReentrantLock lock = new ReentrantLock();
 
-        for (int i = 0; i < 10; i++) {
+        //10个读线程
+        for (int i = 0; i < countReader; i++) {
             Thread readThread1 = new Thread() {
                 public void run() {
+                    try {
+                        barrier.await();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    System.out.println(this.getName() + " started");
                     while (flag == true) {
                         lock.lock();
                         try {
                             readActionCount += 1;
                             System.out.println(this.getName() + " read:" + count + " readActionCount:" + readActionCount);
                             sleepMillis(20);
-                        } catch (Exception e) {
-                            e.printStackTrace();
                         } finally {
                             lock.unlock();
                         }
@@ -54,18 +65,23 @@ public class TestReadWriteLock {
             readThread1.start();
         }
 
-        for (int i = 0; i < 1; i++) {
+        //1个写线程
+        for (int i = 0; i < countWriter; i++) {
             Thread writeThread1 = new Thread() {
                 public void run() {
+                    try {
+                        barrier.await();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    System.out.println(this.getName() + " started");
                     while (flag == true) {
                         lock.lock();
                         try {
                             count += 1;
                             System.out.println(this.getName() + "write:" + count);
                             sleepMillis(80);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            ;
                         } finally {
                             lock.unlock();
                         }
@@ -80,6 +96,7 @@ public class TestReadWriteLock {
         }
 
 
+        System.out.println("main started");
         TimeUnit.SECONDS.sleep(30);
         flag = false;
     }
@@ -90,6 +107,7 @@ public class TestReadWriteLock {
      * 10个读线程线程，读操作耗时20ms
      * 1个写线程，写操作耗时80ms 每隔100毫秒一个写操作
      * 30秒可以并发读7000+次
+     *
      * @throws Exception
      */
     @Test
@@ -99,18 +117,23 @@ public class TestReadWriteLock {
         final ReentrantReadWriteLock.ReadLock readLock = lock.readLock();
         final ReentrantReadWriteLock.WriteLock writeLock = lock.writeLock();
 
-        for (int i = 0; i < 10; i++) {
+        //10个读线程
+        for (int i = 0; i < countReader; i++) {
             Thread readThread1 = new Thread() {
                 public void run() {
+                    try {
+                        barrier.await();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
                     while (flag == true) {
                         readLock.lock();
                         try {
                             readActionCount += 1;
                             System.out.println(this.getName() + " read:" + count + " readActionCount:" + readActionCount);
                             sleepMillis(20);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            ;
+
                         } finally {
                             readLock.unlock();
                         }
@@ -124,18 +147,21 @@ public class TestReadWriteLock {
             readThread1.start();
         }
 
-        for (int i = 0; i < 1; i++) {
+        //1个写线程
+        for (int i = 0; i < countWriter; i++) {
             Thread writeThread1 = new Thread() {
                 public void run() {
+                    try {
+                        barrier.await();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     while (flag == true) {
                         writeLock.lock();
                         try {
                             count += 1;
-                            System.out.println(this.getName() + "write:" + count);
-                            TimeUnit.MILLISECONDS.sleep(80);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            ;
+                            System.out.println(this.getName() + " write:" + count);
+                            sleepMillis(80);
                         } finally {
                             writeLock.unlock();
                         }
