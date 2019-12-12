@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/aqs/OnShotLatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/containers/TestDelayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/containers/TestDelayQueue.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +17,7 @@
     <session id="-843770457">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="42" />
+          <entry key="project.closed" value="47" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -35,20 +36,22 @@
           <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.4" value="7" />
+          <entry key="project.open.time.4" value="8" />
           <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.62" value="1" />
-          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="63" />
+          <entry key="project.opened" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,7 +59,7 @@
           <entry key="README" value="1" />
           <entry key="aj" value="1" />
           <entry key="class" value="41" />
-          <entry key="java" value="475" />
+          <entry key="java" value="500" />
           <entry key="json" value="1" />
           <entry key="md" value="13" />
           <entry key="pom" value="2" />
@@ -64,7 +67,7 @@
           <entry key="sh" value="4" />
           <entry key="sql" value="2" />
           <entry key="txt" value="20" />
-          <entry key="xml" value="43" />
+          <entry key="xml" value="44" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
@@ -72,19 +75,19 @@
         <counts>
           <entry key="AspectJ" value="1" />
           <entry key="CLASS" value="41" />
-          <entry key="JAVA" value="475" />
+          <entry key="JAVA" value="500" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="13" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Properties" value="2" />
           <entry key="SQL" value="2" />
-          <entry key="XML" value="46" />
+          <entry key="XML" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="51" />
-          <entry key="java" value="29913" />
+          <entry key="java" value="31478" />
           <entry key="json" value="54" />
           <entry key="md" value="1979" />
           <entry key="sh" value="275" />
@@ -95,7 +98,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="29913" />
+          <entry key="JAVA" value="31478" />
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="1979" />
           <entry key="PLAIN_TEXT" value="768" />
@@ -108,123 +111,100 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/queue/SynchronousQueueTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#354#875#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#1107#1646#0" expanded="true" />
-                <element signature="e#1645#1646#0" expanded="true" />
-                <element signature="e#1705#1706#0" expanded="true" />
-                <element signature="e#1740#1741#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/executor/TestScheduledThreadPoolExecutorService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/code/MybatisFromCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-              <folding>
-                <element signature="e#1747#1928#0" expanded="true" />
-                <element signature="e#1927#1928#0" expanded="true" />
-                <element signature="e#2079#2080#0" expanded="true" />
-                <element signature="e#2119#2120#0" expanded="true" />
-                <element signature="e#2870#2871#0" expanded="true" />
-                <element signature="e#2919#2920#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/ThreadLocalTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/MyBeanFactoryPostProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/Person.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="913" column="29" lean-forward="true" selection-start-line="874" selection-start-column="4" selection-end-line="913" selection-end-column="29" />
-              <folding>
-                <element signature="e#36709#36710#0" expanded="true" />
-                <element signature="e#36767#36768#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="1258" column="11" selection-start-line="1258" selection-start-column="11" selection-end-line="1258" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/TestThreadInterupt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="65" column="8" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-              <folding>
-                <element signature="e#856#1472#0" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-              </folding>
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/containers/TestDelayQueue.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="241">
+              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/DelayQueue.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/TestMultipleDatasource1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="206" column="13" lean-forward="true" selection-start-line="206" selection-start-column="13" selection-end-line="206" selection-end-column="13" />
-              <folding>
-                <element signature="e#5406#5407#0" expanded="true" />
-                <element signature="e#5437#5438#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/DynamicDatasource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/DataSourceHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/mappers/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -242,8 +222,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Gson</find>
-      <find>MapDeserializerDoubleAsIntFix</find>
       <find>泛型</find>
       <find>TransactionStatus</find>
       <find>Date</find>
@@ -272,6 +250,8 @@
       <find>corePoolSize</find>
       <find>workQueue</find>
       <find>delay</find>
+      <find>Reentr</find>
+      <find>condition</find>
     </findStrings>
     <replaceStrings>
       <replace>System.out.println(&quot;RESULT#</replace>
@@ -294,8 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/TypeADisk.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/AutoConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/Tests.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/pb.java" />
@@ -345,6 +323,8 @@
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/queue/SynchronousQueueTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/executor/TestScheduledThreadPoolExecutorService.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/containers/TestDelayQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/aqs/OnShotLatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java" />
       </list>
     </option>
   </component>
@@ -386,10 +366,10 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-691" />
-    <option name="y" value="-1360" />
-    <option name="width" value="1606" />
-    <option name="height" value="1104" />
+    <option name="x" value="-477" />
+    <option name="y" value="-1296" />
+    <option name="width" value="1560" />
+    <option name="height" value="1132" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -422,9 +402,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -435,11 +412,6 @@
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="andy.com" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -470,7 +442,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="springFramework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
@@ -479,8 +451,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="executor" type="462c0819:PsiDirectoryNode" />
+              <item name="springFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
@@ -489,18 +461,31 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="springFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAccess" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="andy.com" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -512,7 +497,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572925416362" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576142043078" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -557,20 +542,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestDelayQueue">
+  <component name="RunManager" selected="JUnit.ProfileBug.test1">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.designpattern.observer.Client" />
+    <configuration name="OnShotLatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.synchronizers.aqs.OnShotLatch" />
       <module name="mycodebase" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="andy.com.designpattern.observer.*" />
+          <option name="PATTERN" value="andy.com.concurrent.synchronizers.aqs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -578,13 +563,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronousQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.queue.SynchronousQueueTest" />
+    <configuration name="ProfileBug" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="andy.com.springFramework.bugs.ProfileBug" />
       <module name="mycodebase" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="andy.com.concurrent.queue.*" />
+          <option name="PATTERN" value="andy.com.springFramework.bugs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -606,36 +591,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestScheduledThreadPoolExecutorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.executor.TestScheduledThreadPoolExecutorService" />
-      <module name="mycodebase" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.concurrent.executor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestScheduledThreadPoolExecutorService.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileBug.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mycodebase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="andy.com.concurrent.executor.*" />
+          <option name="PATTERN" value="andy.com.springFramework.bugs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="andy.com.concurrent.executor" />
-      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.executor.TestScheduledThreadPoolExecutorService" />
+      <option name="PACKAGE_NAME" value="andy.com.springFramework.bugs" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.springFramework.bugs.ProfileBug" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -684,19 +655,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SynchronousQueueTest" />
-      <item itemvalue="Application.TestScheduledThreadPoolExecutorService" />
-      <item itemvalue="JUnit.TestScheduledThreadPoolExecutorService.test1" />
       <item itemvalue="JUnit.TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" />
       <item itemvalue="Application.TestDelayQueue" />
+      <item itemvalue="Application.OnShotLatch" />
+      <item itemvalue="Application.ProfileBug" />
+      <item itemvalue="JUnit.ProfileBug.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProfileBug.test1" />
+        <item itemvalue="Application.ProfileBug" />
+        <item itemvalue="Application.OnShotLatch" />
         <item itemvalue="Application.TestDelayQueue" />
         <item itemvalue="JUnit.TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" />
-        <item itemvalue="JUnit.TestScheduledThreadPoolExecutorService.test1" />
-        <item itemvalue="Application.TestScheduledThreadPoolExecutorService" />
-        <item itemvalue="Application.SynchronousQueueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -768,7 +739,13 @@
       <workItem from="1571644013064" duration="3087000" />
       <workItem from="1571906316199" duration="3099000" />
       <workItem from="1572400994576" duration="11598000" />
-      <workItem from="1572832695521" duration="18476000" />
+      <workItem from="1572832695521" duration="25426000" />
+      <workItem from="1574061671062" duration="5802000" />
+      <workItem from="1574677843138" duration="4217000" />
+      <workItem from="1575098983419" duration="3332000" />
+      <workItem from="1575282060728" duration="1191000" />
+      <workItem from="1575523674067" duration="597000" />
+      <workItem from="1576141097628" duration="943000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -795,18 +772,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestScheduledThreadPoolExecutorService_test1 - 2019.11.04 at 18h 29m 15s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestScheduledThreadPoolExecutorService_test1 - 2019.11.04 at 18h 30m 08s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 27m 08s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 27m 31s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 28m 11s.xml">
       <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
     </history-entry>
@@ -825,15 +790,27 @@
     <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 40m 57s.xml">
       <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 11m 18s.xml">
+      <configuration name="ProfileBug.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 11m 50s.xml">
+      <configuration name="ProfileBug.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 13m 09s.xml">
+      <configuration name="ProfileBug.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 13m 56s.xml">
+      <configuration name="ProfileBug.test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381310000" />
+    <option name="totallyTimeSpent" value="404342000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-691" y="-1360" width="1606" height="1104" extended-state="0" />
+    <frame x="-477" y="-1296" width="1560" height="1132" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26214835" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30171278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -845,13 +822,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49938196" weight="0.32753164" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7342488" weight="0.3308157" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6828644" visible="true" weight="0.4337715" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6818182" visible="true" weight="0.43264502" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48785165" weight="0.2173913" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.31713554" side_tool="true" visible="true" weight="0.4337715" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48592493" weight="0.22455405" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3181818" side_tool="true" visible="true" weight="0.43264502" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32923076" />
@@ -969,184 +946,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/CommandB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.3.1/gson-2.3.1-sources.jar!/com/google/gson/GsonBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/MyFuntional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/functional/TestFunctional3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/java8/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/flink/demo/SocketWindowWordCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/bigdata/flink/demo/WikipediaAnalysis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/stuff/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/junit/junitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/proxy/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/AMenu.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/notjava/shell/test3.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/notjava/shell/test4.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/notjava/shell/text.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/notjava/shell/test2.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/proxy/Job.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/proxy/ConcretJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/proxy/ProxyJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/运维.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/notjava/shell/test1.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar!/sun/nio/ch/Interruptible.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/executor/ExecutorPoolExecutorByNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ExecutorCompletionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/executor/TestThreadPoolExecutorServiceFuture.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -1186,10 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="70" column="45" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="45" />
-          <folding>
-            <element signature="e#2940#2941#0" expanded="true" />
-            <element signature="e#2990#2991#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,9 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#8285#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1228,10 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="248" column="11" selection-start-line="248" selection-start-column="11" selection-end-line="248" selection-end-column="11" />
-          <folding>
-            <element signature="e#7388#7389#0" expanded="true" />
-            <element signature="e#7427#7428#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1246,10 +1034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13651">
           <caret line="853" column="11" selection-start-line="853" selection-start-column="11" selection-end-line="853" selection-end-column="11" />
-          <folding>
-            <element signature="e#34990#34991#0" expanded="true" />
-            <element signature="e#35017#35018#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1271,15 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#354#875#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#1107#1646#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1290,32 +1065,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/executor/TestScheduledThreadPoolExecutorService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-          <folding>
-            <element signature="e#1747#1928#0" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
-            <element signature="e#2079#2080#0" expanded="true" />
-            <element signature="e#2119#2120#0" expanded="true" />
-            <element signature="e#2870#2871#0" expanded="true" />
-            <element signature="e#2919#2920#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1328,43 +1088,238 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="913" column="29" lean-forward="true" selection-start-line="874" selection-start-column="4" selection-end-line="913" selection-end-column="29" />
-          <folding>
-            <element signature="e#36709#36710#0" expanded="true" />
-            <element signature="e#36767#36768#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="14552">
+          <caret line="913" column="29" selection-start-line="874" selection-start-column="4" selection-end-line="913" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6902">
+          <caret line="449" selection-start-line="449" selection-end-line="449" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/TestThreadInterupt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="65" column="8" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-          <folding>
-            <element signature="e#856#1472#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/DelayQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="206" column="13" lean-forward="true" selection-start-line="206" selection-start-column="13" selection-end-line="206" selection-end-column="13" />
-          <folding>
-            <element signature="e#5406#5407#0" expanded="true" />
-            <element signature="e#5437#5438#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1105">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/containers/TestDelayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer_Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/BarrierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/SemaphoreTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/aqs/OnShotLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/LatchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24786">
+          <caret line="1511" column="25" selection-start-line="1511" selection-start-column="25" selection-end-line="1511" selection-end-column="25" />
+          <folding>
+            <element signature="e#41392#41393#0" expanded="true" />
+            <element signature="e#41449#41450#0" expanded="true" />
+            <element signature="e#42562#42563#0" expanded="true" />
+            <element signature="e#42619#42620#0" expanded="true" />
+            <element signature="e#44444#44445#0" expanded="true" />
+            <element signature="e#44501#44502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/DelayQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="206" column="13" selection-start-line="206" selection-start-column="13" selection-end-line="206" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="155" column="13" selection-start-line="152" selection-start-column="24" selection-end-line="155" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/dataAccess/annotationTransactionImplementation/Foo1Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/dataAccess/annotationTransactionImplementation/FooServiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/dataAccess/annotationTransactionImplementation/FooService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/dataAccess/codeTransactionImplementation/declarativeTransactionImplementation/FooService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/dataAccess/codeTransactionImplementation/declarativeTransactionImplementation/DefaultFooService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/configfile/MybatisFromConfigFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="84" column="75" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/TestMultipleDatasource1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/DynamicDatasource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/DataSourceHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/mappers/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/code/MybatisFromCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/MyBeanFactoryPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
           </folding>
         </state>
       </provider>
