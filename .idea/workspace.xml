@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/TestReadWriteLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer_Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer_Lock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -10,6 +13,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/mycodebase$TestReadWriteLock_test1.ic" NAME="TestReadWriteLock.test1 Coverage Results" MODIFIED="1576143864067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>andy.com.concurrent.synchronizers.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="211" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-843770457">
@@ -57,7 +68,7 @@
           <entry key="README" value="1" />
           <entry key="aj" value="1" />
           <entry key="class" value="41" />
-          <entry key="java" value="500" />
+          <entry key="java" value="504" />
           <entry key="json" value="1" />
           <entry key="md" value="13" />
           <entry key="pom" value="2" />
@@ -73,7 +84,7 @@
         <counts>
           <entry key="AspectJ" value="1" />
           <entry key="CLASS" value="41" />
-          <entry key="JAVA" value="500" />
+          <entry key="JAVA" value="504" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="13" />
           <entry key="PLAIN_TEXT" value="25" />
@@ -85,7 +96,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="51" />
-          <entry key="java" value="31581" />
+          <entry key="java" value="32508" />
           <entry key="json" value="54" />
           <entry key="md" value="1979" />
           <entry key="sh" value="275" />
@@ -96,7 +107,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="31581" />
+          <entry key="JAVA" value="32508" />
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="1979" />
           <entry key="PLAIN_TEXT" value="768" />
@@ -108,15 +119,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mybatis.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/code/MybatisFromCode.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -144,47 +146,71 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="42" column="85" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+            <state relative-caret-position="377">
+              <caret line="46" column="83" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#456#457#0" expanded="true" />
                 <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
                 <element signature="e#536#537#0" expanded="true" />
                 <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/TestMultipleDatasource1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer_Lock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="1241">
+              <caret line="73" column="33" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="33" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/TestReadWriteLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#390#705#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#939#1330#0" expanded="true" />
+                <element signature="e#1329#1330#0" expanded="true" />
+                <element signature="e#2534#3334#0" expanded="true" />
+                <element signature="e#3333#3334#0" expanded="true" />
+                <element signature="e#2942#3573#0" expanded="true" />
+                <element signature="e#3572#3573#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/DynamicDatasource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/TestThreadJoin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/DataSourceHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -220,8 +246,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>泛型</find>
-      <find>TransactionStatus</find>
       <find>Date</find>
       <find>stream()</find>
       <find>group</find>
@@ -249,6 +273,8 @@
       <find>workQueue</find>
       <find>delay</find>
       <find>Reentr</find>
+      <find>ReadWriteLock</find>
+      <find>Reen</find>
       <find>condition</find>
     </findStrings>
     <replaceStrings>
@@ -261,9 +287,9 @@
       <dir>$PROJECT_DIR$/src/main/java/andy/com/jsengine</dir>
       <dir>$PROJECT_DIR$/src/main/java</dir>
       <dir>$PROJECT_DIR$/src/main</dir>
-      <dir>$PROJECT_DIR$/src/main/java/andy/com</dir>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/src/main/java/andy/com</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -272,9 +298,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/AutoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/Tests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/pb.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/Pb.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/pa.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/basic/wire/autowire/pb/AutoConfig.java" />
@@ -323,6 +346,9 @@
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/containers/TestDelayQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/aqs/OnShotLatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer_Lock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/ReadWriteLock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/TestReadWriteLock.java" />
       </list>
     </option>
   </component>
@@ -440,7 +466,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="springFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
@@ -449,8 +475,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="springFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="cp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
@@ -459,8 +485,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="springFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="dataAccess" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="synchronizers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
@@ -495,7 +521,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576142120430" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576145014942" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -540,7 +566,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProfileBug.test1">
+  <component name="RunManager" selected="JUnit.TestReadWriteLock.test2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -575,20 +601,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDelayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.containers.TestDelayQueue" />
-      <module name="mycodebase" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.concurrent.containers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -612,17 +624,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestReadWriteLock.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mycodebase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="andy.com.concurrent.executor.*" />
+          <option name="PATTERN" value="andy.com.concurrent.synchronizers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="andy.com.concurrent.executor" />
-      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.executor.TestScheduledThreadPoolExecutorService" />
-      <option name="METHOD_NAME" value="testScheduleAtFixRate" />
+      <option name="PACKAGE_NAME" value="andy.com.concurrent.synchronizers" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.synchronizers.TestReadWriteLock" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestReadWriteLock.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mycodebase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.concurrent.synchronizers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.concurrent.synchronizers" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.concurrent.synchronizers.TestReadWriteLock" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -653,19 +682,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" />
-      <item itemvalue="Application.TestDelayQueue" />
       <item itemvalue="Application.OnShotLatch" />
       <item itemvalue="Application.ProfileBug" />
       <item itemvalue="JUnit.ProfileBug.test1" />
+      <item itemvalue="JUnit.TestReadWriteLock.test1" />
+      <item itemvalue="JUnit.TestReadWriteLock.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestReadWriteLock.test2" />
+        <item itemvalue="JUnit.TestReadWriteLock.test1" />
         <item itemvalue="JUnit.ProfileBug.test1" />
         <item itemvalue="Application.ProfileBug" />
         <item itemvalue="Application.OnShotLatch" />
-        <item itemvalue="Application.TestDelayQueue" />
-        <item itemvalue="JUnit.TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" />
       </list>
     </recent_temporary>
   </component>
@@ -743,7 +772,7 @@
       <workItem from="1575098983419" duration="3332000" />
       <workItem from="1575282060728" duration="1191000" />
       <workItem from="1575523674067" duration="597000" />
-      <workItem from="1576141097628" duration="1021000" />
+      <workItem from="1576141097628" duration="3903000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -770,39 +799,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 33m 17s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 37m 11s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 37m 53s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 38m 17s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestScheduledThreadPoolExecutorService_testScheduleAtFixRate - 2019.11.04 at 21h 40m 57s.xml">
-      <configuration name="TestScheduledThreadPoolExecutorService.testScheduleAtFixRate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 11m 18s.xml">
+    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 15m 55s.xml">
       <configuration name="ProfileBug.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 11m 50s.xml">
+    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 21m 23s.xml">
       <configuration name="ProfileBug.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 13m 09s.xml">
-      <configuration name="ProfileBug.test1" configurationId="JUnit" />
+    <history-entry file="TestReadWriteLock_test1 - 2019.12.12 at 17h 43m 57s.xml">
+      <configuration name="TestReadWriteLock.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 13m 56s.xml">
-      <configuration name="ProfileBug.test1" configurationId="JUnit" />
+    <history-entry file="TestReadWriteLock_test1 - 2019.12.12 at 17h 44m 59s.xml">
+      <configuration name="TestReadWriteLock.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProfileBug_test1 - 2019.12.12 at 17h 14m 11s.xml">
-      <configuration name="ProfileBug.test1" configurationId="JUnit" />
+    <history-entry file="TestReadWriteLock_test2 - 2019.12.12 at 17h 47m 16s.xml">
+      <configuration name="TestReadWriteLock.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestReadWriteLock_test2 - 2019.12.12 at 17h 50m 47s.xml">
+      <configuration name="TestReadWriteLock.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestReadWriteLock_test1 - 2019.12.12 at 17h 51m 28s.xml">
+      <configuration name="TestReadWriteLock.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestReadWriteLock_test1 - 2019.12.12 at 17h 56m 03s.xml">
+      <configuration name="TestReadWriteLock.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestReadWriteLock_test2 - 2019.12.12 at 17h 56m 56s.xml">
+      <configuration name="TestReadWriteLock.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestReadWriteLock_test1 - 2019.12.12 at 18h 03m 09s.xml">
+      <configuration name="TestReadWriteLock.test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="404420000" />
+    <option name="totallyTimeSpent" value="407302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-477" y="-1296" width="1560" height="1132" extended-state="0" />
@@ -819,14 +848,14 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49938196" weight="0.32753164" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7342488" weight="0.3308157" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6818182" weight="0.43264502" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.73320156" weight="0.33038348" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6805007" visible="true" weight="0.35889873" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32923076" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.48550725" visible="true" weight="0.22418879" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51449275" side_tool="true" visible="true" weight="0.22418879" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48550725" weight="0.22418879" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.31949934" side_tool="true" visible="true" weight="0.35889873" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32923076" />
@@ -834,6 +863,7 @@
       <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.6106138" weight="0.2942366" />
       <window_info anchor="bottom" id="Thumbnails" order="16" weight="0.32971016" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.328722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24973986" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -944,13 +974,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/executor/TestThreadPoolExecutorServiceFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1042,13 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/TestThreadJoin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/queue/SynchronousQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1088,6 +1104,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14552">
           <caret line="913" column="29" selection-start-line="874" selection-start-column="4" selection-end-line="913" selection-end-column="29" />
+          <folding>
+            <element signature="e#36709#36710#0" expanded="true" />
+            <element signature="e#36767#36768#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,20 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer_Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1308,16 +1314,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/bugs/ProfileBug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="42" column="85" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+        <state relative-caret-position="377">
+          <caret line="46" column="83" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#456#457#0" expanded="true" />
             <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
             <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/TestThreadJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer_Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="33" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/TestReadWriteLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#390#705#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#939#1330#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#2534#3334#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#2942#3573#0" expanded="true" />
+            <element signature="e#3572#3573#0" expanded="true" />
           </folding>
         </state>
       </provider>

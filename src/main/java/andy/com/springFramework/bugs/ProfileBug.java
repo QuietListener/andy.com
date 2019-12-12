@@ -16,15 +16,18 @@ public class ProfileBug {
     }
 
     @Bean("name")
-    public String name() {
-        return "name";
-    }
-
-    @Bean("name")
     @Profile("prod")
     public String nameProd() {
         return "name_prod";
     }
+
+    //默认数据
+    @Bean("name")
+    public String name() {
+        return "name";
+    }
+
+
 
     public String testProfile(String profile) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
@@ -33,7 +36,7 @@ public class ProfileBug {
         context.refresh();
 
         String name = (String) context.getBean("name");
-        System.out.println(String.format("%s:%s",profile,name));
+        System.out.println(String.format("%s:%s", profile, name));
         return name;
     }
 
@@ -41,6 +44,6 @@ public class ProfileBug {
     public void test1() {
         assert "name_test".equals(testProfile("test")); // passed return "name_test"
         assert "name".equals(testProfile("default")); // passed return default value "name"
-        assert "name_prod".equals(testProfile("prod")); //failed return "name"
+        assert "name_prod".equals(testProfile("prod")); //passed return "name_prod"
     }
 }

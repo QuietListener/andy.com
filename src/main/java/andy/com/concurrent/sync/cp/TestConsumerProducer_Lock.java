@@ -18,12 +18,14 @@ public class TestConsumerProducer_Lock {
 
 	private static final Lock lock = new ReentrantLock();
 	private static final Condition condition = lock.newCondition();
+
 	
 	/**
 	 * @param args
 	 * @throws InterruptedException 
 	 */
 	public static void main(String[] args) throws InterruptedException {
+
 		List<String> pool = new ArrayList<>();
 		for(int i = 0; i < 1;i++)
 		{
