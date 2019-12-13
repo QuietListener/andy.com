@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * ./bin/spark-submit --class andy.com.bigdata.spark.demo.rdd.Test1  --master spark://junjunkaifarnxiaojuyuwang.local:7077  /Users/junjun/Documents/项目/java/java/andy.com/target/mycodebase-WordCountPOJO.jar
+ * ./bin/spark-submit --class andy.com.bigdata.spark.demo.rdd.TestCommandHelloWorld  --master spark://junjunkaifarnxiaojuyuwang.local:7077  /Users/junjun/Documents/项目/java/java/andy.com/target/mycodebase-WordCountPOJO.jar
  */
 public class Test1 {
 

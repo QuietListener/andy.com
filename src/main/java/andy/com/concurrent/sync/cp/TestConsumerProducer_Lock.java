@@ -88,14 +88,6 @@ public class TestConsumerProducer_Lock {
 
         }
 
-        public List<String> getPool() {
-            return pool;
-        }
-
-        public void setPool(List<String> pool) {
-            this.pool = pool;
-        }
-
         private static void sleepMs() {
             try {
                 TimeUnit.SECONDS.sleep(2 + new Random().nextInt(5));
@@ -157,12 +149,5 @@ public class TestConsumerProducer_Lock {
             }
         }
 
-        public List<String> getPool() {
-            return pool;
-        }
-
-        public void setPool(List<String> pool) {
-            this.pool = pool;
-        }
     }
 }
