@@ -65,11 +65,9 @@ public class CommandCollapserGetValueForKey extends HystrixCollapser<List<String
             for (Integer key : keys) {
                 response.add("ValueForKey:" + key);
             }
-
             return response;
         }
     }
-
 
     public static class Test {
 

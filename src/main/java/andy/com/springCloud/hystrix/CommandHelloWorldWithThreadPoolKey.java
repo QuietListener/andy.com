@@ -5,8 +5,6 @@ import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.HystrixCommandKey;
 import com.netflix.hystrix.HystrixThreadPoolKey;
 
-import java.util.concurrent.Future;
-
 /**
  * CommandName:一个command的名字
  * CommandGroup:用来组织Command，比如根据团队，库，报告等来自组织,名字是CommandGroupKey
