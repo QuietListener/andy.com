@@ -96,7 +96,9 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
     @Override
     protected String run() throws Exception {
         TimeUnit.MILLISECONDS.sleep(exeTimeoutMs);
-        return Prefix + name;
+        String ret =  Prefix + name;
+        System.out.println("run in:"+Thread.currentThread().getName()+": ret = "+ret);
+        return ret;
     }
 
     /**
@@ -218,10 +220,7 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
 
             TimeUnit.SECONDS.sleep(50);
         }
-
     }
-
-
 }
 
 
