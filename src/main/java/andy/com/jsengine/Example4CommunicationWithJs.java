@@ -24,13 +24,12 @@ public class Example4CommunicationWithJs {
 		engine.put("result", result);
 		
 		//The eval() method from ScriptEngine returns the last value in the script as an Object.
-		Object ret = engine.eval("println(result); var obj = {'p1':1,'p2':'haha'}; obj");
+		Object ret = engine.eval(" print('hello:'+result);var obj = {'p1':1,'p2':'haha',result:result}; obj");
 		System.out.println("\nret = "+ret);
 		System.out.println("2:"+result);
  	}
 
-	static 
-	class Result
+	static class Result
 	{
 		private String name;
 		private int age;
