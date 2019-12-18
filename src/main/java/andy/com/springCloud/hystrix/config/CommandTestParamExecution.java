@@ -3,6 +3,7 @@ package andy.com.springCloud.hystrix.config;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.HystrixCommandProperties;
+import com.netflix.hystrix.HystrixThreadPoolProperties;
 import org.junit.Test;
 
 import java.util.Random;
@@ -33,7 +34,7 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
      */
     public CommandTestParamExecution(String name, int isolationStrategy, int timeoutMs, int exeTimeoutMs) {
 
-        this(name, isolationStrategy, timeoutMs, exeTimeoutMs, 10,10);
+        this(name, isolationStrategy, timeoutMs, exeTimeoutMs, 10, 10);
 
     }
 
@@ -41,13 +42,32 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
 
 
         super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"))
-                .andCommandPropertiesDefaults(HystrixCommandProperties.Setter().withExecutionIsolationStrategy(isolationStrategy == IsolationStrategyThread ? HystrixCommandProperties.ExecutionIsolationStrategy.THREAD : HystrixCommandProperties.ExecutionIsolationStrategy.SEMAPHORE) //线程池还是信号量隔离
+                .andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
+
+                        /**execution*/
+                        .withExecutionIsolationStrategy(isolationStrategy == IsolationStrategyThread ? HystrixCommandProperties.ExecutionIsolationStrategy.THREAD : HystrixCommandProperties.ExecutionIsolationStrategy.SEMAPHORE) //线程池还是信号量隔离
                         .withExecutionTimeoutInMilliseconds(timeoutMs) //run方法timeout时间
                         .withExecutionTimeoutEnabled(true)//hystrix.command.default.execution.timeout.enabled 是否开启timeout
                         .withExecutionIsolationThreadInterruptOnTimeout(true)// hystrix.command.HystrixCommandKey.execution.isolation.thread.interruptOnTimeout 当timeout时候是否应该中断HystrixCommand.run()
                         .withExecutionIsolationThreadInterruptOnFutureCancel(true)
                         .withExecutionIsolationSemaphoreMaxConcurrentRequests(semaphoreMaxConcurrentRequests)  //信号量的上线。
-                        .withFallbackIsolationSemaphoreMaxConcurrentRequests(allbackIsolationSemaphoreMaxConcurrentRequests) //Caller执行返回Fallback的上线
+
+                        /**fallback*/
+                        .withFallbackIsolationSemaphoreMaxConcurrentRequests(allbackIsolationSemaphoreMaxConcurrentRequests) //isolation为Semaphore时,Caller执行返回Fallback的上限
+
+
+                        /**Circuit Breaker*/
+                        .withCircuitBreakerEnabled(true)
+                        //在一个窗口期内,激活断路器的最小请求量，比如设置为30，但是只有29个请求，就算这19个请求全部挂了，都不会断路.默认20个
+                        .withCircuitBreakerRequestVolumeThreshold(20)
+                        //当断路发生时候，会拒绝请求，睡眠一段时间再去请求看服务 是否恢复。这个参数就是这个时间间隔。 默认5000毫秒
+                        .withCircuitBreakerSleepWindowInMilliseconds(2000)
+                        //当错误率高于这个数，就会断路执行fallback中的逻辑
+                        .withCircuitBreakerErrorThresholdPercentage(60)
+
+
+                ).andThreadPoolPropertiesDefaults( //线程池配置
+                        HystrixThreadPoolProperties.Setter().withCoreSize(1).withMaxQueueSize(1)
                 )
         );
 
@@ -122,9 +142,9 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
                     public void run() {
                         try {
                             barrier.await();
-                            TimeUnit.MILLISECONDS.sleep(20+new Random().nextInt(40));
+                            TimeUnit.MILLISECONDS.sleep(20 + new Random().nextInt(40));
                             //sempphore 为4，最多只能有4个执行成功，有一个会挂掉
-                            String s = new CommandTestParamExecution(name, IsolationStrategySemophore, testTimeOutMs, testTimeOutMs - 120, 4,5).execute();
+                            String s = new CommandTestParamExecution(name, IsolationStrategySemophore, testTimeOutMs, testTimeOutMs - 120, 4, 5).execute();
                             System.out.println(getName() + ":" + s);
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -136,6 +156,53 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
             }
 
             TimeUnit.SECONDS.sleep(3);
+        }
+
+
+        @Test
+        public void testCircuitBreaker() throws Exception {
+            int testTimeOutMs = 200;
+            String name = "junjun";
+
+            for (int i = 0; i < 40; i++) {
+
+                final int j = i;
+                Thread t = new Thread() {
+
+                    @Override
+                    public void run() {
+                        try {
+                            int time = 0;
+                            int exeTime = 0;
+                            if(j <= 5){
+                                time = j*(testTimeOutMs+100);
+                                exeTime = testTimeOutMs / 2;
+                            }
+                            else if(j > 5 && j < 20){
+                                time = 5*(testTimeOutMs+100)+(j-5)*3;
+                                exeTime = testTimeOutMs + 10;
+                            }
+                            else {
+                                time = j*(testTimeOutMs+100);
+                                exeTime = testTimeOutMs /2;
+                            }
+                            TimeUnit.MILLISECONDS.sleep(time);
+
+
+                            CommandTestParamExecution cmd = new CommandTestParamExecution(name, IsolationStrategySemophore, testTimeOutMs, exeTime, 5, 5000);
+                            String s = cmd.execute();
+                            System.out.println(getName() + ":" + s+ "   cmd: isCircuitBreakerOpen="+cmd.isCircuitBreakerOpen()+"  metrics:"+cmd.getMetrics().getHealthCounts());
+                        }
+                        catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                t.setName("t"+i);
+                t.start();
+            }
+
+            TimeUnit.SECONDS.sleep(20);
         }
 
     }
