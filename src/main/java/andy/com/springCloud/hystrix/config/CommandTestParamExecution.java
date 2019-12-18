@@ -6,6 +6,7 @@ import com.netflix.hystrix.HystrixCommandProperties;
 import com.netflix.hystrix.HystrixThreadPoolProperties;
 import org.junit.Test;
 
+import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.TimeUnit;
@@ -59,11 +60,26 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
                         /**Circuit Breaker*/
                         .withCircuitBreakerEnabled(true)
                         //在一个窗口期内,激活断路器的最小请求量，比如设置为30，但是只有29个请求，就算这19个请求全部挂了，都不会断路.默认20个
-                        .withCircuitBreakerRequestVolumeThreshold(20)
+                        .withCircuitBreakerRequestVolumeThreshold(29)
                         //当断路发生时候，会拒绝请求，睡眠一段时间再去请求看服务 是否恢复。这个参数就是这个时间间隔。 默认5000毫秒
                         .withCircuitBreakerSleepWindowInMilliseconds(2000)
                         //当错误率高于这个数，就会断路执行fallback中的逻辑
                         .withCircuitBreakerErrorThresholdPercentage(60)
+
+                        /**Merix*/
+                        //控制统计滑动窗口的大小 如果在这个时间内,并且请求个数大于 ircuitBreakerRequestVolumeThreshold,并且大于CircuitBreakerErrorThresholdPercentage就会熔断
+                        .withMetricsRollingStatisticalWindowInMilliseconds(200000)
+                        //每个窗口划分的bucket个数
+                        .withMetricsRollingStatisticalWindowBuckets(10)
+
+                        //下面的知识统计需要不影响实际使用
+                        .withMetricsRollingPercentileEnabled(true)
+                        .withMetricsRollingPercentileWindowInMilliseconds(60000)
+                        .withMetricsRollingPercentileWindowBuckets(6)
+                        .withMetricsRollingPercentileBucketSize(100)
+
+                        //多久计算一次
+                        .withMetricsHealthSnapshotIntervalInMilliseconds(1000)
 
 
                 ).andThreadPoolPropertiesDefaults( //线程池配置
@@ -161,9 +177,10 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
 
         @Test
         public void testCircuitBreaker() throws Exception {
-            int testTimeOutMs = 200;
+            int testTimeOutMs = 500;
             String name = "junjun";
 
+            System.out.println("time:" + new Date().getTime());
             for (int i = 0; i < 40; i++) {
 
                 final int j = i;
@@ -174,35 +191,32 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
                         try {
                             int time = 0;
                             int exeTime = 0;
-                            if(j <= 5){
-                                time = j*(testTimeOutMs+100);
+                            if (j <= 5) {
+                                time = j * (testTimeOutMs + 100);
                                 exeTime = testTimeOutMs / 2;
-                            }
-                            else if(j > 5 && j < 20){
-                                time = 5*(testTimeOutMs+100)+(j-5)*3;
+                            } else if (j > 5 && j < 19) {
+                                time = 5 * (testTimeOutMs + 100) + testTimeOutMs / 5;
                                 exeTime = testTimeOutMs + 10;
-                            }
-                            else {
-                                time = j*(testTimeOutMs+100);
-                                exeTime = testTimeOutMs /2;
+                            } else {
+                                time = j * (testTimeOutMs + 100);
+                                exeTime = testTimeOutMs / 2;
                             }
                             TimeUnit.MILLISECONDS.sleep(time);
 
 
                             CommandTestParamExecution cmd = new CommandTestParamExecution(name, IsolationStrategySemophore, testTimeOutMs, exeTime, 5, 5000);
                             String s = cmd.execute();
-                            System.out.println(getName() + ":" + s+ "   cmd: isCircuitBreakerOpen="+cmd.isCircuitBreakerOpen()+"  metrics:"+cmd.getMetrics().getHealthCounts());
-                        }
-                        catch (Exception e){
+                            System.out.println(getName() + ":" + "time:" + new Date().getTime() + ":  " + s + "   cmd: isCircuitBreakerOpen=" + cmd.isCircuitBreakerOpen() + "  metrics:" + cmd.getMetrics().getHealthCounts() + "  " + cmd.getMetrics().getTotalTimeMean() + "  ");
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
                 };
-                t.setName("t"+i);
+                t.setName("t" + i);
                 t.start();
             }
 
-            TimeUnit.SECONDS.sleep(20);
+            TimeUnit.SECONDS.sleep(50);
         }
 
     }
