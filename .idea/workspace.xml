@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example4CommunicationWithJs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example4CommunicationWithJs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/web/stuff/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example5CallJsFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example5CallJsFunc.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +26,7 @@
     <session id="-843770457">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="47" />
+          <entry key="project.closed" value="49" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -36,7 +39,7 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.275" value="1" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.30" value="3" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="2" />
@@ -44,75 +47,86 @@
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="8" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.42" value="2" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="2" />
           <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.62" value="1" />
-          <entry key="project.open.time.7" value="5" />
+          <entry key="project.open.time.7" value="6" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="71" />
+          <entry key="project.opened" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="README" value="2" />
+          <entry key="README" value="4" />
           <entry key="aj" value="1" />
-          <entry key="class" value="62" />
-          <entry key="java" value="567" />
-          <entry key="js" value="2" />
+          <entry key="class" value="76" />
+          <entry key="html" value="1" />
+          <entry key="java" value="589" />
+          <entry key="js" value="4" />
           <entry key="json" value="1" />
           <entry key="md" value="13" />
-          <entry key="pom" value="2" />
-          <entry key="properties" value="2" />
+          <entry key="png" value="13" />
+          <entry key="pom" value="4" />
+          <entry key="properties" value="4" />
           <entry key="sh" value="4" />
           <entry key="sql" value="2" />
           <entry key="txt" value="23" />
-          <entry key="xml" value="46" />
+          <entry key="xml" value="48" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="AspectJ" value="1" />
-          <entry key="CLASS" value="62" />
-          <entry key="JAVA" value="567" />
+          <entry key="CLASS" value="76" />
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="13" />
+          <entry key="JAVA" value="589" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="13" />
-          <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Properties" value="2" />
+          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Properties" value="4" />
           <entry key="SQL" value="2" />
-          <entry key="XML" value="49" />
+          <entry key="XML" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="class" value="1" />
           <entry key="dummy" value="51" />
-          <entry key="java" value="41159" />
+          <entry key="html" value="21" />
+          <entry key="java" value="41899" />
           <entry key="json" value="54" />
           <entry key="md" value="1979" />
+          <entry key="properties" value="17" />
           <entry key="sh" value="275" />
           <entry key="sql" value="2" />
           <entry key="txt" value="444" />
-          <entry key="xml" value="577" />
+          <entry key="xml" value="627" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="41159" />
+          <entry key="CLASS" value="1" />
+          <entry key="HTML" value="21" />
+          <entry key="JAVA" value="41899" />
           <entry key="JSON" value="54" />
           <entry key="Markdown" value="1979" />
           <entry key="PLAIN_TEXT" value="770" />
+          <entry key="Properties" value="17" />
           <entry key="SQL" value="2" />
-          <entry key="XML" value="577" />
+          <entry key="XML" value="627" />
         </counts>
       </usages-collector>
     </session>
@@ -120,50 +134,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example6JSON.java">
+        <entry file="file://$PROJECT_DIR$/../../bcz_online/ribbon/src/main/java/ribbon/RibboTest1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state>
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example5CallJsFunc.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/thrift/helloworld/MultiplicationServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="143">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example4CommunicationWithJs.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/web/stuff/ImageUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#261#293#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/JSEngineUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/config/CommandTestParamExecution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+            <state relative-caret-position="311">
+              <caret line="107" column="19" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,46 +164,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/sql/Date.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
+            <state relative-caret-position="136">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/AbstractCommand.class">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/awt/Graphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="952" column="160" lean-forward="true" selection-start-line="952" selection-start-column="160" selection-end-line="952" selection-end-column="160" />
+            <state relative-caret-position="417">
+              <caret line="782" column="25" selection-start-line="782" selection-start-column="25" selection-end-line="782" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixCircuitBreaker.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/thrift/libthrift/0.9.2/libthrift-0.9.2.jar!/org/apache/thrift/transport/TNonblockingServerSocket.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="204">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixCommandMetrics.class">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="238" column="43" lean-forward="true" selection-start-line="238" selection-start-column="43" selection-end-line="238" selection-end-column="43" />
+            <state relative-caret-position="8041">
+              <caret line="473" column="31" selection-start-line="473" selection-start-column="31" selection-end-line="473" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/metric/consumer/BucketedCounterStream.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/archaius/archaius-core/0.4.1/archaius-core-0.4.1.jar!/com/netflix/config/ConfigurationManager.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
+            <state relative-caret-position="255">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.7.17/ribbon-httpclient-2.7.17.pom">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="17" selection-start-line="25" selection-start-column="3" selection-end-line="30" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -224,18 +225,12 @@
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spring-data-access2</find>
-      <find>asp</find>
-      <find>fooService</find>
-      <find>org.codehaus.mojo</find>
-      <find>【</find>
-      <find>InstantiationAwareBeanPostProcessor</find>
-      <find>$$</find>
       <find>【注入属性】注入属性phone</find>
       <find>postProcessBeanFactory</find>
       <find>spring</find>
@@ -259,12 +254,20 @@
       <find>print</find>
       <find>example4_calljsfunc.js</find>
       <find>IsolationStrategyThread</find>
+      <find>DEFAULT_CLIENT_CLASSNAME</find>
+      <find>ribbo</find>
+      <find>http</find>
+      <find>httpclient</find>
+      <find>junit</find>
+      <find>hystirx</find>
+      <find>'</find>
     </findStrings>
     <replaceStrings>
       <replace>System.out.println(&quot;RESULT#</replace>
       <replace>&quot;salary&quot;</replace>
       <replace />
       <replace>**【</replace>
+      <replace>&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/andy/com/jsengine</dir>
@@ -281,13 +284,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/Observer/Observer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/Observer/Observable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/Observer/WeathInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/Observer/ObserverA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/Observer/RadioStationA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/Observer/RadioStationB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/Observer/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/Observer/WeatherStation.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/observer/WeatherStation.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/designpattern/proxy/Job.java" />
@@ -322,7 +318,6 @@
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/TestCommandHelloWorldHystrixBadRequestException.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorldWithThreadPoolKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandCollapserGetValueForKey.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/rxjava/Rxjava1Hello.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/rxjava/resource.txt" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/rxjava/Rxjava2Operator.java" />
@@ -332,6 +327,14 @@
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/config/CommandTestStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/config/CommandTestParamExecution.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example4CommunicationWithJs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example5CallJsFunc.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springCloud/ribbon/p1.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/springCloud/ribbon/MyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/springCloud/ribbon/RibboTest1.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/thrift/helloworld/MultiplicationServer.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/test.html" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/web/stuff/ImageUtil.java" />
       </list>
     </option>
   </component>
@@ -373,10 +376,10 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-761" />
-    <option name="y" value="-1182" />
-    <option name="width" value="2048" />
-    <option name="height" value="1075" />
+    <option name="x" value="-1016" />
+    <option name="y" value="-1129" />
+    <option name="width" value="1963" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -409,6 +412,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -419,22 +425,6 @@
             <path>
               <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="andy.com" type="462c0819:PsiDirectoryNode" />
-              <item name="others" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
-              <item name="others" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -465,18 +455,36 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jsengine" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="notjava" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -485,7 +493,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576736389403" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578387864619" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -530,34 +538,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker">
+  <component name="RunManager" selected="JUnit.ImageUtil.test2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example1HelloWordl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.jsengine.Example1HelloWordl" />
+    <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="andy.com.web.stuff.ImageUtil" />
       <module name="mycodebase" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="andy.com.jsengine.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Example4CommunicationWithJs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.jsengine.Example4CommunicationWithJs" />
-      <module name="mycodebase" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.jsengine.*" />
+          <option name="PATTERN" value="andy.com.web.stuff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -603,17 +597,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testExecutionIsolationSemaphoreMaxConcurrentRequests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImageUtil.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mycodebase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="andy.com.springCloud.hystrix.config.*" />
+          <option name="PATTERN" value="andy.com.web.stuff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="andy.com.springCloud.hystrix.config" />
-      <option name="MAIN_CLASS_NAME" value="andy.com.springCloud.hystrix.config.CommandTestParamExecution$TestCommandHelloWorldFallback" />
-      <option name="METHOD_NAME" value="testExecutionIsolationSemaphoreMaxConcurrentRequests" />
+      <option name="PACKAGE_NAME" value="andy.com.web.stuff" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.web.stuff.ImageUtil" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RibboTest1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mycodebase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ribbon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.springCloud.ribbon" />
+      <option name="MAIN_CLASS_NAME" value="ribbon.RibboTest1" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -644,19 +655,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Example4CommunicationWithJs" />
-      <item itemvalue="Application.Example1HelloWordl" />
       <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" />
-      <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testExecutionIsolationSemaphoreMaxConcurrentRequests" />
       <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback" />
+      <item itemvalue="JUnit.RibboTest1.test1" />
+      <item itemvalue="Application.ImageUtil" />
+      <item itemvalue="JUnit.ImageUtil.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImageUtil.test2" />
+        <item itemvalue="Application.ImageUtil" />
+        <item itemvalue="JUnit.RibboTest1.test1" />
         <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" />
         <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback" />
-        <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testExecutionIsolationSemaphoreMaxConcurrentRequests" />
-        <item itemvalue="Application.Example4CommunicationWithJs" />
-        <item itemvalue="Application.Example1HelloWordl" />
       </list>
     </recent_temporary>
   </component>
@@ -736,7 +747,12 @@
       <workItem from="1575523674067" duration="597000" />
       <workItem from="1576141097628" duration="33070000" />
       <workItem from="1576394404322" duration="16504000" />
-      <workItem from="1576569060999" duration="14666000" />
+      <workItem from="1576569060999" duration="26510000" />
+      <workItem from="1576894686306" duration="4000" />
+      <workItem from="1576915143725" duration="3751000" />
+      <workItem from="1577092920039" duration="5527000" />
+      <workItem from="1577227949327" duration="596000" />
+      <workItem from="1577930558829" duration="8280000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -763,45 +779,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 17h 54m 29s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="RibboTest1_test1 - 2019.12.20 at 17h 04m 50s.xml">
+      <configuration name="RibboTest1.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 17h 55m 29s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="RibboTest1_test1 - 2019.12.20 at 17h 06m 10s.xml">
+      <configuration name="RibboTest1.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 17h 56m 02s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="RibboTest1_test1 - 2019.12.20 at 17h 11m 16s.xml">
+      <configuration name="RibboTest1.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 17h 56m 49s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="RibboTest1_test1 - 2019.12.20 at 17h 13m 23s.xml">
+      <configuration name="RibboTest1.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 17h 57m 18s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="RibboTest1_test1 - 2019.12.20 at 17h 14m 57s.xml">
+      <configuration name="RibboTest1.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 17h 58m 17s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="RibboTest1_test1 - 2019.12.20 at 17h 15m 21s.xml">
+      <configuration name="RibboTest1.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 18h 33m 15s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="RibboTest1_test1 - 2019.12.20 at 17h 24m 05s.xml">
+      <configuration name="RibboTest1.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback - 2019.12.18 at 18h 33m 31s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback" configurationId="JUnit" />
+    <history-entry file="RibboTest1_test1 - 2019.12.20 at 17h 25m 57s.xml">
+      <configuration name="RibboTest1.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 18h 34m 28s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="ImageUtil_test2 - 2020.01.07 at 16h 59m 26s.xml">
+      <configuration name="ImageUtil.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandTestParamExecution$TestCommandHelloWorldFallback_testCircuitBreaker - 2019.12.18 at 18h 34m 57s.xml">
-      <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" configurationId="JUnit" />
+    <history-entry file="ImageUtil_test2 - 2020.01.07 at 17h 00m 47s.xml">
+      <configuration name="ImageUtil.test2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467639000" />
+    <option name="totallyTimeSpent" value="497641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-761" y="-1182" width="2048" height="1075" extended-state="0" />
+    <frame x="-1016" y="-1129" width="1963" height="1082" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24875374" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18792295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -812,20 +828,20 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49802372" weight="0.32743362" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.73320156" weight="0.33038348" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6625125" weight="0.45833334" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7326491" weight="0.32976446" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6543467" visible="true" weight="0.29886246" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4775673" visible="true" weight="0.21666667" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5224327" side_tool="true" visible="true" weight="0.21666667" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4717286" weight="0.22205438" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3456533" side_tool="true" visible="true" weight="0.29886246" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32923076" />
       <window_info anchor="bottom" id="JRebel Executor" order="13" />
       <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.5972084" weight="0.29166666" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.58927643" weight="0.3050672" />
       <window_info anchor="bottom" id="Thumbnails" order="16" weight="0.32971016" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24973986" />
@@ -885,6 +901,24 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4Handler.java</url>
+          <line>129</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.7.17/ribbon-httpclient-2.7.17.jar!/com/netflix/niws/client/http/RestClient.class</url>
+          <line>309</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -894,6 +928,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>var6</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>info.getKeys()</expression-string>
         <language-id>JAVA</language-id>
@@ -934,287 +973,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>info.getExecutionEvents()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/strategy/concurrency/HystrixRequestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorldWithRequestCollapsing.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixCollapser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="240" column="21" selection-start-line="240" selection-start-column="21" selection-end-line="240" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixRequestLog.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixInvokableInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/命令模式.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/CommandA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/Receiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/designpattern/command_pattern/CommandB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/TestCommandHelloWorld.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/TestCommandHelloWorldHystrixBadRequestException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/TestCommandHelloWorldFallback.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandCollapserGetValueForKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/actor/Pi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/rxjava/Rxjava1Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/rxjava/Rxjava2Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/rxjava/resource.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.0/rxjava-2.2.0.jar!/io/reactivex/Observable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45526">
-          <caret line="2938" column="28" selection-start-line="2938" selection-start-column="28" selection-end-line="2938" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.0/rxjava-2.2.0.jar!/io/reactivex/functions/Consumer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorldWithCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/config/CommandTest.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixCommand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixCommandProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="534" column="8" selection-start-line="534" selection-start-column="8" selection-end-line="534" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/rxjava/Rxjava3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorldHystrixBadRequestException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorldWithThreadPoolKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="61" column="24" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorldWithFallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/CyclicBarrier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/others/js/example4_calljsfunc.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/javax/script/ScriptEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/others/js/example4_impl_interface.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/rhino/README">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example3Outputs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example2AvaiableEngines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example1HelloWordl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixCircuitBreaker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/AbstractCommand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="952" column="160" lean-forward="true" selection-start-line="952" selection-start-column="160" selection-end-line="952" selection-end-column="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/metric/consumer/BucketedCounterStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixCommandMetrics.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="238" column="43" lean-forward="true" selection-start-line="238" selection-start-column="43" selection-end-line="238" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/sql/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1226,9 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1236,6 +994,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example1HelloWordl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example2AvaiableEngines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example3Outputs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example4CommunicationWithJs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1248,18 +1034,292 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example5CallJsFunc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/Example4CommunicationWithJs.java">
+    <entry file="file://$PROJECT_DIR$/others/js/example4_calljsfunc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/others/js/example4_impl_interface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/rhino/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="87" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/jsengine/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.2.5/ribbon-httpclient-2.2.5-sources.jar!/com/netflix/client/http/HttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="151" column="20" selection-start-line="151" selection-start-column="20" selection-end-line="151" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.2.5/ribbon-httpclient-2.2.5-sources.jar!/com/netflix/niws/client/http/RestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5-sources.jar!/com/netflix/loadbalancer/reactive/LoadBalancerCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5-sources.jar!/com/netflix/client/AbstractLoadBalancerAwareClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon/2.7.17/ribbon-2.7.17.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1515" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-core/2.2.5/ribbon-core-2.2.5-sources.jar!/com/netflix/client/IClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5-sources.jar!/com/netflix/client/ClientFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="94" column="34" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-core/2.7.17/ribbon-core-2.7.17.jar!/com/netflix/client/IClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-core/2.7.17/ribbon-core-2.7.17.jar!/com/netflix/client/config/CommonClientConfigKey.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="98" column="49" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-core/2.7.17/ribbon-core-2.7.17.jar!/com/netflix/client/config/IClientConfigKey.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-archaius/2.7.17/ribbon-archaius-2.7.17.jar!/com/netflix/client/config/DefaultClientConfigImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-core/2.7.17/ribbon-core-2.7.17.jar!/com/netflix/client/config/AbstractDefaultClientConfigImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="206" column="83" lean-forward="true" selection-start-line="206" selection-start-column="83" selection-end-line="206" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-core/2.7.17/ribbon-core-2.7.17.jar!/com/netflix/client/IResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-loadbalancer/2.7.17/ribbon-loadbalancer-2.7.17.jar!/com/netflix/client/AbstractLoadBalancerAwareClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../bcz_online/ribbon/src/main/java/ribbon/MyClient.java" />
+    <entry file="file://$PROJECT_DIR$/../../bcz_online/ribbon/src/main/resources/p1.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5-sources.jar!/org/apache/http/impl/client/AbstractHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="198" column="22" selection-start-line="198" selection-start-column="22" selection-end-line="198" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="254" selection-start-line="254" selection-end-line="254" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5-sources.jar!/org/apache/http/conn/scheme/Scheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-core/1.9/jersey-core-1.9-sources.jar!/com/sun/jersey/core/reflection/MethodList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-core/2.7.17/ribbon-core-2.7.17.jar!/com/netflix/client/IClientConfigAware.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1-sources.jar!/com/sun/jersey/api/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="193" column="13" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="134" column="7" lean-forward="true" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1-sources.jar!/com/sun/jersey/api/client/filter/Filterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-loadbalancer/2.7.17/ribbon-loadbalancer-2.7.17.jar!/com/netflix/client/ClientFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.7.17/ribbon-httpclient-2.7.17.jar!/com/netflix/niws/client/http/RestClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../bcz_online/ribbon/src/main/java/ribbon/RibboTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/thrift/libthrift/0.9.2/libthrift-0.9.2.jar!/org/apache/thrift/transport/TNonblockingServerSocket.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8041">
+          <caret line="473" column="31" selection-start-line="473" selection-start-column="31" selection-end-line="473" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/archaius/archaius-core/0.4.1/archaius-core-0.4.1.jar!/com/netflix/config/ConfigurationManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorldWithFallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.7.17/ribbon-httpclient-2.7.17.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="17" selection-start-line="25" selection-start-column="3" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/awt/Graphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="782" column="25" selection-start-line="782" selection-start-column="25" selection-end-line="782" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/thrift/helloworld/MultiplicationServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/web/stuff/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="107" column="19" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#261#293#0" expanded="true" />
           </folding>
         </state>
       </provider>
