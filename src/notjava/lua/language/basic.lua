@@ -111,5 +111,30 @@ else
     print(s1.." is  a number"..sn)
 end
 
-
 print(tostring("10") == "10")
+
+-- 字符串长度
+s2 = "hello"
+print("s2.length = " .. #s2)
+s3 = "你好hey"
+print("s3.length = " .. #s3)
+
+print("********table********")
+a = {}
+k = "x"
+a[k] = 10
+a[20] = "great"
+print("a['x']="..a["x"])
+print("a[k]="..a[k])
+
+k = 20
+print("a['x']="..a["x"])
+print("a[k]="..a[k])
+
+ab = a   --变量 ab 指向table
+a = nil
+print("ab['x']="..ab["x"])
+print("ab[k]="..ab[k])
+
+print("ab.x="..ab.x) --语法糖 ab["x"] 等价于 ab.x
+
