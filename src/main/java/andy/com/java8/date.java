@@ -43,6 +43,12 @@ public class date {
 
     }
 
+    @Test
+    public void testddd(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.println(sdf.format(new Date()));
+    }
+
 
     @Test
     public void testTimeZone(){
