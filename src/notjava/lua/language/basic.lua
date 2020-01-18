@@ -28,9 +28,9 @@ print(fact(a))
 如果要删除某个全局变量的话只需要赋值为nil
 ]]
 
-print("b=".. tostring(b))
+print("b=" .. tostring(b))
 b = 10
-print("b="..b)
+print("b=" .. b)
 b = nil
 
 
@@ -99,16 +99,16 @@ print("********string********")
 ]]
 
 --字符串连接
-print("aa"..1)
+print("aa" .. 1)
 print(11 .. 22)
 
 --字符串转换
 s1 = "a12"
 sn = tonumber(s1)
-if(n == nil) then
-    print(s1.." is not a number")
+if (n == nil) then
+    print(s1 .. " is not a number")
 else
-    print(s1.." is  a number"..sn)
+    print(s1 .. " is  a number" .. sn)
 end
 
 print(tostring("10") == "10")
@@ -124,19 +124,19 @@ a = {}
 k = "x"
 a[k] = 10
 a[20] = "great"
-print("a['x']="..a["x"])
-print("a[k]="..a[k])
+print("a['x']=" .. a["x"])
+print("a[k]=" .. a[k])
 
 k = 20
-print("a['x']="..a["x"])
-print("a[k]="..a[k])
+print("a['x']=" .. a["x"])
+print("a[k]=" .. a[k])
 
-ab = a   --变量 ab 指向table
+ab = a --变量 ab 指向table
 a = nil
-print("ab['x']="..ab["x"])
-print("ab[k]="..ab[k])
+print("ab['x']=" .. ab["x"])
+print("ab[k]=" .. ab[k])
 
-print("ab.x="..ab.x) --语法糖 ab["x"] 等价于 ab.x
+print("ab.x=" .. ab.x) --语法糖 ab["x"] 等价于 ab.x
 
 
 print("********function********")
@@ -149,6 +149,77 @@ print("********function********")
 print("********表达式********")
 
 --%取模
-print("3%2 = " .. 3%2)
-print("1.2345%1 = " .. tostring(1.2345%1)) --取小数部分
-print("1.2345%0.01 = " .. tostring(1.2345%0.01) ) --取小数部分后两位
+print("3%2 = " .. 3 % 2)
+print("1.2345%1 = " .. tostring(1.2345 % 1)) --取小数部分
+print("1.2345%0.01 = " .. tostring(1.2345 % 0.01)) --取小数部分后两位
+
+-- 关系操作符
+d1 = 1
+print("d1 = " .. d1)
+d3 = d1 == 1
+if d3 then
+    print("d1 == 1")
+end
+
+if d1 ~= 2 then
+    print("d1 ~= 2")
+end
+
+-- nil 只能与自己相等
+print(aaaaa == nil)
+
+
+print("********逻辑操作符********")
+--[[逻辑操作符有 and, or, not。 逻辑操作符将false和nil视作假，其他东西视作真。
+    对and来说如果第一个操作为假，就返回第一个操作数.
+    对or来说，如果第一个为操作数真，就返回第一个，否则返回第二个。
+--]]
+
+print(4 and 5) -- 5
+print(nil and 12) --nil
+print(false and 13) --false
+print(4 or 5) --4
+print(not nil)
+print(not false)
+print(not 0)
+print(not not nil)
+
+-- 等价于 if not x then x = 1 end;
+x = x or 1
+
+
+print("********table constructor********")
+-- table初始化
+
+days = { "Monday", "Tuesday", "Wednesday", "Thursday" }
+print(days[1]) -- Monday 注意下表从1开始
+print(#days) -- 返回长度
+
+
+t1 = { x = 10, y = 20 }
+print("t1['x'] = " .. t1["x"]) -- 10
+print("t1.x =" .. t1.x) --10
+t1.y = 30
+print("t1['y'] = " .. t1["y"]);
+print("#t1 = " .. #t1)
+
+
+-- lua不能使用
+
+t3 = {
+    color = "red",
+    point = 10,
+    info = { name = "junjun", age = 10 },
+    { x = 3, y = 0 },
+    { x = -10, y = 2 }
+}
+
+print("t3[1].x = " .. t3[1].x) -- 3 注意下标从1开始
+print("t3.info.name = " .. t3.info.name)
+
+-- table允许提供通用表达式来作为索引
+ttmp1 = 10
+t4 = { ["-"] = 1, [ttmp1 + 2] = 10, [2 + 3] = 11 }
+print(t4["-"])
+print(t4[12])
+print(t4[5])
