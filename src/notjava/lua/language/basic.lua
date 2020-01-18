@@ -169,7 +169,7 @@ end
 print(aaaaa == nil)
 
 
-print("********逻辑操作符********")
+print("********表达式：逻辑操作符********")
 --[[逻辑操作符有 and, or, not。 逻辑操作符将false和nil视作假，其他东西视作真。
     对and来说如果第一个操作为假，就返回第一个操作数.
     对or来说，如果第一个为操作数真，就返回第一个，否则返回第二个。
@@ -188,7 +188,7 @@ print(not not nil)
 x = x or 1
 
 
-print("********table constructor********")
+print("********表达式：table constructor********")
 -- table初始化
 
 days = { "Monday", "Tuesday", "Wednesday", "Thursday" }
@@ -208,10 +208,11 @@ print("#t1 = " .. #t1)
 
 t3 = {
     color = "red",
-    point = 10,
-    info = { name = "junjun", age = 10 },
+    point = 10; --可以用分号来分隔
+
     { x = 3, y = 0 },
-    { x = -10, y = 2 }
+    { x = -10, y = 2 },
+    info = { name = "junjun", age = 10 }
 }
 
 print("t3[1].x = " .. t3[1].x) -- 3 注意下标从1开始
@@ -223,3 +224,19 @@ t4 = { ["-"] = 1, [ttmp1 + 2] = 10, [2 + 3] = 11 }
 print(t4["-"])
 print(t4[12])
 print(t4[5])
+
+
+
+
+print("********语句********")
+
+print("********赋值********")
+ss1 = 1
+ss2 = 2
+
+ss1, ss2 = ss2, ss1
+print("ss1 = " .. ss1 .. "  ss2= " .. ss2)
+
+ss3, ss4, ss5 = "a", 1
+
+print("ss3, ss4, ss5:" .. ss3 .. ", " .. ss4 .. ", " .. tostring(ss5))
