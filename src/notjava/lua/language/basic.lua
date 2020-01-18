@@ -230,7 +230,7 @@ print(t4[5])
 
 print("********语句********")
 
-print("********赋值********")
+print("********语句：赋值********")
 ss1 = 1
 ss2 = 2
 
@@ -240,3 +240,34 @@ print("ss1 = " .. ss1 .. "  ss2= " .. ss2)
 ss3, ss4, ss5 = "a", 1
 
 print("ss3, ss4, ss5:" .. ss3 .. ", " .. ss4 .. ", " .. tostring(ss5))
+
+
+print("********语句：局部变量与块(block)********")
+
+
+bx = 3 --全局变量
+local bli = 1 --局部变量
+
+while bli <= bx do
+    local bx = bli * 2
+    print(bx) -- 2,4,6
+    bli = bli + 1
+end
+
+print("bx = " .. bx) -- 3 全局变量不变
+print("bli = " .. bli) -- 4 局部变量
+
+
+--控制局部变量的作用域可以将其放在 do-end之中
+
+x = 1
+do
+    local x = x --全局的x赋值给局部的x
+    local a = 2
+
+    x = x + 1 + a;
+    print(x) --2
+end
+
+print(x) --1
+print(a)
