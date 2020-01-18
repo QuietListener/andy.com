@@ -270,4 +270,45 @@ do
 end
 
 print(x) --1
-print(a)
+print(a) --nil
+
+
+
+print("********语句：控制结构********")
+-- if, while,repeat,for end;  repeat以until结尾。
+a = 2
+if a == 1 then
+    print("1")
+elseif a == 2 then
+    print("2")
+else
+    print("other")
+end
+
+print("----")
+b = 3
+local i = 1;
+while i < b do
+    print(i)
+    i = i + 1
+end
+
+print("----")
+b = 3
+local j = 1;
+repeat
+    print(j)
+    j = j + 1
+until j >= b
+
+print("----")
+-- 2是步长 可以不提供
+for ii = 1, 5, 2 do
+    print(ii)
+end
+print(ii) -- nil ii是局部变量
+
+print("----")
+for i = 1, -1, -1 do
+    print(i)
+end
