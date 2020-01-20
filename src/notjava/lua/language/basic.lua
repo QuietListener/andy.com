@@ -312,3 +312,126 @@ print("----")
 for i = 1, -1, -1 do
     print(i)
 end
+
+
+
+print("---泛型for---")
+a = { 1, 2, "a", 4, 5 }
+for i, k in ipairs(a) do --ipairs返回数组迭代器
+    print(i .. "->" .. k)
+end
+
+print("---")
+a = { 1, 2, x = "a", y = 3 }
+for k in pairs(a) do --pairs 返回table原生迭代器
+    print(k .. "->" .. a[k])
+end
+
+print("---beak return--")
+
+for i = 1, 3 do
+    print("i = " .. i)
+    for j = 1, 3 do
+        if i >= 2 and j == 1 then
+            break;
+        end
+        print("   j = " .. j)
+    end
+end
+
+
+
+print("---return--")
+function foo()
+    return
+    print("aaa")
+end
+
+foo();
+
+print("********函数********")
+--[[ Lua中函数式一等公民
+      函数式一种对语句和表达式进行抽象的主要机制。
+      1.函数既可以完成某些特定的任务，这种情况函数被视为一条语句；
+      2. 函数也可以制作一些计算并返回结果，这将其视为一句表达式。
+-- ]]
+
+
+--函数调用，参数必须有一对款括号中，如果没有参数也需要有圆括号。如果只有一个参数，如果这个参数是一个"字面字符串"或table 那就可以不用括号
+
+a = "dddd"
+--print a 报错
+print "dddd"
+print [[dafdasfd]]
+
+function f(v)
+    print(v)
+end
+
+f { x = 1, y = "a" } --f({x=1,y="a" })
+
+--函数:形参实参 更多重复制相似，实参多于形参 舍弃多余实参，实参不住，就将多余行参初始化为nil
+function ff(a, b) return a or b end
+
+ff(3) -- 实参a = 3 ,b =nil
+ff(3, 4) -- 实参a = 3 ,b =4
+ff(3, 4, 5) -- 实参a = 3 ,b =4, （5被丢掉）
+
+--函数:多重返回
+-- maximum返回数组最大元素与其index
+function maximum(a)
+    local mi = 1;
+    local tmp = a[1]
+    for i, v in ipairs(a) do
+        if v > tmp then
+            mi = i;
+            tmp = v;
+        end
+    end
+
+    return tmp, mi
+end
+
+a = { 1, 2, 3, 4, 3, 2 }
+
+v, index ,other= maximum(a)
+print("item=" .. v .. " index = " .. index .. " other = " .. tostring(other))
+
+--函数:返回的坑
+function foo0()  end
+function foo1() return "a" end
+function foo2() return "b","c" end
+--function foo2_() return ("a","b") end
+
+--如果一个函数调用不是一系列表达式的最后一个原生，那么只产生一个值
+x,y = foo2(),2
+print("x="..x.."  y="..y) --x=b,y=2  y不是c
+x,y,z = 2, foo2()
+print("x="..x.."  y="..y.." z="..z) --x=2  y=b z=c
+
+--函数调用也一样
+print(foo2(),2) --b 2
+print(2,foo2())--2 b c
+print(foo2().."x") --当foo2出现再表达式中，Lua将其返回值的量调整为1
+
+--table也一样
+t0 = {foo0()}
+t1 = {foo1()}
+t2 = {foo2()}
+t3 = {foo2(),4 }
+t4 = {4,foo2(),5}
+function printTable(tt,tip)
+    print(tip)
+    for k in pairs(tt) do --pairs 返回table原生迭代器
+        print(k .. "->" .. tt[k])
+    end
+end
+printTable(t0,"t0:")
+printTable(t1,"t1:")
+printTable(t2,"t2:")
+printTable(t3,"t3:")
+printTable(t4,"t4:")
+
+--圆括号值返回第一个值
+a = (foo2())
+print(a) --b
