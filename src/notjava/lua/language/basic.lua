@@ -394,44 +394,86 @@ end
 
 a = { 1, 2, 3, 4, 3, 2 }
 
-v, index ,other= maximum(a)
+v, index, other = maximum(a)
 print("item=" .. v .. " index = " .. index .. " other = " .. tostring(other))
 
 --函数:返回的坑
-function foo0()  end
+function foo0() end
+
 function foo1() return "a" end
-function foo2() return "b","c" end
+
+function foo2() return "b", "c" end
+
 --function foo2_() return ("a","b") end
 
 --如果一个函数调用不是一系列表达式的最后一个原生，那么只产生一个值
-x,y = foo2(),2
-print("x="..x.."  y="..y) --x=b,y=2  y不是c
-x,y,z = 2, foo2()
-print("x="..x.."  y="..y.." z="..z) --x=2  y=b z=c
+x, y = foo2(), 2
+print("x=" .. x .. "  y=" .. y) --x=b,y=2  y不是c
+x, y, z = 2, foo2()
+print("x=" .. x .. "  y=" .. y .. " z=" .. z) --x=2  y=b z=c
 
 --函数调用也一样
-print(foo2(),2) --b 2
-print(2,foo2())--2 b c
-print(foo2().."x") --当foo2出现再表达式中，Lua将其返回值的量调整为1
+print(foo2(), 2) --b 2
+print(2, foo2()) --2 b c
+print(foo2() .. "x") --当foo2出现再表达式中，Lua将其返回值的量调整为1
 
 --table也一样
-t0 = {foo0()}
-t1 = {foo1()}
-t2 = {foo2()}
-t3 = {foo2(),4 }
-t4 = {4,foo2(),5}
-function printTable(tt,tip)
+t0 = { foo0() }
+t1 = { foo1() }
+t2 = { foo2() }
+t3 = { foo2(), 4 }
+t4 = { 4, foo2(), 5 }
+function printTable(tt, tip)
     print(tip)
     for k in pairs(tt) do --pairs 返回table原生迭代器
         print(k .. "->" .. tt[k])
     end
 end
-printTable(t0,"t0:")
-printTable(t1,"t1:")
-printTable(t2,"t2:")
-printTable(t3,"t3:")
-printTable(t4,"t4:")
 
---圆括号值返回第一个值
+printTable(t0, "t0:")
+printTable(t1, "t1:")
+printTable(t2, "t2:")
+printTable(t3, "t3:")
+printTable(t4, "t4:")
+
+--圆括号迫使返回第一个值
 a = (foo2())
 print(a) --b
+
+
+--unpack 接受一个数组，并从1开始返回所有元素；这很重要，可以实现泛型调用，可以使用任何实参来调用任何函数。
+--可以给函数f的传入任意参数unpack(a): f(table.unpack(a))
+print("--unpack---")
+arr1 = { 1, 2, 3, 4, 3 }
+print(table.unpack(arr1))
+a, b = table.unpack(arr1)
+print(a, b)
+
+
+
+
+
+--变长参数
+print("---变长参数---")
+
+-- 三个点可以看做是一个有多重返回的函数
+function add(...)
+    print("... = ", ...)
+    local s = 0;
+    local v = { ... };
+    printTable(v)
+
+    local count = select("#", ...) -- select("#",可以返回变长参数个数)
+    local argi = select(2, ...) --返回第2个参数
+    print(string.format("count = %d, arg2 = %s",count,argi))
+
+    for i, v in ipairs(v) do
+        s = s + v;
+    end
+
+    return s;
+end
+
+r = add(1, 2, 3)
+print("r = " .. r)
+
