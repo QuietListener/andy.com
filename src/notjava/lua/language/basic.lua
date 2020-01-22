@@ -423,10 +423,16 @@ t1 = { foo1() }
 t2 = { foo2() }
 t3 = { foo2(), 4 }
 t4 = { 4, foo2(), 5 }
+
 function printTable(tt, tip)
     print(tip)
+    count = 0
     for k in pairs(tt) do --pairs 返回table原生迭代器
-        print(k .. "->" .. tt[k])
+        if type(tt[k]) == "table" then
+            printTable(tt[k], "sub" .. count + 1)
+        else
+            print(k .. "->" .. tostring(tt[k]))
+        end
     end
 end
 
@@ -465,7 +471,7 @@ function add(...)
 
     local count = select("#", ...) -- select("#",可以返回变长参数个数)
     local argi = select(2, ...) --返回第2个参数
-    print(string.format("count = %d, arg2 = %s",count,argi))
+    print(string.format("count = %d, arg2 = %s", count, argi))
 
     for i, v in ipairs(v) do
         s = s + v;
@@ -476,4 +482,216 @@ end
 
 r = add(1, 2, 3)
 print("r = " .. r)
+
+
+
+print("---深入函数---")
+--[[
+--1.函数像变量一样，是"一等公明",
+-- a.函数可以存到变量，table中，
+-- b.也可以作为参数传给其他函数，
+-- c.还可以作为其他函数返回值
+--2.函数有特定的词法域:一个函数可以嵌套在另一个函数中，内部函数可以访问外部函数的变量。支持函数式编程(Lua包含Lambda Caculus)
+ ]]
+
+
+a = { p = print }
+a.p("hello")
+
+print = math.sin
+a.p(print(1))
+print = a.p --还是还原下面好使用
+
+
+
+
+print("----函数----")
+--[[函数式"值"，函数就是由一些表达式创建的"值"
+function foo(x) return 2 * x end
+上面这个定义其实只是语法糖真正的书写形式是：
+foo = function(x) return 2 * x end
+
+一个函数定义其实就是一条赋值语句，这条语句创建了一个类型为"函数"的值，并将其复制给一个变量(foo)
+function(x) <body> end 和 {} 一样，前者是函数的构造式，后者是table的构造式。
+
+]]
+
+
+
+
+
+print("--函数:匿名函数 高阶函数--")
+
+network = {
+    { name = "a", ip = "1.2.3.4" },
+    { name = "c", ip = "1.2.3.5" },
+    { name = "b", ip = "1.2.3.6" }
+}
+
+table.sort(network, function(a, b) return a.name > b.name end)
+printTable(network)
+
+--[[
+-- sort 可以接受一个函数 function(a, b) return a.name > b.name end 作为参数，这个函数式匿名函数
+-- sort这样可以接受一个函数作文实参的函数叫"高阶函数"
+]]
+
+
+-- 使用高阶函数求函数 f(x)导数
+function derivate(f, delta)
+    delta = delta or 1e-4
+    return function(x)
+        return (f(x + delta) - f(x)) / delta;
+    end
+end
+
+--sina'10 = cos10
+derivate_sin = derivate(math.sin)
+print("math.cos = " .. math.cos(10) .. " sin'(10) = " .. derivate_sin(10))
+
+
+
+
+
+
+
+
+print("--函数:闭合函数 closure--")
+--[[ 内部函数可以返回外部函数的局部变量，这个特性叫"词法域"
+-- ]]
+
+function newCounter()
+    local i = 0;
+    return function()
+        i = i + 1;
+        return i;
+    end
+end
+
+counter1 = newCounter()
+print("counter1 = " .. counter1())
+print("counter1 = " .. counter1())
+counter2 = newCounter();
+print("counter2 = " .. counter2())
+print("counter2 = " .. counter2())
+print("counter1 = " .. counter1())
+
+
+--[[
+function newCounter()
+    local i = 0;
+    return function()
+        i = i + 1;
+        return i;
+    end
+end
+这段代码中匿名函数访问了一个"非局部变量"i,i保持了一个计数器。当newCounter返回后，每次调用
+匿名函数时候，好像i都超出了作用范围，但是其实不然。Lua的closure会处理这种情况。
+closure = 函数+该函数所需访问的所有"非局部变量"。如果再调用newCounter会创建一个新的局部变量i，
+也会得到一个新的closure。
+-- ]]
+
+
+print("--- -函数：函数 vs closure---")
+--[[函数只是一种特殊的closure, lua中其实只有closure没有函数这个概念]]
+
+
+print("--- -函数：非全局函数---")
+print("--- -函数：非全局函数 存table中---")
+Lib = {}
+Lib.foo = function(x, y) return x + y end
+Lib.goo = function(x, y) return x - y end
+
+print(Lib.foo(1, 2));
+
+--等价于--
+Lib = {
+    foo1 = function(x, y) return x + y end,
+    goo1 = function(x, y) return x - y end
+}
+print(Lib.foo1(1, 2));
+--等价于 语法糖--
+function Lib.foo2(x, y) return x + y end
+
+function Lib.goo2(x, y) return x - y end
+
+print(Lib.foo1(1, 2));
+
+
+print("--- -函数：非全局函数 局部函数---")
+
+local foo3 = function(x, y) return x + y end --语法糖local function foo3(x, y) return x + y end
+local foo4 = function(x, y)
+    local r = x + y
+    return r + foo3(x, y) -- foo3 可见
+end
+
+print(foo4(1, 2))
+
+print("--- -函数：非全局函数 局部函数---")
+
+--[[
+local fact1 = function (n)
+    if n == 0 then
+        return 1;
+    else
+        return n * fact1(n - 1)
+    end
+end
+
+print("fact1(6):" .. fact1(3))
+这段代码有问题，因为在递归调用fact1的时候fact1还没有初始完。
+可以改成 下面的。
+]]
+
+local fact1
+fact1 = function(n)
+    if n == 0 then
+        return 1;
+    else
+        return n * fact1(n - 1)
+    end
+end
+
+print("fact1(6):" .. fact1(3))
+
+--下面是语法糖 lua会将其变为上面的形式
+local function fact2(n)
+    if n == 0 then
+        return 1;
+    else
+        return n * fact2(n - 1)
+    end
+end
+
+print("fact2(6):" .. fact1(3))
+
+
+
+print("---函数：尾调用，尾递归，尾调用优化--")
+--[[
+尾调用 类似于 goto语句，当一个函数调用是另一个函数的最后一个动作时候，该调用才叫"尾调用"
+例如
+function f(x)
+    return g(x+1);
+end
+
+尾调用优化，
+函数调用是一个"栈模型"，一般情况下，函数f在调用函数g的时候， 会保留f的堆栈，g有可能会调用其他函数
+所以每调用一次都会有一个堆栈出现，形成一个"调用栈"，有的语言对调用栈的深度是有规定的，例如java。
+
+但是如果是尾调用的情况下：
+在调用 return g(x)的时候，已经不需要f(x)的栈了，就可以删除f(x)的堆栈，直接调用g(x+1)。这就是尾调用优化。
+尾递归也是一样的道理。 ES6，C++也支持这种优化了。
+
+
+return g(x)+1
+return x or g(x)
+return (g(x))都不是尾调用。
+]]
+
+
+
+
+
 
