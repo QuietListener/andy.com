@@ -775,3 +775,25 @@ t = { "a", "b", "c" }
 for idx, element, idx1 in myIpairs(t) do
     print(string.format("idx = %s, element = %s , idx1 = %s", idx, element, idx1))
 end
+
+
+print("--pairs一-")
+--next(table,key) 返回table key对应的"下一个"key和value，当key为nil时候返回第一个，当最后一个的时候返回nil
+t2 = { a = "aa", bb = "bb", cc = "cc" }
+kk, vv = next(t2, nil)
+print(string.format("kk=%s ,vv=%s", kk, vv))
+kk, vv = next(t2, kk)
+print(string.format("kk=%s ,vv=%s", kk, vv))
+kk, vv = next(t2, kk)
+print(string.format("kk=%s ,vv=%s", kk, vv))
+kk, vv = next(t2, kk)
+print(string.format("kk=%s ,vv=%s", kk, vv))
+
+print("---- ----")
+function myPairs(a)
+    return next, a, nil
+end
+
+for kk, vv in myPairs(t) do
+    print(string.format("kk=%s ,vv=%s", kk, vv))
+end
