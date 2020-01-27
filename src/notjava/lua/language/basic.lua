@@ -763,7 +763,7 @@ local function iter(a, i)
     i = i + 1;
     local v = a[i]
     if v then
-        return i, v, i + 1
+        return i, v, i + 1 --可以返回任意多个
     end;
 end
 
