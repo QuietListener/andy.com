@@ -807,6 +807,8 @@ print("---编译:loadfile dofile load---")
 
 --[[ loadfile 将动态代码编译成一个函数，但不执行。
      dofile 将动态代码编译成一个函数，并且执行。
+     load 从字符串中编译成一个函数
+     loadfile dofile load 都是在全局环境中编译。
 ]]
 
 jj =1
