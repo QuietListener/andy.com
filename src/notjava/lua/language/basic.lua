@@ -803,15 +803,29 @@ end
 
 print("---编译---")
 
-print("---编译:loadfile dofile loadstring---")
+print("---编译:loadfile dofile load---")
 
 --[[ loadfile 将动态代码编译成一个函数，但不执行。
      dofile 将动态代码编译成一个函数，并且执行。
 ]]
 
-func = assert(loadfile("f.lua")) -- 不执行代码
+jj =1
+local jj = 100
+func = assert(loadfile("f.lua")) -- 不执行代码 使用的是全局变量
 func();
+
 print("---")
 dofile("f.lua") --直接执行代码
+
+print("---")
+func1 = load("print('hello1 jj='..jj)")
+func1();
+
+print("---")
+function func2 ()
+    print('hello2 jj='..jj) -- 访问的是局部变量
+end
+func2();
+
 
 
