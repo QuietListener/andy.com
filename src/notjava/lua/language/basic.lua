@@ -809,9 +809,9 @@ print("---编译:loadfile dofile loadstring---")
      dofile 将动态代码编译成一个函数，并且执行。
 ]]
 
-func = assert(loadfile("f.lua"))
+func = assert(loadfile("f.lua")) -- 不执行代码
 func();
 print("---")
-dofile("f.lua")
+dofile("f.lua") --直接执行代码
 
 
