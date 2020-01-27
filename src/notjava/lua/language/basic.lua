@@ -797,3 +797,21 @@ end
 for kk, vv in myPairs(t) do
     print(string.format("kk=%s ,vv=%s", kk, vv))
 end
+
+
+
+
+print("---编译---")
+
+print("---编译:loadfile dofile loadstring---")
+
+--[[ loadfile 将动态代码编译成一个函数，但不执行。
+     dofile 将动态代码编译成一个函数，并且执行。
+]]
+
+func = assert(loadfile("f.lua"))
+func();
+print("---")
+dofile("f.lua")
+
+
