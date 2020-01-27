@@ -693,5 +693,85 @@ return (g(x))都不是尾调用。
 
 
 
+print("---迭代器与泛型for---")
+--[[迭代器就是可以访问一个集合所有元素的机制，lua中将迭代器表示为函数~，每调用一次返回集合中"下一个"元素]]
+
+print("---迭代器与泛型for：closure---")
+function values(t)
+    local i = 0;
+    return function() i = i + 1; return t[i] end
+end
+
+--泛型for，在内部保存迭代器函数，在函数返回nil时候结束
+t = { 10, 20, 30 }
+for element in values(t) do
+    print(element)
+end
 
 
+
+print("---迭代器与泛型for：泛型语义---")
+--[[
+ for <var-list> in <exp-list> do
+    <body>
+ end
+ 泛型for保存了3个值，一个是迭代器函数，一个是恒定状态，一个是控制变量。
+ for做的过程如下:
+ 1.对in后面的表达式进行求值。
+ 2.这些表达式求值，返回3个值给for保存:一个是迭代器函数，一个是恒定状态，一个是控制变量的初始值。
+]]
+
+--当使用较为简单的迭代器的时候,返回一个迭代器函数即可，恒定状态和控制变量都为nil ，如下values1所示。
+function values1(t)
+    local i = 0;
+    return function() i = i + 1; return t[i], i end, nil, nil
+end
+
+
+t = { 10, 20, 30 }
+for element, idx in values1(t) do
+    print(string.format("count = %d, arg2 = %s", idx, element))
+end
+
+
+print("----------")
+
+
+do
+    local _f, _s, _var = values1(t)
+    while true do
+        local _var1, _var2 = _f(_s, _var)
+        _var = _var1
+        if _var == nil then break; end;
+        print(string.format("count = %d, arg2 = %s", _var2, _var1))
+    end
+end
+
+
+print("---迭代器与泛型for：无状态迭代器---")
+--[[
+上面的 迭代工厂函数
+function values1(t)
+    local i = 0;
+    return function() i = i + 1; return t[i], i end,nil,nil
+end
+会有一个状态变量 例如i
+像 ipairs 这种没有一个状态变量。
+-- ]]
+
+local function iter(a, i)
+    i = i + 1;
+    local v = a[i]
+    if v then
+        return i, v, i + 1
+    end;
+end
+
+function myIpairs(a)
+    return iter, a, 0 --a 为恒定状态，0为控制变量初始值
+end
+
+t = { "a", "b", "c" }
+for idx, element, idx1 in myIpairs(t) do
+    print(string.format("idx = %s, element = %s , idx1 = %s", idx, element, idx1))
+end
