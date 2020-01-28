@@ -829,5 +829,8 @@ function func2 ()
 end
 func2();
 
-
+print("---")
+--load 将字符串编译为函数，还可以接受参数，比如下面 afunc可以传入一个参数~。
+afunc = assert(load("local x = ...; print(x+1)"))
+print(afunc(10))
 
