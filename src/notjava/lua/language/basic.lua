@@ -811,7 +811,7 @@ print("---编译:loadfile dofile load---")
      loadfile dofile load 都是在全局环境中编译。
 ]]
 
-jj =1
+jj = 1
 local jj = 100
 func = assert(loadfile("f.lua")) -- 不执行代码 使用的是全局变量
 func();
@@ -824,13 +824,39 @@ func1 = load("print('hello1 jj='..jj)")
 func1();
 
 print("---")
-function func2 ()
-    print('hello2 jj='..jj) -- 访问的是局部变量
+function func2()
+    print('hello2 jj=' .. jj) -- 访问的是局部变量
 end
+
 func2();
 
 print("---")
 --load 将字符串编译为函数，还可以接受参数，比如下面 afunc可以传入一个参数~。
-afunc = assert(load("local x = ...; print(x+1)"))
+afunc = load("local x = ...; print(x+1)")
 print(afunc(10))
 
+
+print("---编译: error---")
+--[[
+n = io.read()
+error = assert(tonumber(n), "invalid input " .. n .. " is not a number")
+]]
+
+function getNumber()
+    n = io.read()
+    num = tonumber(n)
+    if not number then
+        error("invalid input " .. n .. " is not a number") -- error 就像java中throw抛出一个异常
+    else
+        return num;
+    end
+end
+
+--print(getNumber())
+
+
+print("---编译: pcall（protected call）---")
+-- 相当于java的try catch
+local status, error = pcall(function() error({ code = 1, msg = "it is error" }) end)
+print(status)
+printTable(error,"error:")
