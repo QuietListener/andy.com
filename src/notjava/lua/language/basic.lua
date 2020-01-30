@@ -860,3 +860,4 @@ print("---编译: pcall（protected call）---")
 local status, error = pcall(function() error({ code = 1, msg = "it is error" }) end)
 print(status)
 printTable(error,"error:")
+
