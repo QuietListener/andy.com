@@ -90,4 +90,44 @@ function send(x)
 end
 
 --coroutine.resume(producer1)
-assert(coroutine.resume(consumer1))
+--assert(coroutine.resume(consumer1))
+
+
+print("------filter--------")
+
+function producer2()
+    return coroutine.create(function()
+        while true do
+            local x = io.read();
+            print("producer2", x);
+            send1(x);
+        end
+    end);
+end
+
+function consumer2(prod)
+    while true do
+        local x = receive1(prod)
+        print("consumer2", x);
+    end
+end
+
+function filter(prod)
+    return coroutine.create(function()
+        while true do
+            local x = receive1(prod)
+            send1("filter:" .. x);
+        end
+    end);
+end
+
+function receive1(prod)
+    local status, data = coroutine.resume(prod);
+    return data
+end
+
+function send1(x)
+    coroutine.yield(x);
+end
+
+consumer2(filter(producer2()))
