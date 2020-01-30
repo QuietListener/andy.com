@@ -89,5 +89,5 @@ function send(x)
     coroutine.yield(x);
 end
 
-coroutine.resume(producer1)
+--coroutine.resume(producer1)
 assert(coroutine.resume(consumer1))
