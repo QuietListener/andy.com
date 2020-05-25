@@ -141,14 +141,13 @@ public class RedisDistributeLock {
             pool.submit(new Runnable() {
                 @Override
                 public void run() {
-                    int sleepMs = new Random().nextInt(300);
+                    int sleepMs = new Random().nextInt(4);
                     try {
-                        TimeUnit.MILLISECONDS.sleep(sleepMs);
+                        TimeUnit.SECONDS.sleep(sleepMs);
                     } catch (Exception e) {
 
                     }
-
-                    int sleepTime = 1000*new Random().nextInt(30);
+                    int sleepTime = 1000*new Random().nextInt(10);
                     boolean locked = false;
                     String value = Thread.currentThread().getName() + System.currentTimeMillis();
                     try {
@@ -159,13 +158,12 @@ public class RedisDistributeLock {
                         } else {
                             System.out.println(j + ":locked failed");
                         }
-
                     } catch (Exception e) {
                         e.printStackTrace();
                     } finally {
-                        boolean ret = RedisDistributeLock.getInstance().unLock(key, value);
-                        if (locked == true) {
-                            System.out.println("#" + j + ":unlocked :" + ret +" using "+sleepTime+" Ms");
+                        if(locked == true){
+                             boolean ret = RedisDistributeLock.getInstance().unLock(key, value);
+                             System.out.println("#" + j + ":unlocked :" + ret +" using "+sleepTime+" Ms");
                         }
                     }
                 }
@@ -174,7 +172,7 @@ public class RedisDistributeLock {
 
         pool.shutdown();
         try {
-            pool.awaitTermination(20, TimeUnit.SECONDS);
+            pool.awaitTermination(1000, TimeUnit.SECONDS);
         } catch (Exception e) {
         }
         pool.shutdownNow();
@@ -221,9 +219,9 @@ public class RedisDistributeLock {
 
     public static void main(String[] args) throws Exception {
 
-        //test1();
+        test1();
         //test2();
-        testWatchDog();
+        //testWatchDog();
     }
 
     private class WatchDog extends Thread {
@@ -240,6 +238,7 @@ public class RedisDistributeLock {
             String name = Thread.currentThread().getName();
             while (true) {
                 try {
+                    System.out.println(name + " start");
                     boolean locked = readLock.tryLock(1, TimeUnit.SECONDS);
                     List<String> toRemovedKey = new ArrayList<>();
                     if (locked) {
