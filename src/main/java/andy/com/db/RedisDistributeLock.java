@@ -94,7 +94,7 @@ public class RedisDistributeLock {
 
         writeLock.lock();
         try {
-            currKeyValues.remove(key);
+            currKeyValues.remove(key,value);
         } finally {
             writeLock.unlock();
         }
