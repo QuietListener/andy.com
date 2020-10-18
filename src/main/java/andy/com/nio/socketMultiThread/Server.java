@@ -95,6 +95,8 @@ public class Server {
                         });
 
                     }
+
+                    System.out.println("select ");
                 } catch (IOException e) {
                     e.printStackTrace();
                     try {

@@ -28,6 +28,7 @@ public class Handler
     public void send(SelectionKey key) throws IOException {
        // ByteBuffer buffer = (ByteBuffer) key.attachment();
         SocketChannel socketChannel = (SocketChannel) key.channel();
+        key.interestOps(SelectionKey.OP_READ);
         buffer.flip();// 把极限设为位置,把位置设为0, 准备读
 
         String data = decode(buffer);
@@ -35,7 +36,6 @@ public class Handler
         if (data.indexOf("\r\n") == -1) {
             return;
         }
-
 
         String outputData = data.substring(0, data.indexOf("\n") + 1);
         System.out.print(Thread.currentThread().getName()+":"+outputData);
@@ -56,12 +56,14 @@ public class Handler
 
     public void receive(SelectionKey key) throws IOException {
        // ByteBuffer buffer = (ByteBuffer) key.attachment();
+        key.interestOps(SelectionKey.OP_WRITE);
         SocketChannel socketChannel = (SocketChannel) key.channel();
         ByteBuffer readBuff = ByteBuffer.allocate(32);
         socketChannel.read(readBuff);
         readBuff.flip();
         buffer.limit(buffer.capacity());
         buffer.put(readBuff);
+
     }
 
     public String decode(ByteBuffer buffer) {
