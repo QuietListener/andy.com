@@ -17,6 +17,7 @@ import java.util.Arrays;
  */
 public class Frame {
 
+    public static final int HEAD_LENGTH = 6;
     public static final byte COMPRESS_GZIP = 0x1;
     public static final byte COMPRESS_NONE = 0x0;
 
@@ -47,8 +48,8 @@ public class Frame {
         byte[] lbytes = PUtils.intToByteArray(length);
 
         //长度2个字节
-        head[4] = lbytes[0];
-        head[5] = lbytes[1];
+        head[4] = lbytes[2];
+        head[5] = lbytes[3];
 
     }
 
@@ -69,8 +70,9 @@ public class Frame {
     public static Frame decode(byte [] bs) throws IOException{
         Frame f = new Frame();
         f.head = Arrays.copyOfRange(bs,0,6);
-        f.data = Arrays.copyOfRange(bs,6,bs.length);
-
+        byte[] lengthBytes = new byte[]{0,0,f.head[4],f.head[5]};
+        int length = PUtils.byteArrayToInt(lengthBytes);
+        f.data = Arrays.copyOfRange(bs,HEAD_LENGTH,length+HEAD_LENGTH);
 
         if(f.head[2] != COMPRESS_NONE){
             if(f.head[2] == COMPRESS_GZIP){
@@ -81,14 +83,18 @@ public class Frame {
     }
 
     public static void main(String[] args) throws  Exception {
-        String a = "abcdefghiaaaaaaadddddddddddddddddddddddddsssssssssssssssssssssssslalallalaaaaaaaaaaaaaaalallalalalldddddddddj";
+        String a = "abcdefghiaaaaaaadddddddddddddddddddddddddsssssssssssssssssssssssslalallalaaaaaaaaaaaaaaalallalalalldddddddddj1123";
 
         Frame f = Frame.encode(a);
 
         byte [] h = f.getHead();
         byte [] d = f.getData();
 
+        byte[] interupt = new byte[]{1,2,2,4,5};
+
         byte [] both = ArrayUtils.addAll(h,d);
+        both = ArrayUtils.addAll(both,interupt);
+
 
         Frame f1 = Frame.decode(both);
         String a1 = new String(f1.getData());

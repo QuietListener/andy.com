@@ -19,7 +19,10 @@ public class PUtils {
     }
 
     public static void main(String [] args){
-        int [] a = new int[]{1,2,3,4,5};
-        System.out.println();
+        int a = 7;
+        byte [] bs = intToByteArray(a);
+        for(int i = 0; i < bs.length; i++){
+            System.out.println(bs[i]);
+        }
     }
 }
