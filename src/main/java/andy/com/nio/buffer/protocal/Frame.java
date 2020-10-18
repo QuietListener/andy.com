@@ -1,5 +1,9 @@
 package andy.com.nio.buffer.protocal;
 
+import org.apache.commons.lang.ArrayUtils;
+
+import java.util.Arrays;
+
 /**
  * 消息头:
  * 1个byte做为type
@@ -47,15 +51,27 @@ public class Frame {
         return new Frame(s);
     }
 
-    public String decode(byte [] bs){
+    public static Frame decode(byte [] bs){
         Frame f = new Frame();
-        f.head = bs[0,5];
-        f.data = bs[6,bs.length-1];
+        f.head = Arrays.copyOfRange(bs,0,6);
+        f.data = Arrays.copyOfRange(bs,6,bs.length);
+        return f;
     }
 
     public static void main(String[] args) {
         String a = "abcdefghiaaaaaaadddddddddddddddddddddddddsssssssssssssssssssssssslalallalaaaaaaaaaaaaaaalallalalalldddddddddj";
 
+        Frame f = Frame.encode(a);
+
+        byte [] h = f.getHead();
+        byte [] d = f.getData();
+
+        byte [] both = ArrayUtils.addAll(h,d);
+
+        Frame f1 = Frame.decode(both);
+        String a1 = new String(f1.getData());
+
+        System.out.println(a.equals(a1));
 
     }
 }
