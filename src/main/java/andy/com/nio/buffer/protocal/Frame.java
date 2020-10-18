@@ -62,11 +62,11 @@ public class Frame {
     }
 
 
-    public static Frame encode(String s){
+    public static Frame encode(String s) throws IOException{
         return new Frame(s,COMPRESS_GZIP);
     }
 
-    public static Frame decode(byte [] bs){
+    public static Frame decode(byte [] bs) throws IOException{
         Frame f = new Frame();
         f.head = Arrays.copyOfRange(bs,0,6);
         f.data = Arrays.copyOfRange(bs,6,bs.length);
@@ -80,7 +80,7 @@ public class Frame {
         return f;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws  Exception {
         String a = "abcdefghiaaaaaaadddddddddddddddddddddddddsssssssssssssssssssssssslalallalaaaaaaaaaaaaaaalallalalalldddddddddj";
 
         Frame f = Frame.encode(a);
