@@ -33,8 +33,15 @@ public class Frame {
 
     }
 
-    public byte [] getBytes(){
+    public byte[] getHead() {
+        return head;
     }
+
+
+    public byte[] getData() {
+        return data;
+    }
+
 
     public static Frame encode(String s){
         return new Frame(s);
@@ -42,7 +49,8 @@ public class Frame {
 
     public String decode(byte [] bs){
         Frame f = new Frame();
-        ns
+        f.head = bs[0,5];
+        f.data = bs[6,bs.length-1];
     }
 
     public static void main(String[] args) {
