@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/compress/Compressor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/compress/GzipCompressor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,7 +76,7 @@
           <entry key="conf" value="1" />
           <entry key="data" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="656" />
+          <entry key="java" value="658" />
           <entry key="js" value="4" />
           <entry key="json" value="1" />
           <entry key="lua" value="4" />
@@ -95,7 +97,7 @@
           <entry key="CLASS" value="88" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="13" />
-          <entry key="JAVA" value="656" />
+          <entry key="JAVA" value="658" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="4" />
           <entry key="Lua" value="3" />
@@ -112,7 +114,7 @@
           <entry key="class" value="1" />
           <entry key="dummy" value="51" />
           <entry key="html" value="27" />
-          <entry key="java" value="49116" />
+          <entry key="java" value="49464" />
           <entry key="json" value="54" />
           <entry key="lua" value="16333" />
           <entry key="md" value="1979" />
@@ -127,7 +129,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="HTML" value="27" />
-          <entry key="JAVA" value="49116" />
+          <entry key="JAVA" value="49464" />
           <entry key="JSON" value="54" />
           <entry key="Lua" value="16090" />
           <entry key="Markdown" value="1979" />
@@ -159,15 +161,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="179" column="17" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Queue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="198" column="6" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -206,8 +199,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="448">
+              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#671#672#0" expanded="true" />
@@ -217,6 +210,27 @@
                 <element signature="e#690#691#0" expanded="true" />
                 <element signature="e#725#726#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/compress/GzipCompressor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/compress/Compressor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -235,15 +249,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
               <caret line="492" column="30" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -315,8 +320,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/TestReadWriteLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/conditionQueue/TheadGage.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/sync/cp/TestConsumerProducer_Lock.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/aqs/OnShotLatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/HelloWorld.java" />
@@ -365,6 +368,8 @@
         <option value="$PROJECT_DIR$/src/main/java/andy/com/nio/socketMultiThread/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/ByteTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/PUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/compress/Compressor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/compress/GzipCompressor.java" />
         <option value="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java" />
       </list>
     </option>
@@ -521,6 +526,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="nio" type="462c0819:PsiDirectoryNode" />
+              <item name="buffer" type="462c0819:PsiDirectoryNode" />
+              <item name="protocal" type="462c0819:PsiDirectoryNode" />
+              <item name="compress" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycodebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andy.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="nio" type="462c0819:PsiDirectoryNode" />
               <item name="socketMultiThread" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -559,7 +576,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603033697701" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603034529418" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -835,7 +852,7 @@
       <workItem from="1590285514916" duration="5275000" />
       <workItem from="1602638458072" duration="5473000" />
       <workItem from="1602726130969" duration="592000" />
-      <workItem from="1602752112195" duration="11375000" />
+      <workItem from="1602752112195" duration="12206000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -894,13 +911,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="628625000" />
+    <option name="totallyTimeSpent" value="629456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="123" width="1692" height="928" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25878787" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25878787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -912,18 +929,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49757576" weight="0.32715377" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7326491" weight="0.32976446" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.69878787" visible="true" weight="0.3702337" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.69878787" weight="0.3702337" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.45454547" weight="0.23124231" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4539394" visible="true" weight="0.23124231" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5323102" side_tool="true" weight="0.33987916" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32923076" />
       <window_info anchor="bottom" id="JRebel Executor" order="13" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.30121213" side_tool="true" visible="true" weight="0.3702337" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.5460606" side_tool="true" visible="true" weight="0.23124231" />
       <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.5769697" weight="0.29766297" />
       <window_info anchor="bottom" id="Thumbnails" order="16" weight="0.32971016" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1061,20 +1078,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/queue/SynchronousQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/concurrent/synchronizers/aqs/OnShotLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10064">
@@ -1431,10 +1434,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/compress/Compressor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/compress/GzipCompressor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="448">
+          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#671#672#0" expanded="true" />
