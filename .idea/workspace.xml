@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/FrameNeedMoreBytesException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java" afterDir="false" />
     </list>
@@ -114,7 +113,7 @@
           <entry key="class" value="1" />
           <entry key="dummy" value="51" />
           <entry key="html" value="27" />
-          <entry key="java" value="51615" />
+          <entry key="java" value="51647" />
           <entry key="json" value="54" />
           <entry key="lua" value="16333" />
           <entry key="md" value="1979" />
@@ -129,7 +128,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="HTML" value="27" />
-          <entry key="JAVA" value="51615" />
+          <entry key="JAVA" value="51647" />
           <entry key="JSON" value="54" />
           <entry key="Lua" value="16090" />
           <entry key="Markdown" value="1979" />
@@ -146,8 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="138" column="65" selection-start-line="138" selection-start-column="65" selection-end-line="138" selection-end-column="65" />
+            <state relative-caret-position="293">
+              <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1645#1646#0" expanded="true" />
@@ -584,7 +583,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603073743424" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603073861585" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -860,7 +859,7 @@
       <workItem from="1590285514916" duration="5275000" />
       <workItem from="1602638458072" duration="5473000" />
       <workItem from="1602726130969" duration="592000" />
-      <workItem from="1602752112195" duration="16833000" />
+      <workItem from="1602752112195" duration="16966000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -919,7 +918,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="634083000" />
+    <option name="totallyTimeSpent" value="634216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="123" width="1692" height="928" extended-state="0" />
@@ -937,19 +936,19 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49757576" weight="0.32715377" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7326491" weight="0.32976446" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6969697" weight="0.3702337" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.69575757" visible="true" weight="0.3702337" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.45272726" weight="0.23124231" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4521212" weight="0.23124231" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5323102" side_tool="true" weight="0.33987916" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32923076" />
       <window_info anchor="bottom" id="JRebel Executor" order="13" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.42424244" side_tool="true" visible="true" weight="0.29766297" />
-      <window_info active="true" anchor="bottom" id="Messages" order="15" sideWeight="0.57575756" visible="true" weight="0.29766297" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.30424243" side_tool="true" visible="true" weight="0.3702337" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.57575756" weight="0.29766297" />
       <window_info anchor="bottom" id="Thumbnails" order="16" weight="0.32971016" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24973986" />
@@ -1473,8 +1472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/protocal/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="138" column="65" selection-start-line="138" selection-start-column="65" selection-end-line="138" selection-end-column="65" />
+        <state relative-caret-position="293">
+          <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1645#1646#0" expanded="true" />
