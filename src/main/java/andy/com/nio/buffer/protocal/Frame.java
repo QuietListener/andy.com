@@ -7,9 +7,7 @@ import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import org.apache.commons.lang.ArrayUtils;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 消息头:
@@ -120,11 +118,39 @@ public class Frame {
         return f;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Frame frame = (Frame) o;
+        return originFrameLength == frame.originFrameLength &&
+                comprredFrameLength == frame.comprredFrameLength &&
+                Arrays.equals(head, frame.head) &&
+                Arrays.equals(data, frame.data);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(originFrameLength, comprredFrameLength);
+        result = 31 * result + Arrays.hashCode(head);
+        result = 31 * result + Arrays.hashCode(data);
+        return result;
+    }
+
     public static void main(String[] args) throws Exception {
 
-        List<String> strs = Arrays.asList("aaaaaaad3222asssssssssssssssssfdfdfasd22222222222222ddd", "bbb232asdfas3bdccc", "eeee11212345");
+        String[] ss = new String[]{"a","b","c","1","2","&"};
+        List<String> strs = new ArrayList<>();
+        for(int i = 0; i < 10;i++){
+            StringBuilder sb = new StringBuilder();
+            for(int j = 0;j<3000+new Random().nextInt(3000);j++){
+                sb.append(j%50+20+new Random().nextInt(100));
+            }
+            strs.add(sb.toString());
+        }
 
         int total_length = 0;
+        List<Frame> fs1 = new ArrayList<>();
         ByteOutputStream bo = new ByteOutputStream();
         for (int i = 0; i < strs.size(); i++) {
             Frame ff = Frame.encode(strs.get(i));
@@ -132,6 +158,7 @@ public class Frame {
             bo.write(ff.data);
             total_length += ff.head.length;
             total_length += ff.data.length;
+            fs1.add(ff);
         }
 
 
@@ -162,8 +189,10 @@ public class Frame {
 
 
         for (int i = 0; i < fs.size(); i++) {
+            Frame f1 = fs1.get(i);
             Frame f2 = fs.get(i);
             String s = new String(f2.getData());
+            assert f1.equals(f2);
             System.out.println(s + ":" + s.equals(strs.get(i)));
         }
 
