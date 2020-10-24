@@ -123,7 +123,7 @@ public class Client {
         socketChannel.read(receiveBuffer);
 
 
-        receiveBuffer.position(temp.limit());
+        //receiveBuffer.position(temp.limit());
         receiveBuffer.compact();
     }
 
