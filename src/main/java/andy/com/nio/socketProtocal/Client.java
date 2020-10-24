@@ -1,8 +1,8 @@
 package andy.com.nio.socketProtocal;
 
-import java.io.BufferedReader;
+import andy.com.nio.buffer.protocal.Frame;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -11,8 +11,11 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
+import java.util.Date;
 import java.util.Iterator;
+import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class Client {
     private SocketChannel socketChannel = null;
@@ -30,31 +33,34 @@ public class Client {
         System.out.println("与服务器的连接建立成功");
         selector = Selector.open();
     }
+
     public static void main(String[] args) throws IOException {
         final Client client = new Client();
-        Thread receiver = new Thread() {
-            public void run() {
-                client.receiveFromUser();
-            }
-        };
-        receiver.start();
         client.talk();
+
+
     }
 
-    public void receiveFromUser() {
-        try {
-            BufferedReader localReader = new BufferedReader(
-                    new InputStreamReader(System.in));
-            String msg = null;
-            while ((msg = localReader.readLine()) != null) {
-                synchronized (sendBuffer) {
-                    sendBuffer.put(encode(msg + "\r\n"));
+    private class AddDataThread extends Thread {
+
+        @Override
+        public void run() {
+
+            int seq = 0;
+            while (true) {
+                try {
+                    String str = String.format("%s data", seq);
+
+                    Frame f = Frame.encode(str);
+                    Client.this.sendBuffer.put(f.getData());
+
+                    Date t = new Date();
+                    System.out.println(t + " :" + str);
+                    TimeUnit.SECONDS.sleep(new Random().nextInt(3) + 2);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-                if (msg.equals("bye"))
-                    break;
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
@@ -115,22 +121,8 @@ public class Client {
         // 如果receiverBuffer中有一行数据，就打印这行数据，然后把它从receiverBuffer中删除
         SocketChannel socketChannel = (SocketChannel) key.channel();
         socketChannel.read(receiveBuffer);
-        receiveBuffer.flip();
-        String receiveData = decode(receiveBuffer);
-        if (receiveData.indexOf("\n") == -1) {
-            return;
-        }
-        String outputData = receiveData.substring(0,
-                receiveData.indexOf("\n") + 1);
-        System.out.println(outputData);
-        if (outputData.equals("echo:bye\r\n")) {
-            key.cancel();
-            socketChannel.close();
-            System.out.println("关闭与服务器的连接");
-            selector.close();
-            System.exit(0);
-        }
-        ByteBuffer temp = encode(outputData);
+
+
         receiveBuffer.position(temp.limit());
         receiveBuffer.compact();
     }
