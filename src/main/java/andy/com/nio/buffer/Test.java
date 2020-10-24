@@ -10,6 +10,7 @@ public class Test {
 
         System.out.println("\r\n===============写==================");
         buf.put("hello".getBytes());
+        buf.put("1".getBytes());
         putBuf(buf);
 
 
