@@ -2,8 +2,8 @@ package andy.com.nio.buffer.protocal;
 
 import andy.com.nio.buffer.protocal.compress.Compressor;
 import andy.com.nio.buffer.protocal.compress.GzipCompressor;
-import com.sun.xml.internal.messaging.saaj.util.ByteInputStream;
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
+//import com.sun.xml.internal.messaging.saaj.util.ByteInputStream;
+//import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import org.apache.commons.lang.ArrayUtils;
 
 import java.io.IOException;
@@ -138,64 +138,64 @@ public class Frame {
     }
 
     public static void main(String[] args) throws Exception {
-
-        String[] ss = new String[]{"a","b","c","1","2","&"};
-        List<String> strs = new ArrayList<>();
-        for(int i = 0; i < 10;i++){
-            StringBuilder sb = new StringBuilder();
-            for(int j = 0;j<3000+new Random().nextInt(3000);j++){
-                sb.append(j%50+20+new Random().nextInt(100));
-            }
-            strs.add(sb.toString());
-        }
-
-        int total_length = 0;
-        List<Frame> fs1 = new ArrayList<>();
-        ByteOutputStream bo = new ByteOutputStream();
-        for (int i = 0; i < strs.size(); i++) {
-            Frame ff = Frame.encode(strs.get(i));
-            bo.write(ff.head);
-            bo.write(ff.data);
-            total_length += ff.head.length;
-            total_length += ff.data.length;
-            fs1.add(ff);
-        }
-
-
-        byte[] bs = bo.getBytes();
-        ByteInputStream bi = new ByteInputStream(bs, total_length);
-
-
-        byte[] buf = new byte[20];
-        byte[] databuf = null;
-        int size = 0;
-        List<Frame> fs = new ArrayList<>();
-        while ((size = bi.read(buf)) > 0) {
-            if (databuf == null) {
-                databuf = Arrays.copyOfRange(buf, 0, size);
-            } else {
-                databuf = ArrayUtils.addAll(databuf, buf);
-            }
-
-            try {
-                Frame f1 = Frame.decode(databuf);
-                int length = f1.getComprredFrameLength();
-                fs.add(f1);
-                databuf = Arrays.copyOfRange(databuf, length, databuf.length);
-            } catch (FrameNeedMoreBytesException e) {
-                System.out.println("need more");
-            }
-        }
-
-
-        for (int i = 0; i < fs.size(); i++) {
-            Frame f1 = fs1.get(i);
-            Frame f2 = fs.get(i);
-            String s = new String(f2.getData());
-            assert f1.equals(f2);
-            System.out.println(s + ":" + s.equals(strs.get(i)));
-        }
-
+//
+//        String[] ss = new String[]{"a","b","c","1","2","&"};
+//        List<String> strs = new ArrayList<>();
+//        for(int i = 0; i < 10;i++){
+//            StringBuilder sb = new StringBuilder();
+//            for(int j = 0;j<3000+new Random().nextInt(3000);j++){
+//                sb.append(j%50+20+new Random().nextInt(100));
+//            }
+//            strs.add(sb.toString());
+//        }
+//
+//        int total_length = 0;
+//        List<Frame> fs1 = new ArrayList<>();
+//        ByteOutputStream bo = new ByteOutputStream();
+//        for (int i = 0; i < strs.size(); i++) {
+//            Frame ff = Frame.encode(strs.get(i));
+//            bo.write(ff.head);
+//            bo.write(ff.data);
+//            total_length += ff.head.length;
+//            total_length += ff.data.length;
+//            fs1.add(ff);
+//        }
+//
+//
+//        byte[] bs = bo.getBytes();
+//        ByteInputStream bi = new ByteInputStream(bs, total_length);
+//
+//
+//        byte[] buf = new byte[20];
+//        byte[] databuf = null;
+//        int size = 0;
+//        List<Frame> fs = new ArrayList<>();
+//        while ((size = bi.read(buf)) > 0) {
+//            if (databuf == null) {
+//                databuf = Arrays.copyOfRange(buf, 0, size);
+//            } else {
+//                databuf = ArrayUtils.addAll(databuf, buf);
+//            }
+//
+//            try {
+//                Frame f1 = Frame.decode(databuf);
+//                int length = f1.getComprredFrameLength();
+//                fs.add(f1);
+//                databuf = Arrays.copyOfRange(databuf, length, databuf.length);
+//            } catch (FrameNeedMoreBytesException e) {
+//                System.out.println("need more");
+//            }
+//        }
+//
+//
+//        for (int i = 0; i < fs.size(); i++) {
+//            Frame f1 = fs1.get(i);
+//            Frame f2 = fs.get(i);
+//            String s = new String(f2.getData());
+//            assert f1.equals(f2);
+//            System.out.println(s + ":" + s.equals(strs.get(i)));
+//        }
+//
 
     }
 }
