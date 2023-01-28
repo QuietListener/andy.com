@@ -14,12 +14,9 @@ import org.junit.Test;
 import com.google.gson.internal.LinkedTreeMap;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
-class MapDeserializerDoubleAsIntFix implements JsonDeserializer<Map<String, Object>> {
+class MapDeserializerDoubleAsIntFix implements JsonDeserializer<Map<String,Object>> {
 
 
     @Override
@@ -103,5 +100,57 @@ public class GsonTest {
         Map<String, Object> map = gson.fromJson(json, new TypeToken<Map<String, Object>>(){}.getType());
         System.out.println(map);
         //{data=[{id=1, quantity=2, name=apple}, {id=3, quantity=4, name=orange}]}
+    }
+
+
+    /**
+     * 重写JsonDeserializer解决这个问题
+     */
+    @Test
+    public void ok1() {
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(new TypeToken<Map>(){}.getType(),  new MapDeserializerDoubleAsIntFix());
+        Gson gson = gsonBuilder.create();
+        Map map = gson.fromJson(json, new TypeToken<Map>(){}.getType());
+        System.out.println(map);
+        //{data=[{id=1, quantity=2, name=apple}, {id=3, quantity=4, name=orange}]}
+    }
+
+
+    @Test
+    public void ok2(){
+        Map<String,Object> data = new HashMap<>();
+
+        Map<String,Object> data1 = new HashMap<>();
+        data1.put("aaa",1);
+        data1.put("bbb",1.111);
+
+        data.put("attrs",data1);
+        Data d = new Data();
+        d.setData(data);
+
+        Gson gson = new Gson();
+
+        GsonBuilder gsonBuilder1 = new GsonBuilder();
+        gsonBuilder1.registerTypeAdapter(new TypeToken<Map>(){}.getType(),  new MapDeserializerDoubleAsIntFix());
+        Gson gson1 = gsonBuilder1.create();
+
+        String str = gson.toJson(d);
+        Data dd = gson1.fromJson(str,new TypeToken<Data>(){}.getType());
+
+        System.out.println(dd);
+
+    }
+
+    private static class Data{
+        private Map data;
+
+        public Map getData() {
+            return data;
+        }
+
+        public void setData(Map data) {
+            this.data = data;
+        }
     }
 }
