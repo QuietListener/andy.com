@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="fx">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redisScript/tokenBucket.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/epub/ReadingParse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/db/redis/ratelimiting/TokenBucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/db/redis/ratelimiting/TokenBucket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/config/CommandTestParamExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/config/CommandTestParamExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,9 +377,23 @@
       <recent name="$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker">
+  <component name="RunManager" selected="Application.ReadingParse">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadingParse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="andy.com.epub.ReadingParse" />
+      <module name="andy.com" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.epub.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -394,19 +404,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandHelloWorld$TestCommandHelloWorld.testSyncHelloWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="andy.com" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.springCloud.hystrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="andy.com.springCloud.hystrix.CommandHelloWorld" />
-      <option name="MAIN_CLASS_NAME" value="andy.com.springCloud.hystrix.CommandHelloWorld$TestCommandHelloWorld" />
-      <option name="METHOD_NAME" value="testSyncHelloWord" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -504,19 +508,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CommandHelloWorld$TestCommandHelloWorld.testSyncHelloWord" />
       <item itemvalue="JUnit.CommandHelloWorldWithFallback$TestCommandHelloWorldFallback" />
       <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testSemophore" />
       <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testExecutionIsolationSemaphoreMaxConcurrentRequests" />
       <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" />
+      <item itemvalue="Application.ReadingParse" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadingParse" />
         <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" />
         <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testExecutionIsolationSemaphoreMaxConcurrentRequests" />
         <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testSemophore" />
         <item itemvalue="JUnit.CommandHelloWorldWithFallback$TestCommandHelloWorldFallback" />
-        <item itemvalue="JUnit.CommandHelloWorld$TestCommandHelloWorld.testSyncHelloWord" />
       </list>
     </recent_temporary>
   </component>
@@ -633,7 +637,7 @@
       <workItem from="1678081386069" duration="801000" />
       <workItem from="1684403802120" duration="3690000" />
       <workItem from="1691044738410" duration="2552000" />
-      <workItem from="1708577686131" duration="331000" />
+      <workItem from="1708577686131" duration="1546000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -809,6 +813,11 @@
           <url>jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.7.17/ribbon-httpclient-2.7.17.jar!/com/netflix/niws/client/http/RestClient.class</url>
           <line>309</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/andy/com/epub/ReadingParse.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
