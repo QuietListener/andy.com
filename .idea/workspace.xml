@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="fx">
-      <change afterPath="$PROJECT_DIR$/src/main/java/andy/com/epub/ReadingParse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/epub/ReadingParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/epub/ReadingParse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -637,7 +636,7 @@
       <workItem from="1678081386069" duration="801000" />
       <workItem from="1684403802120" duration="3690000" />
       <workItem from="1691044738410" duration="2552000" />
-      <workItem from="1708577686131" duration="1546000" />
+      <workItem from="1708577686131" duration="2941000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -813,11 +812,6 @@
           <url>jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.7.17/ribbon-httpclient-2.7.17.jar!/com/netflix/niws/client/http/RestClient.class</url>
           <line>309</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/andy/com/epub/ReadingParse.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

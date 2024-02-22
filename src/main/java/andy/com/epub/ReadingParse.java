@@ -1,12 +1,18 @@
 package andy.com.epub;
 
+import com.google.gson.Gson;
 import nl.siegmann.epublib.domain.*;
 import nl.siegmann.epublib.epub.EpubReader;
+import org.apache.commons.io.FileUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import java.io.*;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class ReadingParse {
 
@@ -14,6 +20,8 @@ public class ReadingParse {
 
 
         File file = new File("/Users/yangtingjun/Downloads/ALittlePrincess.epub");
+        Map<String,Object> ret = new LinkedHashMap<>();
+
         InputStream in = null;
         try {
             //从输入流当中读取epub格式文件
@@ -22,7 +30,12 @@ public class ReadingParse {
             Book book = reader.readEpub(in);
             //获取到书本的头部信息
             Metadata metadata = book.getMetadata();
-            System.out.println("FirstTitle为："+metadata.getFirstTitle());
+            String title = book.getTitle();
+
+            System.out.println("FirstTitle为："+title);
+
+            ret.put("title",title);
+
             //获取到书本的全部资源
             Resources resources = book.getResources();
             System.out.println("所有资源数量为："+resources.size());
@@ -56,22 +69,43 @@ public class ReadingParse {
             System.out.println("目录资源数量为："+tableOfContents.size());
             //获取到目录对应的资源数据
             List<TOCReference> tocReferences = tableOfContents.getTocReferences();
+
+
+            List<Map<String,String>> contentList = new ArrayList<>();
+            ret.put("content",contentList);
+
+
             for (TOCReference tocReference : tocReferences) {
                 Resource resource = tocReference.getResource();
-                String title = tocReference.getTitle();
+                String title1= tocReference.getTitle();
 
-                System.out.println("title:"+title);
+                System.out.println("title:"+title1);
 
                 //data就是资源的内容数据，可能是css,html,图片等等
                 byte[] data = resource.getData();
                 String content = new String(data);
-                System.out.println(content);
+
+                String  finalText = Parser1.parse(content);
+
+
+                Map<String,String> map = new HashMap<>();
+                map.put("title",title1);
+                map.put("content",finalText);
+
+                contentList.add(map);
+
                 // 获取到内容的类型  css,html,还是图片
                 MediaType mediaType = resource.getMediaType();
                 if(tocReference.getChildren().size()>0){
                     //获取子目录的内容
                 }
             }
+
+
+            Gson gson = new Gson();
+            String jsonRet = gson.toJson(ret);
+
+            FileUtils.writeStringToFile(new File("reading/"+title+".json"),jsonRet);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -85,4 +119,17 @@ public class ReadingParse {
             }
         }
     }
+
+
+
+    static  class Parser1{
+        public static String parse(String content){
+            Document doc = Jsoup.parse(content);
+            Elements elements = doc.select("p");
+
+            List<String> eachText = elements.eachText();
+            return eachText.stream().collect(Collectors.joining("\r\n"));
+        }
+    }
+
 }
