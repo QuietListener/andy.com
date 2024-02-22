@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="">
+    <list default="true" id="05cbb625-0fb6-4786-9453-7ac51031f10f" name="Default Changelist" comment="fx">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/redisScript/tokenBucket.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/db/redis/ratelimiting/TokenBucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/db/redis/ratelimiting/TokenBucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/config/CommandTestParamExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/config/CommandTestParamExecution.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,234 +25,6 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="211" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-843770457">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="71" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="6" />
-          <entry key="project.open.time.102" value="1" />
-          <entry key="project.open.time.11" value="3" />
-          <entry key="project.open.time.116" value="1" />
-          <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.17" value="2" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.27" value="1" />
-          <entry key="project.open.time.275" value="1" />
-          <entry key="project.open.time.29" value="2" />
-          <entry key="project.open.time.3" value="4" />
-          <entry key="project.open.time.30" value="3" />
-          <entry key="project.open.time.34" value="2" />
-          <entry key="project.open.time.36" value="2" />
-          <entry key="project.open.time.38" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.4" value="8" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.43" value="1" />
-          <entry key="project.open.time.45" value="3" />
-          <entry key="project.open.time.46" value="3" />
-          <entry key="project.open.time.5" value="6" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.51" value="2" />
-          <entry key="project.open.time.54" value="1" />
-          <entry key="project.open.time.6" value="6" />
-          <entry key="project.open.time.61" value="2" />
-          <entry key="project.open.time.62" value="1" />
-          <entry key="project.open.time.7" value="8" />
-          <entry key="project.open.time.74" value="1" />
-          <entry key="project.open.time.75" value="1" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="104" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="1-SNAPSHOT" value="1" />
-          <entry key="README" value="4" />
-          <entry key="aj" value="1" />
-          <entry key="class" value="90" />
-          <entry key="conf" value="1" />
-          <entry key="data" value="1" />
-          <entry key="html" value="1" />
-          <entry key="java" value="677" />
-          <entry key="js" value="4" />
-          <entry key="json" value="1" />
-          <entry key="lua" value="4" />
-          <entry key="md" value="13" />
-          <entry key="png" value="13" />
-          <entry key="pom" value="8" />
-          <entry key="properties" value="4" />
-          <entry key="sh" value="6" />
-          <entry key="sql" value="2" />
-          <entry key="txt" value="28" />
-          <entry key="xml" value="52" />
-          <entry key="xsd" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="AspectJ" value="1" />
-          <entry key="CLASS" value="90" />
-          <entry key="HTML" value="1" />
-          <entry key="Image" value="13" />
-          <entry key="JAVA" value="677" />
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="4" />
-          <entry key="Lua" value="3" />
-          <entry key="Markdown" value="13" />
-          <entry key="PLAIN_TEXT" value="41" />
-          <entry key="Properties" value="4" />
-          <entry key="SQL" value="2" />
-          <entry key="UML" value="1" />
-          <entry key="XML" value="61" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="dummy" value="51" />
-          <entry key="html" value="27" />
-          <entry key="java" value="52842" />
-          <entry key="json" value="54" />
-          <entry key="lua" value="16333" />
-          <entry key="md" value="1979" />
-          <entry key="properties" value="17" />
-          <entry key="sh" value="276" />
-          <entry key="sql" value="2" />
-          <entry key="txt" value="444" />
-          <entry key="xml" value="651" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="HTML" value="27" />
-          <entry key="JAVA" value="52842" />
-          <entry key="JSON" value="54" />
-          <entry key="Lua" value="16090" />
-          <entry key="Markdown" value="1979" />
-          <entry key="PLAIN_TEXT" value="1014" />
-          <entry key="Properties" value="17" />
-          <entry key="SQL" value="2" />
-          <entry key="XML" value="651" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Common.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketProtocal/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4897#4898#0" expanded="true" />
-                <element signature="e#4939#4940#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/socketMultiThread/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/andy/com/nio/buffer/ByteTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-191">
-              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="801" column="28" selection-start-line="801" selection-start-column="28" selection-end-line="801" selection-end-column="28" />
-              <folding>
-                <element signature="e#33709#33710#0" expanded="true" />
-                <element signature="e#33760#33761#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/nio/Buffer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="355" column="24" selection-start-line="355" selection-start-column="24" selection-end-line="355" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="858" column="16" lean-forward="true" selection-start-line="858" selection-start-column="16" selection-end-line="858" selection-end-column="16" />
-              <folding>
-                <element signature="e#25207#25208#0" expanded="true" />
-                <element signature="e#25253#25254#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -381,11 +157,6 @@
         <option name="mavenHome" value="$PROJECT_DIR$/../../../../安装程序/software/apache-maven-3.3.1" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -412,6 +183,7 @@
     <option name="width" value="1476" />
     <option name="height" value="944" />
   </component>
+  <component name="ProjectId" id="2KwYV6XwRbZE6uzzX7PHIr6wy2c" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -553,6 +325,10 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -561,16 +337,25 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603528386928" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="Template Data Languages" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -596,91 +381,9 @@
       <recent name="$PROJECT_DIR$/src/main/resources/books/PersistenceWithMybatis3" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.nio.socketProtocal.Client" />
-      <module name="andy.com" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.nio.socketProtocal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Frame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.nio.buffer.protocal.Frame" />
-      <module name="andy.com" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.nio.buffer.protocal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.nio.buffer.protocal.PUtils" />
-      <module name="andy.com" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.nio.buffer.protocal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.nio.socketProtocal.Server" />
-      <module name="andy.com" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.nio.socketProtocal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="andy.com.nio.buffer.Test" />
-      <module name="andy.com" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="andy.com.nio.buffer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -691,13 +394,99 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration name="CommandHelloWorld$TestCommandHelloWorld.testSyncHelloWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="andy.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.springCloud.hystrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.springCloud.hystrix.CommandHelloWorld" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.springCloud.hystrix.CommandHelloWorld$TestCommandHelloWorld" />
+      <option name="METHOD_NAME" value="testSyncHelloWord" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration name="CommandHelloWorldWithFallback$TestCommandHelloWorldFallback" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="andy.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.springCloud.hystrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.springCloud.hystrix.CommandHelloWorldWithFallback" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.springCloud.hystrix.CommandHelloWorldWithFallback$TestCommandHelloWorldFallback" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="andy.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.springCloud.hystrix.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.springCloud.hystrix.config.CommandTestParamExecution" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.springCloud.hystrix.config.CommandTestParamExecution$TestCommandHelloWorldFallback" />
+      <option name="METHOD_NAME" value="testCircuitBreaker" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testExecutionIsolationSemaphoreMaxConcurrentRequests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="andy.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.springCloud.hystrix.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.springCloud.hystrix.config.CommandTestParamExecution" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.springCloud.hystrix.config.CommandTestParamExecution$TestCommandHelloWorldFallback" />
+      <option name="METHOD_NAME" value="testExecutionIsolationSemaphoreMaxConcurrentRequests" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandTestParamExecution$TestCommandHelloWorldFallback.testSemophore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="andy.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="andy.com.springCloud.hystrix.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="andy.com.springCloud.hystrix.config.CommandTestParamExecution" />
+      <option name="MAIN_CLASS_NAME" value="andy.com.springCloud.hystrix.config.CommandTestParamExecution$TestCommandHelloWorldFallback" />
+      <option name="METHOD_NAME" value="testSemophore" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <properties />
       <listeners />
@@ -705,32 +494,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Frame" />
-      <item itemvalue="Application.PUtils" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Server" />
-      <item itemvalue="Application.Client" />
+      <item itemvalue="JUnit.CommandHelloWorld$TestCommandHelloWorld.testSyncHelloWord" />
+      <item itemvalue="JUnit.CommandHelloWorldWithFallback$TestCommandHelloWorldFallback" />
+      <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testSemophore" />
+      <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testExecutionIsolationSemaphoreMaxConcurrentRequests" />
+      <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Frame" />
-        <item itemvalue="Application.PUtils" />
+        <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testCircuitBreaker" />
+        <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testExecutionIsolationSemaphoreMaxConcurrentRequests" />
+        <item itemvalue="JUnit.CommandTestParamExecution$TestCommandHelloWorldFallback.testSemophore" />
+        <item itemvalue="JUnit.CommandHelloWorldWithFallback$TestCommandHelloWorldFallback" />
+        <item itemvalue="JUnit.CommandHelloWorld$TestCommandHelloWorld.testSyncHelloWord" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -838,6 +628,12 @@
       <workItem from="1602752112195" duration="21441000" />
       <workItem from="1603349490333" duration="2730000" />
       <workItem from="1603427253951" duration="4671000" />
+      <workItem from="1674887135376" duration="1106000" />
+      <workItem from="1674888841336" duration="925000" />
+      <workItem from="1678081386069" duration="801000" />
+      <workItem from="1684403802120" duration="3690000" />
+      <workItem from="1691044738410" duration="2552000" />
+      <workItem from="1708577686131" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="添加 一个doc">
       <created>1547714356829</created>
@@ -860,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566973183460</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fx">
+      <created>1674887652084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674887652084</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -945,10 +748,19 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加 一个doc" />
@@ -961,49 +773,41 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/andy/com/springFramework/core/aop/MyAspect.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/andy/com/basic/ArrayTest.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/andy/com/basic/ArrayTest.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/andy/com/db/mybatis/spring/multiple_datasource/UserService.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/andy/com/springCloud/hystrix/CommandHelloWorldWithCache.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4Handler.java</url>
           <line>129</line>
-          <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4.java</url>
           <line>136</line>
-          <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.7.17/ribbon-httpclient-2.7.17.jar!/com/netflix/niws/client/http/RestClient.class</url>
           <line>309</line>
-          <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
@@ -1012,6 +816,11 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mycodebase$CommandTestParamExecution_TestCommandHelloWorldFallback_testSemophore.ic" NAME="CommandTestParamExecution$TestCommandHelloWorldFallback.testSemophore Coverage Results" MODIFIED="1684464057064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>andy.com.springCloud.hystrix.config.*</FILTER>
+    </SUITE>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">

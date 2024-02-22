@@ -9,8 +9,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="andy.com" />
         <module name="mycodebase" />
+        <module name="andy.com" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

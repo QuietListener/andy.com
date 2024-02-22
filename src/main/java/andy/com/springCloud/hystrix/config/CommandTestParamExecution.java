@@ -60,7 +60,7 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
                         /**Circuit Breaker*/
                         .withCircuitBreakerEnabled(true)
                         //在一个窗口期内,激活断路器的最小请求量，比如设置为30，但是只有29个请求，就算这19个请求全部挂了，都不会断路.默认20个
-                        .withCircuitBreakerRequestVolumeThreshold(29)
+                        .withCircuitBreakerRequestVolumeThreshold(10)
                         //当断路发生时候，会拒绝请求，睡眠一段时间再去请求看服务 是否恢复。这个参数就是这个时间间隔。 默认5000毫秒
                         .withCircuitBreakerSleepWindowInMilliseconds(2000)
                         //当错误率高于这个数，就会断路执行fallback中的逻辑
@@ -183,7 +183,7 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
             String name = "junjun";
 
             System.out.println("time:" + new Date().getTime());
-            for (int i = 0; i < 40; i++) {
+            for (int i = 0; i < 100; i++) {
 
                 final int j = i;
                 Thread t = new Thread() {
@@ -196,9 +196,9 @@ public class CommandTestParamExecution extends HystrixCommand<String> {
                             if (j <= 5) {
                                 time = j * (testTimeOutMs + 100);
                                 exeTime = testTimeOutMs / 2;
-                            } else if (j > 5 && j < 19) {
+                            } else if (j > 5 && j < 60) {
                                 time = 5 * (testTimeOutMs + 100) + testTimeOutMs / 5;
-                                exeTime = testTimeOutMs + 10;
+                                exeTime = testTimeOutMs + 100;
                             } else {
                                 time = j * (testTimeOutMs + 100);
                                 exeTime = testTimeOutMs / 2;

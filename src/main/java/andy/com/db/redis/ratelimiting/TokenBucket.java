@@ -15,6 +15,18 @@ public class TokenBucket {
         return false;
     }
 
+    /**
+     *
+     * @param script
+     * @param bucketName 桶的名字
+     * @param countPerSecond 每秒钟向桶里放入的令牌数量
+     * @param bucketCapacity 桶的容量
+     */
+    private boolean executeScript(String script, String bucketName, long countPerSecond,long bucketCapacity) {
+
+        return true;
+    }
+
 
 
 
